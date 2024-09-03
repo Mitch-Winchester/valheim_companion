@@ -1,0 +1,622 @@
+[
+    {
+        "Item": "Mushroom",
+        "Health": 15,
+        "Stamina": 15,
+        "Eitr": null,
+        "Healing": 1,
+        "Duration": "15m",
+        "Biome": "Meadows",
+        "Recipe": null
+    },
+    {
+        "Item": "Raspberry",
+        "Health": 7,
+        "Stamina": 20,
+        "Eitr": null,
+        "Healing": 1,
+        "Duration": "10m",
+        "Biome": "Meadows",
+        "Recipe": null
+    },
+    {
+        "Item": "Honey",
+        "Health": 8,
+        "Stamina": 35,
+        "Eitr": null,
+        "Healing": 1,
+        "Duration": "15m",
+        "Biome": "Meadows",
+        "Recipe": null
+    },
+    {
+        "Item": "Boar Jerky",
+        "Health": 23,
+        "Stamina": 23,
+        "Eitr": null,
+        "Healing": 2,
+        "Duration": "30m",
+        "Biome": "Meadows",
+        "Recipe": "1 boar meat, 1 honey"
+    },
+    {
+        "Item": "Grilled Neck Tail",
+        "Health": 25,
+        "Stamina": 8,
+        "Eitr": null,
+        "Healing": 2,
+        "Duration": "20m",
+        "Biome": "Meadows",
+        "Recipe": null
+    },
+    {
+        "Item": "Cooked Boar Meat",
+        "Health": 30,
+        "Stamina": 10,
+        "Eitr": null,
+        "Healing": 2,
+        "Duration": "20m",
+        "Biome": "Meadows",
+        "Recipe": null
+    },
+    {
+        "Item": "Cooked Deer Meat",
+        "Health": 35,
+        "Stamina": 12,
+        "Eitr": null,
+        "Healing": 2,
+        "Duration": "20m",
+        "Biome": "Meadows",
+        "Recipe": null
+    },
+    {
+        "Item": "Blueberry",
+        "Health": 8,
+        "Stamina": 25,
+        "Eitr": null,
+        "Healing": 1,
+        "Duration": "10m",
+        "Biome": "Black Forest",
+        "Recipe": null
+    },
+    {
+        "Item": "Yellow Mushroom",
+        "Health": 10,
+        "Stamina": 30,
+        "Eitr": null,
+        "Healing": 1,
+        "Duration": "10m",
+        "Biome": "Black Forest",
+        "Recipe": null
+    },
+    {
+        "Item": "Carrot",
+        "Health": 10,
+        "Stamina": 32,
+        "Eitr": null,
+        "Healing": 1,
+        "Duration": "15m",
+        "Biome": "Black Forest",
+        "Recipe": null
+    },
+    {
+        "Item": "Queens Jam",
+        "Health": 14,
+        "Stamina": 40,
+        "Eitr": null,
+        "Healing": 2,
+        "Duration": "20m",
+        "Biome": "Black Forest",
+        "Recipe": "8 raspberries, 6 blueberries"
+    },
+    {
+        "Item": "Minced Meat Sauce",
+        "Health": 40,
+        "Stamina": 13,
+        "Eitr": null,
+        "Healing": 3,
+        "Duration": "25m",
+        "Biome": "Black Forest",
+        "Recipe": "1 boar meat, 1 necktail, 1 carrot"
+    },
+    {
+        "Item": "Cooked Fish",
+        "Health": 45,
+        "Stamina": 15,
+        "Eitr": null,
+        "Healing": 2,
+        "Duration": "20m",
+        "Biome": "Black Forest",
+        "Recipe": null
+    },
+    {
+        "Item": "Carrot Soup",
+        "Health": 15,
+        "Stamina": 45,
+        "Eitr": null,
+        "Healing": 2,
+        "Duration": "25m",
+        "Biome": "Black Forest",
+        "Recipe": "3 carrots, 1 mushroom"
+    },
+    {
+        "Item": "Deer Stew",
+        "Health": 45,
+        "Stamina": 15,
+        "Eitr": null,
+        "Healing": 3,
+        "Duration": "25m",
+        "Biome": "Black Forest",
+        "Recipe": "1 cooked deer meat, 1 blueberries, 1 carrot"
+    },
+    {
+        "Item": "Muckshake",
+        "Health": 16,
+        "Stamina": 50,
+        "Eitr": null,
+        "Healing": 1,
+        "Duration": "20m",
+        "Biome": "Swamp",
+        "Recipe": "1 ooze, 2 raspberries, 2 blueberries"
+    },
+    {
+        "Item": "Black Soup",
+        "Health": 50,
+        "Stamina": 17,
+        "Eitr": null,
+        "Healing": 3,
+        "Duration": "20m",
+        "Biome": "Swamp",
+        "Recipe": "1 bloodbag, 1 honey, 1 turnip"
+    },
+    {
+        "Item": "Sausages",
+        "Health": 55,
+        "Stamina": 18,
+        "Eitr": null,
+        "Healing": 3,
+        "Duration": "25m",
+        "Biome": "Swamp",
+        "Recipe": "4 entrails, 1 boar meat, 1 thistle"
+    },
+    {
+        "Item": "Turnip Stew",
+        "Health": 18,
+        "Stamina": 55,
+        "Eitr": null,
+        "Healing": 2,
+        "Duration": "25m",
+        "Biome": "Swamp",
+        "Recipe": "3 turnips, 1 boar meat"
+    },
+    {
+        "Item": "Wolf Jerky",
+        "Health": 33,
+        "Stamina": 33,
+        "Eitr": null,
+        "Healing": 3,
+        "Duration": "30m",
+        "Biome": "Mountains",
+        "Recipe": "1 wolf meat, 1 honey"
+    },
+    {
+        "Item": "Onion Soup",
+        "Health": 20,
+        "Stamina": 60,
+        "Eitr": null,
+        "Healing": 1,
+        "Duration": "20m",
+        "Biome": "Mountains",
+        "Recipe": "3 onions"
+    },
+    {
+        "Item": "Eyescream",
+        "Health": 21,
+        "Stamina": 65,
+        "Eitr": null,
+        "Healing": 1,
+        "Duration": "25m",
+        "Biome": "Mountains",
+        "Recipe": "3 greydwarf eye, 1 freeze gland"
+    },
+    {
+        "Item": "Wolf Skewers",
+        "Health": 65,
+        "Stamina": 21,
+        "Eitr": null,
+        "Healing": 3,
+        "Duration": "25m",
+        "Biome": "Mountains",
+        "Recipe": "1 wolf meat, 2 mushrooms, 1 onion"
+    },
+    {
+        "Item": "Cloudberries",
+        "Health": 13,
+        "Stamina": 40,
+        "Eitr": null,
+        "Healing": 1,
+        "Duration": "15m",
+        "Biome": "Plains",
+        "Recipe": null
+    },
+    {
+        "Item": "Cooked Lox Meat",
+        "Health": 50,
+        "Stamina": 16,
+        "Eitr": null,
+        "Healing": 4,
+        "Duration": "20m",
+        "Biome": "Plains",
+        "Recipe": null
+    },
+    {
+        "Item": "Fish Wraps",
+        "Health": 70,
+        "Stamina": 23,
+        "Eitr": null,
+        "Healing": 4,
+        "Duration": "25m",
+        "Biome": "Plains",
+        "Recipe": "2 cooked fish, 4 barley flour"
+    },
+    {
+        "Item": "Bread",
+        "Health": 23,
+        "Stamina": 70,
+        "Eitr": null,
+        "Healing": 2,
+        "Duration": "25m",
+        "Biome": "Plains",
+        "Recipe": "10 barley flour"
+    },
+    {
+        "Item": "Blood Pudding",
+        "Health": 25,
+        "Stamina": 75,
+        "Eitr": null,
+        "Healing": 2,
+        "Duration": "30m",
+        "Biome": "Plains",
+        "Recipe": "2 thistle, 2 bloodbag, 4 barley flour"
+    },
+    {
+        "Item": "Lox Meat Pie",
+        "Health": 75,
+        "Stamina": 24,
+        "Eitr": null,
+        "Healing": 4,
+        "Duration": "30m",
+        "Biome": "Plains",
+        "Recipe": "2 lox meat, 2 cloudberries, 4 barley flour"
+    },
+    {
+        "Item": "Cooked Serpent Meat",
+        "Health": 70,
+        "Stamina": 23,
+        "Eitr": null,
+        "Healing": 3,
+        "Duration": "25m",
+        "Biome": "Ocean",
+        "Recipe": null
+    },
+    {
+        "Item": "Serpent Stew",
+        "Health": 80,
+        "Stamina": 26,
+        "Eitr": null,
+        "Healing": 4,
+        "Duration": "30m",
+        "Biome": "Ocean",
+        "Recipe": "1 cooked serpent meat, 1 mushroom, 2 honey"
+    },
+    {
+        "Item": "Royal Jelly",
+        "Health": 15,
+        "Stamina": 15,
+        "Eitr": null,
+        "Healing": 1,
+        "Duration": "15m",
+        "Biome": "Mistlands",
+        "Recipe": null
+    },
+    {
+        "Item": "Jotun Puffs",
+        "Health": 25,
+        "Stamina": 25,
+        "Eitr": null,
+        "Healing": 1,
+        "Duration": "15m",
+        "Biome": "Mistlands",
+        "Recipe": null
+    },
+    {
+        "Item": "Magecap",
+        "Health": 25,
+        "Stamina": 25,
+        "Eitr": 25,
+        "Healing": 1,
+        "Duration": "15m",
+        "Biome": "Mistlands",
+        "Recipe": null
+    },
+    {
+        "Item": "Cooked Egg",
+        "Health": 35,
+        "Stamina": 12,
+        "Eitr": null,
+        "Healing": 2,
+        "Duration": "20m",
+        "Biome": "Mistlands",
+        "Recipe": "1 egg"
+    },
+    {
+        "Item": "Cooked Chicken Meat",
+        "Health": 60,
+        "Stamina": 20,
+        "Eitr": null,
+        "Healing": 5,
+        "Duration": "20m",
+        "Biome": "Mistlands",
+        "Recipe": null
+    },
+    {
+        "Item": "Cooked Hare Meat",
+        "Health": 60,
+        "Stamina": 20,
+        "Eitr": null,
+        "Healing": 5,
+        "Duration": "20m",
+        "Biome": "Mistlands",
+        "Recipe": null
+    },
+    {
+        "Item": "Cooked Seeker Meat",
+        "Health": 60,
+        "Stamina": 20,
+        "Eitr": null,
+        "Healing": 5,
+        "Duration": "20m",
+        "Biome": "Mistlands",
+        "Recipe": null
+    },
+    {
+        "Item": "Magically Stuffed Shroom",
+        "Health": 25,
+        "Stamina": 12,
+        "Eitr": 75,
+        "Healing": 3,
+        "Duration": "25m",
+        "Biome": "Mistlands",
+        "Recipe": "3 magecaps, 1 blood clot, 2 turnips"
+    },
+    {
+        "Item": "Salad",
+        "Health": 26,
+        "Stamina": 80,
+        "Eitr": null,
+        "Healing": 3,
+        "Duration": "25m",
+        "Biome": "Mistlands",
+        "Recipe": "3 jotun puffs, 3 onions, 3 cloudberries"
+    },
+    {
+        "Item": "Meat Platter",
+        "Health": 80,
+        "Stamina": 26,
+        "Eitr": null,
+        "Healing": 5,
+        "Duration": "30m",
+        "Biome": "Mistlands",
+        "Recipe": "1 seeker meat, 1 lox meat, 1 hare meat"
+    },
+    {
+        "Item": "Honey Glazed Chicken",
+        "Health": 80,
+        "Stamina": 26,
+        "Eitr": null,
+        "Healing": 5,
+        "Duration": "30m",
+        "Biome": "Mistlands",
+        "Recipe": "1 chicken meat, 3 honey, 2 jotun puffs"
+    },
+    {
+        "Item": "Yggdrasil Porridge",
+        "Health": 27,
+        "Stamina": 13,
+        "Eitr": 80,
+        "Healing": 3,
+        "Duration": "25m",
+        "Biome": "Mistlands",
+        "Recipe": "4 sap, 3 barley, 2 royal jelly"
+    },
+    {
+        "Item": "Misthare Supreme",
+        "Health": 85,
+        "Stamina": 28,
+        "Eitr": null,
+        "Healing": 5,
+        "Duration": "25m",
+        "Biome": "Mistlands",
+        "Recipe": "1 hare meat, 3 jotun puffs, 2 carrots"
+    },
+    {
+        "Item": "Mushroom Omelette",
+        "Health": 28,
+        "Stamina": 85,
+        "Eitr": null,
+        "Healing": 3,
+        "Duration": "25m",
+        "Biome": "Mistlands",
+        "Recipe": "3 eggs, 3 jotun puffs"
+    },
+    {
+        "Item": "Seeker Aspic",
+        "Health": 28,
+        "Stamina": 14,
+        "Eitr": 85,
+        "Healing": 3,
+        "Duration": "30m",
+        "Biome": "Mistlands",
+        "Recipe": "2 seeker meat, 2 magecap, 2 royal jelly"
+    },
+    {
+        "Item": "Fish n' Bread",
+        "Health": 30,
+        "Stamina": 90,
+        "Eitr": null,
+        "Healing": 3,
+        "Duration": "30m",
+        "Biome": "Mistlands",
+        "Recipe": "1 anglerfish, 2 bread dough"
+    },
+    {
+        "Item": "Smoke puff",
+        "Health": 15,
+        "Stamina": 15,
+        "Eitr": null,
+        "Healing": 1,
+        "Duration": null,
+        "Biome": "Ashlands",
+        "Recipe": null
+    },
+    {
+        "Item": "Fiddlehead",
+        "Health": 30,
+        "Stamina": 30,
+        "Eitr": null,
+        "Healing": 1,
+        "Duration": null,
+        "Biome": "Ashlands",
+        "Recipe": null
+    },
+    {
+        "Item": "Vineberry cluster",
+        "Health": 30,
+        "Stamina": 30,
+        "Eitr": 30,
+        "Healing": 1,
+        "Duration": null,
+        "Biome": "Ashlands",
+        "Recipe": null
+    },
+    {
+        "Item": "Cooked asksvin tail",
+        "Health": 70,
+        "Stamina": 24,
+        "Eitr": null,
+        "Healing": 6,
+        "Duration": null,
+        "Biome": "Ashlands",
+        "Recipe": "1 asksvin tail"
+    },
+    {
+        "Item": "Cooked volture meat",
+        "Health": 70,
+        "Stamina": 24,
+        "Eitr": null,
+        "Healing": 6,
+        "Duration": null,
+        "Biome": "Ashlands",
+        "Recipe": "1 volture meat"
+    },
+    {
+        "Item": "Cooked bonemaw meat",
+        "Health": 90,
+        "Stamina": 30,
+        "Eitr": null,
+        "Healing": 6,
+        "Duration": null,
+        "Biome": "Ashlands",
+        "Recipe": "1 bonemaw meat"
+    },
+    {
+        "Item": "Fiery svinstew",
+        "Health": 95,
+        "Stamina": 32,
+        "Eitr": null,
+        "Healing": 6,
+        "Duration": null,
+        "Biome": "Ashlands",
+        "Recipe": "1 asksvin tail, 2 vineberry cluster, 1 smokepuff"
+    },
+    {
+        "Item": "Mashed meat",
+        "Health": 100,
+        "Stamina": 34,
+        "Eitr": null,
+        "Healing": 6,
+        "Duration": null,
+        "Biome": "Ashlands",
+        "Recipe": "1 asksvin tail, 1 volture meat, 1 fiddlehead"
+    },
+    {
+        "Item": "Piquant pie",
+        "Health": 105,
+        "Stamina": 35,
+        "Eitr": null,
+        "Healing": 6,
+        "Duration": null,
+        "Biome": "Ashlands",
+        "Recipe": "2 asksvin tail, 2 vineberry cluster, 4 barley flour"
+    },
+    {
+        "Item": "Spicy marmalade",
+        "Health": 30,
+        "Stamina": 90,
+        "Eitr": null,
+        "Healing": 4,
+        "Duration": null,
+        "Biome": "Ashlands",
+        "Recipe": "3 vineberry cluster, 1 honey, 1 fiddlehead"
+    },
+    {
+        "Item": "Scorching medley",
+        "Health": 32,
+        "Stamina": 95,
+        "Eitr": null,
+        "Healing": 4,
+        "Duration": null,
+        "Biome": "Ashlands",
+        "Recipe": "3 jotun puffs, 3 onion, 3 fiddlehead"
+    },
+    {
+        "Item": "Roasted crust pie",
+        "Health": 34,
+        "Stamina": 100,
+        "Eitr": null,
+        "Healing": 4,
+        "Duration": null,
+        "Biome": "Ashlands",
+        "Recipe": "1 volture egg, 2 vineberry cluster, 4 barley flour"
+    },
+    {
+        "Item": "Sizzling berry broth",
+        "Health": 28,
+        "Stamina": 14,
+        "Eitr": 85,
+        "Healing": 4,
+        "Duration": null,
+        "Biome": "Ashlands",
+        "Recipe": "3 sap, 2 vineberry cluster, 2 fiddlehead"
+    },
+    {
+        "Item": "Sparkling shroomshake",
+        "Health": 30,
+        "Stamina": 15,
+        "Eitr": 90,
+        "Healing": 4,
+        "Duration": null,
+        "Biome": "Ashlands",
+        "Recipe": "4 sap, 2 magecap, 2 vineberry cluster, 2 smoke puff"
+    },
+    {
+        "Item": "Marinated greens",
+        "Health": 32,
+        "Stamina": 16,
+        "Eitr": 95,
+        "Healing": 4,
+        "Duration": null,
+        "Biome": "Ashlands",
+        "Recipe": "3 sap, 2 magecap, 2 fiddlehead, 2 smoke puff"
+    }
+]

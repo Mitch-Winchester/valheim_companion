@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Farming/Fishing</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body class="farmBody">
+        <div>
+            <h1>Farming/Fishing Recipes</h1>
+        </div>
+
+        <!--Table for crop info-->
+        <div class="tableDiv" style="margin-bottom: 5%">
+            <table class="table">
+                <thead>
+                    <tr id="tableHeader">
+                        <th></th>
+                        <th>Crop</th>
+                        <th>Biome(s) needed to grow</th>
+                        <th>Grow Time (s)</th>
+                        <th>Required Space (m)</th>
+                    </tr>
+                </thead>
+                <tbody id="cropTable"></tbody>
+            </table>
+        </div>
+
+        <!--Table for breeding info-->
+        <div class="tableDiv" style="margin-bottom: 5%">
+            <table class="table">
+                <thead>
+                    <tr id="tableHeader">
+                        <th></th>
+                        <th>Animal</th>
+                        <th>Feed</th>
+                        <th>Space Needed</th>
+                        <th>Grow Time (s)</th>
+                    </tr>
+                </thead>
+                <tbody id="feedTable"></tbody>
+            </table>
+        </div>
+
+        <!--Table for fishing info-->
+        <div class="tableDiv">
+            <table class="table">
+                <thead>
+                    <tr id="tableHeader">
+                        <th></th>
+                        <th>Bait Type</th>
+                        <th>Use</th>
+                        <th>Recipe</th>
+                    </tr>
+                </thead>
+                <tbody id="baitTable"></tbody>
+            </table>
+        </div>
+        
+        <!--div for back button-->
+        <div class="backButtonDiv">
+            <button class="button" onclick="self.close()">Back to Home Page</button>
+        </div>
+
+        <script>
+            var crop = [
+                {
+                    "Crop": "Carrot",
+                    "Biome": "Meadows, Black forest, Plains, Ashlands",
+                    "Growth": "4000-5000 per cycle",
+                    "Produce": "Seed Cycle: 3 seeds, Crop Cycle: 1 carrot",
+                    "Space": "1"
+                },
+                {
+                    "Crop": "Turnip",
+                    "Biome": "Meadows, Black forest, Swamp, Plains, Mistlands, Ashlands",
+                    "Growth": "4000-5000 per cycle",
+                    "Produce": "Seed Cycle: 3 seeds, Crop Cycle: 1 turnip",
+                    "Space": "1"
+                },
+                {
+                    "Crop": "Onion",
+                    "Biome": "Meadows, Black forest, Plains, Ashlands",
+                    "Growth": "4000-5000 per cycle",
+                    "Produce": "Seed Cycle: 3 seeds, Crop Cycle: 1 onion",
+                    "Space": "1"
+                },
+                {
+                    "Crop": "Barley",
+                    "Biome": "Plains",
+                    "Growth": "4000-5000 per cycle",
+                    "Produce": "2 Barley",
+                    "Space": "1"
+                },
+                {
+                    "Crop": "Flax",
+                    "Biome": "Plains",
+                    "Growth": "4000-5000 per cycle",
+                    "Produce": "2 Flax",
+                    "Space": "1"
+                },
+                {
+                    "Crop": "Jotun puffs",
+                    "Biome": "Mistlands",
+                    "Growth": "4000-5000",
+                    "Produce": "3 Jotun puffs",
+                    "Space": "1"
+                },
+                {
+                    "Crop": "Magecaps",
+                    "Biome": "Mistlands",
+                    "Growth": "4000-5000",
+                    "Produce": "3 Magecaps",
+                    "Space": "1.6"
+                },
+                {
+                    "Crop": "Vineberry cluster",
+                    "Biome": "Meadows, Black forest, Ocean, Swamp, Plains, Mistlands, Ashlands",
+                    "Growth": "Can be picked every 3 hours and 20 minutes",
+                    "Produce": "3 Vineberry clusters",
+                    "Space": "An Ashvine must be planted near a wall. Needs 3.6 m"
+                },
+
+            ];
+            var bait = [
+                {
+                    "Item": "Fishing bait",
+                    "Use": "Perch, Pike",
+                    "Recipe": "10 coins"
+                },
+                {
+                    "Item": "Mossy",
+                    "Use": "Trollfish",
+                    "Recipe": "20 fishing bait, 1 lox trophy"
+                },
+                {
+                    "Item": "Sticky",
+                    "Use": "Giant herring",
+                    "Recipe": "20 fishing bait, 1 abomination trophy"
+                },
+                {
+                    "Item": "Frosty",
+                    "Use": "Northern salmon",
+                    "Recipe": "20 fishing bait, 1 drake trophy"
+                },
+                {
+                    "Item": "Cold",
+                    "Use": "Pike, Tetra",
+                    "Recipe": "20 fishing bait, 1 fenring trophy"
+                },
+                {
+                    "Item": "Heavy",
+                    "Use": "Tuna, Coral Cod",
+                    "Recipe": "20 fishing bait, 1 serpent trophy"
+                },
+                {
+                    "Item": "Stingy",
+                    "Use": "Grouper",
+                    "Recipe": "20 fishing bait, 1 fuling trophy"
+                },
+                {
+                    "Item": "Misty",
+                    "Use": "Pufferfish, Anglerfish",
+                    "Recipe": "20 fishing bait, 1 lox trophy"
+                },
+                {
+                    "Item": "Hot",
+                    "Use": "Magmafish",
+                    "Recipe": "20 fishing bait, 1 warrior trophy"
+                }
+            ];
+            var feed = [
+                {
+                    "Animal": "Boar",
+                    "Feed": "Blueberries, Raspberries, Red Mushrooms, Carrots, Turnips, or Onions",
+                    "Space": "5 within 10 meters",
+                    "Growth": "50 minutes"
+                },
+                {
+                    "Animal": "Wolf",
+                    "Feed": "Neck tail, Boar meat, Deer Meat, Raw fish, Lox meat, or Sausages",
+                    "Space": "4 within 10 meters",
+                    "Growth": "50 minutes"
+                },
+                {
+                    "Animal": "Lox",
+                    "Feed": "Barley, Cloudberries, or Flax",
+                    "Space": "4 within 20 meters",
+                    "Growth": "100 minutes"
+                },
+                {
+                    "Animal": "Hen",
+                    "Feed": "Beech seeds, Birch seeds, Dandelion, Carrot seeds, Turnip seeds, Onion seeds, or Barley",
+                    "Space": "14 within 12 meters",
+                    "Growth": "80 minutes total (30 minutes for egg to hatch)"
+                },
+                {
+                    "Animal": "Asksvin",
+                    "Feed": "Smoke puff, Vineberry cluster, Fiddlehead",
+                    "Space": "10 within 10 meters",
+                    "Growth": "80 minutes total (30 minutes for egg to hatch)"
+                }
+            ];
+
+            function fillFeedTable(data, type) {
+                var table = document.getElementById(type+'Table');
+                data.forEach(function(object) {
+                    var tr = document.createElement('tr');
+                    tr.innerHTML = '<th><img src="imgs/farm/' + object.Animal + '.png"></th>' +
+                        '<td>' + object.Animal + '</td>' +
+                        '<td>' + object.Feed + '</td>' +
+                        '<td>' + object.Space + '</td>' +
+                        '<td>' + object.Growth + '</td>';
+                        table.appendChild(tr);
+                });
+            }
+
+            function fillBaitTable(data, type) {
+                var table = document.getElementById(type+'Table');
+                data.forEach(function(object) {
+                    var tr = document.createElement('tr');
+                    if (object.Item == "Fishing bait") {
+                        tr.innerHTML = '<th><img src="imgs/bait/Fishing_bait.png"></th>' +
+                        '<td>' + object.Item + '</td>' +
+                        '<td>' + object.Use + '</td>' +
+                        '<td>' + object.Recipe + '</td>';
+                        table.appendChild(tr);
+                    }
+                    else {
+                        tr.innerHTML = '<th><img src="imgs/bait/' + object.Item + '_fishing_bait.png"></th>' +
+                        '<td>' + object.Item + '</td>' +
+                        '<td>' + object.Use + '</td>' +
+                        '<td>' + object.Recipe + '</td>';
+                        table.appendChild(tr);
+                    }
+                    
+                });
+            }
+
+            function fillCropTable(data, type) {
+                var table = document.getElementById(type+'Table');
+                data.forEach(function(object) {
+                    var tr = document.createElement('tr');
+                    tr.innerHTML = '<th><img src="imgs/crops/' + object.Crop.replaceAll(' ', '_') + '.png"></th>' +
+                        '<td>' + object.Crop + '</td>' +
+                        '<td>' + object.Biome + '</td>' +
+                        '<td>' + object.Growth + '</td>' +
+                        '<td>' + object.Space + '</td>';
+                        table.appendChild(tr);
+                });
+            }
+
+            fillFeedTable(feed, "feed");
+            fillBaitTable(bait, "bait");
+            fillCropTable(crop, "crop");
+        </script>
+    </body>
+</html>

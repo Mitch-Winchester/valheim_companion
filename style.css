@@ -1,0 +1,173 @@
+/* Style the bodies */
+.mainBody {
+  background-image: url("imgs/backgrounds/ebrithil_base.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  background-color: black;
+  
+  width: 100vw;
+  height: 100vh;
+}
+.meadBody {
+  background-image: url("imgs/backgrounds/ebrithil_mead.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  background-color: black;
+  
+  width: 100vw;
+  height: 100vh;
+}
+.foodBody {
+  background-image: url("imgs/backgrounds/ebrithil_food.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  background-color: black;
+  
+  width: 100vw;
+  height: 100vh;
+}
+.farmBody {
+  background-image: url("imgs/backgrounds/ebrithil_farm.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  background-color: black;
+  
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Style the tables */
+.tableDiv {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+table {
+  border: 4px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgb(94, 102, 111, 0.75);
+}
+
+th {
+  border: 2px solid black;
+  padding: 10px 20px;
+}
+
+td {
+  border: 2px solid black;
+  padding: 10px 20px;
+}
+
+.tableDiv {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/* Header/Logo Title */
+.header {
+  margin: 10%;
+  background-image: url("imgs/valheim_logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+
+  width: 80%;
+  height: 20%;
+}
+
+/* Buttons */
+.buttonDiv {
+  display: flex;
+  position: relative;
+  margin: 10%;
+  
+  height: 30vh;
+}
+.topButtonDiv {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+
+}
+.botButtonDiv {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  margin-top: 15%;
+  margin-left: 20%;
+  width: 60%;
+}
+.backButtonDiv {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 1%;
+}
+
+.button {
+  display: inline-block;
+  padding: 25px 35px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  color: rgb(255, 98, 0);
+  background-color: rgb(94, 102, 111);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px lightgray;
+}
+.button:hover {
+  background-color: rgb(80, 85, 91);
+}
+.button:active {
+  background-color: rgb(80, 85, 91);
+  box-shadow: 0 5px darkgray;
+  transform: translateY(4px);
+}
+
+/* Search Bar */
+.search_container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 1%;
+}
+
+.search_container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search_container input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <title>Valheim Companion</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+  
+  <body class="mainBody"> 
+     
+    <div class="header">
+      <!--
+      <h1>Valheim Companion</h1>
+      -->
+    </div>
+    
+    <div class="buttonDiv">
+      <div class="topButtonDiv">
+        <button class="button" id="bTool">Tools</button>
+        <button class="button" id="bWeapon">Weapons</button>
+        <button class="button" id="bArmor">Armor</button>
+      </div>
+      <div class="botButtonDiv">
+        <button class="button" id="bFood">Food</button>
+        <button class="button" id="bFarm">Farming/Fishing</button>
+        <button class="button" id="bMead">Mead</button>
+      </div>
+      
+    </div>
+  
+    <script>
+      var bTool = document.getElementById('bTool');
+      var bWeapon = document.getElementById('bWeapon');
+      var bArmor = document.getElementById('bArmor');
+      var bFood = document.getElementById('bFood');
+      var bMead = document.getElementById('bMead');
+
+      type = "";
+
+      function underConstruction() {
+        alert("The recipe page for " + type + " is currently under construction!\n" +
+                "Please check back soon!");
+      }
+
+      function displayFood(type) {
+        window.open(type+".html");
+      }
+
+      bTool.onclick = function() {
+        type = "tools";
+        underConstruction();
+      };
+
+      bWeapon.onclick = function() {
+        type = "weapons";
+        underConstruction();
+      }
+
+      bArmor.onclick = function() {
+        type = "armor";
+        underConstruction();
+      }
+
+      bFood.onclick = function() {
+        type = "food";
+        displayFood(type);
+      }
+
+      bFarm.onclick = function() {
+        type = "farming";
+        displayFood(type);
+      }
+
+      bMead.onclick = function() {
+        type = "mead";
+        displayFood(type);
+      }
+
+    </script>
+
+  </body>
+
+  
+</html>
