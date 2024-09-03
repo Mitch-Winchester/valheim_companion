@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body class="meadBody">
+        <!--div for header NEEDS COMPLETED-->
         <div>
             <h1>Mead Recipes</h1>
         </div>
@@ -36,6 +37,7 @@
         </div>
         
         <script>
+            //structure to store json data
             var recipes = [
                 {
                     "Item": "Tasty mead",
@@ -122,6 +124,7 @@
                 var table = document.getElementById('meadTable');
                 data.forEach(function(object) {
                     var tr = document.createElement('tr');
+                    //handles first abnormal name case
                     if (object.Item == "Tasty mead") {
                         tr.innerHTML = '<th><img src="imgs/mead/' + object.Item.replaceAll(' ','_') + '.png"></th>' +
                         '<td>' + object.Item + '</td>' +
@@ -130,6 +133,7 @@
                         '<td>' + object.Recipe + '</td>';
                         table.appendChild(tr);
                     }
+                    //handles second abnormal name case
                     else if (object.Item == "Fire resistance") {
                         tr.innerHTML = '<th><img src="imgs/mead/' + object.Item.replaceAll(' ','_') + '_barley_wine.png"></th>' +
                         '<td>' + object.Item + ' barley wine</td>' +
@@ -154,8 +158,10 @@
 
             //function to filter table by search
             function filterTable() {
+                //get user input
                 var input = document.getElementById("searchBar");
                 var filter = input.value.toLowerCase();
+                //get current table data
                 var table = document.getElementById("meadTable");
                 var rows = table.getElementsByTagName("tr")
                 var td;
@@ -170,12 +176,15 @@
                         var effect = td[1].innerText;
                         //variable to allow filter for ingredient
                         var recipe = td[3].innerText;
+                        //display search results for item name, or effect
                         if (item.toLowerCase().includes(filter) || effect.toLowerCase().includes(filter)) {
                             rows[i].style.display = "";
                         }
+                        //display search results for recipe
                         else if (recipe.toLowerCase().includes(filter)) {
                             rows[i].style.display = "";
                         }
+                        //remove unwanted results from display
                         else {
                             rows[i].style.display = "none";
                         }

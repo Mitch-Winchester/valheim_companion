@@ -41,8 +41,7 @@
         </div>
 
         <script>
-            var searchBar = document.getElementById('searchBar');
-            var bSearch = document.getElementById('submit');
+            //structure to store json data
             var recipes = [
                             {
                                 "Item": "Mushroom",
@@ -684,13 +683,15 @@
                 });
             }
 
-            //call function to fill table
+            //call function to fill table on page load
             fillTable(recipes);
             
             //function to filter table by search
             function filterTable() {
+                //get user input
                 var input = document.getElementById("searchBar");
                 var filter = input.value.toLowerCase();
+                //get current table of elements to filter
                 var table = document.getElementById("foodTable");
                 var rows = table.getElementsByTagName("tr")
                 var td;
@@ -709,18 +710,28 @@
                         var health = td[1].innerText;
                         var stamina = td[2].innerText;
                         var eitr = td[3].innerText;
+
+                        //display search results for item name, biome, or recipe
                         if (item.toLowerCase().includes(filter) || biome.toLowerCase().includes(filter) || recipe.toLowerCase().includes(filter)) {
                             rows[i].style.display = "";
                         }
+                        //display balanced foods
+                        else if (health == stamina && filter.toLowerCase().includes("balance")) {
+                            rows[i].style.display = "";
+                        }
+                        //display health foods
                         else if (Math.max(health, stamina, eitr) == health && health != stamina && filter.toLowerCase().includes("health")) {
                             rows[i].style.display = "";
                         }
+                        //display stamina foods
                         else if (Math.max(health, stamina, eitr) == stamina && health != stamina && filter.toLowerCase().includes("stamina")) {
                             rows[i].style.display = "";
                         }
-                        else if (Math.max(health, stamina, eitr) == eitr && filter.toLowerCase().includes("eitr")) {
+                        //display eitr foods
+                        else if (Math.max(health, stamina, eitr) == eitr && health != stamina && filter.toLowerCase().includes("eitr")) {
                             rows[i].style.display = "";
                         }
+                        //remove unwanted results from display
                         else {
                             rows[i].style.display = "none";
                         }

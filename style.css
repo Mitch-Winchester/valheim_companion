@@ -52,6 +52,7 @@
 .tableDiv {
   margin-left: 10%;
   margin-right: 10%;
+  zoom: 60%;
 }
 table {
   border: 4px solid black;
@@ -62,17 +63,14 @@ table {
   color: white;
   background-color: rgb(94, 102, 111, 0.75);
 }
-
 th {
   border: 2px solid black;
   padding: 10px 20px;
 }
-
 td {
   border: 2px solid black;
   padding: 10px 20px;
 }
-
 .tableDiv {
   display: flex;
   justify-content: center;
@@ -107,7 +105,6 @@ td {
   margin-left: 15%;
   margin-right: 15%;
   width: 70%;
-
 }
 .botButtonDiv {
   display: flex;
@@ -153,7 +150,6 @@ td {
   position: relative;
   margin: 1%;
 }
-
 .search_container button {
   float: right;
   padding: 6px 10px;
@@ -164,7 +160,6 @@ td {
   border: none;
   cursor: pointer;
 }
-
 .search_container input[type=text] {
   padding: 6px;
   margin-top: 8px;
