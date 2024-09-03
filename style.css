@@ -121,7 +121,7 @@ td {
   display: flex;
   justify-content: center;
   position: relative;
-  margin: 1%;
+  padding: 25px 35px;
 }
 
 .button {
