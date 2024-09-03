@@ -123,8 +123,8 @@ td {
 
 .button {
   display: inline-block;
-  padding: 25px 35px;
-  font-size: 24px;
+  padding: 1vh 3vw;
+  font-size: 2vw;
   cursor: pointer;
   text-align: center;
   outline: none;
@@ -132,15 +132,15 @@ td {
   background-color: rgb(94, 102, 111);
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px lightgray;
+  box-shadow: 0 0.5vh lightgray;
 }
 .button:hover {
   background-color: rgb(80, 85, 91);
 }
 .button:active {
   background-color: rgb(80, 85, 91);
-  box-shadow: 0 5px darkgray;
-  transform: translateY(4px);
+  box-shadow: 0 0.25vh darkgray;
+  transform: translateY(0.25vh);
 }
 
 /* Search Bar */
