@@ -3,16 +3,17 @@
   <head>
     <title>Valheim Companion</title>
     <link rel="stylesheet" href="style.css"/>
-  </head>
-
-  
-  <body class="mainBody"> 
-     
     <div class="mainHeader">
       <!--
       <h1>Valheim Companion</h1>
       -->
     </div>
+  </head>
+
+  
+  <body class="mainBody"> 
+     
+    
     
     <div class="buttonDiv">
       <div class="topButtonDiv">
@@ -42,7 +43,7 @@
                 "Please check back soon!");
       }
 
-      function displayFood(type) {
+      function displayPage(type) {
         window.open(type+".html");
       }
 
@@ -63,17 +64,17 @@
 
       bFood.onclick = function() {
         type = "food";
-        displayFood(type);
+        displayPage(type);
       }
 
       bFarm.onclick = function() {
         type = "farming";
-        displayFood(type);
+        displayPage(type);
       }
 
       bMead.onclick = function() {
         type = "mead";
-        displayFood(type);
+        displayPage(type);
       }
 
     </script>
