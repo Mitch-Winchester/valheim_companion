@@ -1,0 +1,140 @@
+{
+    "title": "Farm",
+    "bait": [
+        {
+            "Item": "Fishing bait",
+            "Use": "Perch, Pike",
+            "Recipe": "10 coins"
+        },
+        {
+            "Item": "Mossy",
+            "Use": "Trollfish",
+            "Recipe": "20 fishing bait, 1 lox trophy"
+        },
+        {
+            "Item": "Sticky",
+            "Use": "Giant herring",
+            "Recipe": "20 fishing bait, 1 abomination trophy"
+        },
+        {
+            "Item": "Frosty",
+            "Use": "Northern salmon",
+            "Recipe": "20 fishing bait, 1 drake trophy"
+        },
+        {
+            "Item": "Cold",
+            "Use": "Pike, Tetra",
+            "Recipe": "20 fishing bait, 1 fenring trophy"
+        },
+        {
+            "Item": "Heavy",
+            "Use": "Tuna, Coral Cod",
+            "Recipe": "20 fishing bait, 1 serpent trophy"
+        },
+        {
+            "Item": "Stingy",
+            "Use": "Grouper",
+            "Recipe": "20 fishing bait, 1 fuling trophy"
+        },
+        {
+            "Item": "Misty",
+            "Use": "Pufferfish, Anglerfish",
+            "Recipe": "20 fishing bait, 1 lox trophy"
+        },
+        {
+            "Item": "Hot",
+            "Use": "Magmafish",
+            "Recipe": "20 fishing bait, 1 warrior trophy"
+        }
+    ],
+    "crop": [
+        {
+            "Crop": "Carrot",
+            "Biome": "Meadows, Black forest, Plains, Ashlands",
+            "Growth": "4000-5000 per cycle",
+            "Produce": "Seed Cycle: 3 seeds, Crop Cycle: 1 carrot",
+            "Space": "1"
+        },
+        {
+            "Crop": "Turnip",
+            "Biome": "Meadows, Black forest, Swamp, Plains, Mistlands, Ashlands",
+            "Growth": "4000-5000 per cycle",
+            "Produce": "Seed Cycle: 3 seeds, Crop Cycle: 1 turnip",
+            "Space": "1"
+        },
+        {
+            "Crop": "Onion",
+            "Biome": "Meadows, Black forest, Plains, Ashlands",
+            "Growth": "4000-5000 per cycle",
+            "Produce": "Seed Cycle: 3 seeds, Crop Cycle: 1 onion",
+            "Space": "1"
+        },
+        {
+            "Crop": "Barley",
+            "Biome": "Plains",
+            "Growth": "4000-5000",
+            "Produce": "2 Barley",
+            "Space": "1"
+        },
+        {
+            "Crop": "Flax",
+            "Biome": "Plains",
+            "Growth": "4000-5000",
+            "Produce": "2 Flax",
+            "Space": "1"
+        },
+        {
+            "Crop": "Jotun puffs",
+            "Biome": "Mistlands",
+            "Growth": "4000-5000",
+            "Produce": "3 Jotun puffs",
+            "Space": "1"
+        },
+        {
+            "Crop": "Magecaps",
+            "Biome": "Mistlands",
+            "Growth": "4000-5000",
+            "Produce": "3 Magecaps",
+            "Space": "1.6"
+        },
+        {
+            "Crop": "Vineberry cluster",
+            "Biome": "Meadows, Black forest, Ocean, Swamp, Plains, Mistlands, Ashlands",
+            "Growth": "Can be picked every 3 hours and 20 minutes",
+            "Produce": "3 Vineberry clusters",
+            "Space": "An Ashvine must be planted near a wall. Needs 3.6 m"
+        }
+    ],
+    "feed": [
+        {
+            "Animal": "Boar",
+            "Feed": "Blueberries, Raspberries, Red Mushrooms, Carrots, Turnips, or Onions",
+            "Space": "5 within 10 meters",
+            "Growth": "50 minutes"
+        },
+        {
+            "Animal": "Wolf",
+            "Feed": "Neck tail, Boar meat, Deer Meat, Raw fish, Lox meat, or Sausages",
+            "Space": "4 within 10 meters",
+            "Growth": "50 minutes"
+        },
+        {
+            "Animal": "Lox",
+            "Feed": "Barley, Cloudberries, or Flax",
+            "Space": "4 within 20 meters",
+            "Growth": "100 minutes"
+        },
+        {
+            "Animal": "Hen",
+            "Feed": "Beech seeds, Birch seeds, Dandelion, Carrot seeds, Turnip seeds, Onion seeds, or Barley",
+            "Space": "14 within 12 meters",
+            "Growth": "80 minutes total (30 minutes for egg to hatch)"
+        },
+        {
+            "Animal": "Asksvin",
+            "Feed": "Smoke puff, Vineberry cluster, Fiddlehead",
+            "Space": "10 within 10 meters",
+            "Growth": "80 minutes total (30 minutes for egg to hatch)"
+        }
+    ]
+}

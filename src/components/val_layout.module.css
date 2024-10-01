@@ -1,0 +1,183 @@
+/* Style the bodies */
+.main-body {
+  background-image: url("/images/backgrounds/ebrithil_base.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  background-color: black;
+  
+  width: 100vw;
+  height: 100vh;
+  margin: -8px;
+  overflow: auto;
+}
+.mead-body {
+  background-image: url("/images/backgrounds/ebrithil_mead.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  background-color: black;
+  
+  width: 100vw;
+  min-height: 100vh;
+  margin: -8px;
+  overflow: auto;
+}
+.food-body {
+  background-image: url("/images/backgrounds/ebrithil_food.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  background-color: black;
+  
+  width: 100vw;
+  min-height: 100vh;
+  margin: -8px;
+  overflow: auto;
+}
+.farm-body {
+  background-image: url("/images/backgrounds/ebrithil_farm.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  background-color: black;
+  
+  width: 100vw;
+  min-height: 100vh;
+  margin: -8px;
+  overflow: auto;
+}
+
+/* Style page headers */
+.main-header {
+  margin: 10%;
+  margin-top: 2.5%;
+  background-image: url("/images/valheim_logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+
+  width: 80%;
+  height: 20%;
+}
+.header {
+  display: flex;
+  justify-content: center center;
+  color: rgb(255, 98, 0);
+  text-shadow: 0 0.25vh lightgrey;
+  font-size: 4vw;
+  font-weight: 700;
+  margin: 3rem auto;
+  
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-size: contain;
+  background-color: rgb(94, 102, 111, 0.75);
+}
+
+/* Style the tables */
+.table-div {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-left: 10%;
+  margin-right: 10%;
+  zoom: 70%;
+}
+.table {
+  border: 4px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 3vw;
+  color: white;
+  background-color: rgb(94, 102, 111, 0.75);
+}
+th td {
+  border: 2px solid black;
+  padding: 10px 20px;
+}
+
+/* Buttons */
+.button-div {
+  display: flex;
+  position: relative;
+  margin: 10vw;
+}
+.top-button-div {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+}
+.bot-button-div {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  margin-top: 10vw;
+  margin-left: 20%;
+  width: 60%;
+}
+.back-button-div {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 20%;
+}
+
+.button {
+  display: inline-block;
+  padding: 1vh 3vw;
+  font-size: 2vw;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  color: rgb(255, 98, 0);
+  background-color: rgb(94, 102, 111);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0.5vh lightgray;
+}
+.button:hover {
+  background-color: rgb(80, 85, 91);
+}
+.button:active {
+  background-color: rgb(80, 85, 91);
+  box-shadow: 0 0.25vh darkgray;
+  transform: translateY(0.25vh);
+}
+
+/* Search Bar */
+.search-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 1%;
+}
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.search-container input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
