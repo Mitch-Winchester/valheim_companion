@@ -1,8 +1,5 @@
 import * as React from 'react'
-import { navigate } from 'gatsby'
 import {
-    backButtonDiv,
-    button,
     tableDiv,
     table,
     searchContainer
@@ -66,9 +63,6 @@ const ValTableLayout = ({
                         })}
                     </tbody>
                 </table>
-            </div>
-            <div className={backButtonDiv}>
-                <button className={button} aria-label="back" onClick={()=>{navigate("/")}}>Back to Home Page</button>
             </div>
         </>
     )

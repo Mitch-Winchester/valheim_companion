@@ -1,12 +1,11 @@
 import * as React from 'react'
-import { navigate, Link, graphql } from 'gatsby'
+import { navigate } from 'gatsby'
 import Seo from '../components/seo'
 import ValLayout from '../components/val_layout'
 import {
     buttonDiv,
     topButtonDiv,
     botButtonDiv,
-    backButtonDiv,
     button
 } from '../components/val_layout.module.css'
 
