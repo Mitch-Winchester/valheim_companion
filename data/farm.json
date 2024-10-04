@@ -7,42 +7,42 @@
             "Recipe": "10 coins"
         },
         {
-            "Item": "Mossy",
+            "Item": "Mossy fishing bait",
             "Use": "Trollfish",
             "Recipe": "20 fishing bait, 1 lox trophy"
         },
         {
-            "Item": "Sticky",
+            "Item": "Sticky fishing bait",
             "Use": "Giant herring",
             "Recipe": "20 fishing bait, 1 abomination trophy"
         },
         {
-            "Item": "Frosty",
+            "Item": "Frosty fishing bait",
             "Use": "Northern salmon",
             "Recipe": "20 fishing bait, 1 drake trophy"
         },
         {
-            "Item": "Cold",
+            "Item": "Cold fishing bait",
             "Use": "Pike, Tetra",
             "Recipe": "20 fishing bait, 1 fenring trophy"
         },
         {
-            "Item": "Heavy",
+            "Item": "Heavy fishing bait",
             "Use": "Tuna, Coral Cod",
             "Recipe": "20 fishing bait, 1 serpent trophy"
         },
         {
-            "Item": "Stingy",
+            "Item": "Stingy fishing bait",
             "Use": "Grouper",
             "Recipe": "20 fishing bait, 1 fuling trophy"
         },
         {
-            "Item": "Misty",
+            "Item": "Misty fishing bait",
             "Use": "Pufferfish, Anglerfish",
             "Recipe": "20 fishing bait, 1 lox trophy"
         },
         {
-            "Item": "Hot",
+            "Item": "Hot fishing bait",
             "Use": "Magmafish",
             "Recipe": "20 fishing bait, 1 warrior trophy"
         }
