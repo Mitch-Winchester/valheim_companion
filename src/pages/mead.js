@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 import Seo from '../components/seo'
+import ValLayout from '../components/val_layout'
 import ValTableLayout from '../components/val_table_layout'
 
 const ValMead = ({ data }) => {
@@ -19,16 +20,19 @@ const ValMead = ({ data }) => {
     };
 
     return (
-        <ValTableLayout
-            title = "Mead Recipes"
-            filter = {filter}
-            setFilter = {setFilter}
-            filterFunction = {meadFilter}
-            data = {data.allDataJson.nodes}
-            headers = {["Item", "Effect", "Duration", "Recipe"]}
-            imgBasePath = {"/images/mead"}
+        <ValLayout 
             background = {`url("/images/backgrounds/ebrithil_mead.png")`}
-        />
+            title = "Mead Recipes"
+        >
+            <ValTableLayout
+                filter = {filter}
+                setFilter = {setFilter}
+                filterFunction = {meadFilter}
+                data = {data.allDataJson.nodes}
+                headers = {["Item", "Effect", "Duration", "Recipe"]}
+                imgBasePath = {"/images/mead"}
+            />
+        </ValLayout>
     )
 }
 
