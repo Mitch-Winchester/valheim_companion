@@ -3,16 +3,8 @@ import { graphql } from 'gatsby'
 import Seo from '../components/seo'
 import ValLayout from '../components/val_layout'
 import ValTableLayout from '../components/val_table_layout'
-import {
-    tableDiv,
-    table
-} from '../components/val_layout.module.css'
 
 const ValFarm = ({ data }) => {
-    // separate farm data
-    const cropData = data.allDataJson.nodes.map(node => node.crop)
-    const feedData = data.allDataJson.nodes.map(node => node.feed)
-    const baitData = data.allDataJson.nodes.map(node => node.bait)
 
     return (
         <ValLayout

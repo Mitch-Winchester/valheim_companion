@@ -12,20 +12,6 @@
   margin: -8px;
   overflow: auto;
 }
-.farm-body {
-  background-image: url("/images/backgrounds/ebrithil_farm.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-  
-  background-color: black;
-  
-  width: 100vw;
-  min-height: 100vh;
-  margin: -8px;
-  overflow: auto;
-}
 
 /* Style page headers */
 .main-header {
@@ -135,16 +121,6 @@ th td {
   justify-content: center;
   position: relative;
   margin: 1%;
-}
-.search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
 }
 .search-container input[type=text] {
   padding: 6px;

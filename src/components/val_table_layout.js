@@ -40,9 +40,9 @@ const ValTableLayout = ({
                 <div className={searchContainer}>
                     <input 
                         type="text" 
-                        id="searchBar" 
                         placeholder="Search..." 
                         onChange={inputChange}
+                        aria-label="search label"
                     />
                 </div>
             )}
@@ -50,7 +50,7 @@ const ValTableLayout = ({
                 <table className={table}>
                     <thead>
                         <tr>
-                            <th></th>
+                            <th aria-label='image'></th>
                             {headers.map(column => (
                                 <th>{column}</th>
                             ))}
