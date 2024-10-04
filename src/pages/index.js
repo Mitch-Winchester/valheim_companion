@@ -1,9 +1,8 @@
 import * as React from 'react'
 import { navigate, Link, graphql } from 'gatsby'
 import Seo from '../components/seo'
+import ValLayout from '../components/val_layout'
 import {
-    mainHeader,
-    mainBody,
     buttonDiv,
     topButtonDiv,
     botButtonDiv,
@@ -13,9 +12,10 @@ import {
 
 const ValComp = () => {
     return (
-        <>
-            <body className={mainBody}>
-                <div className={mainHeader}></div>
+        <ValLayout
+            background = {`url("/images/backgrounds/ebrithil_base.png")`}
+            title = "Main"
+        >
                 <div className={buttonDiv}>
                     <div className={topButtonDiv}>
                         <button className={button} onClick={()=>{underConstruction()}}>Tools</button>
@@ -28,8 +28,7 @@ const ValComp = () => {
                         <button className={button} onClick={()=>{navigate("mead")}}>Mead</button>
                     </div>
                 </div>
-            </body>
-        </>
+        </ValLayout>
         
     )
 }
