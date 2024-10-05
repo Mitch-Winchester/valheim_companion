@@ -1,8 +1,7 @@
 import * as React from 'react'
-import { navigate } from 'gatsby'
+import ValButton from './val_button'
 import {
     backButtonDiv,
-    button,
     valBody,
     header,
     mainHeader
@@ -34,13 +33,10 @@ const ValLayout = ({ background, title, children }) => {
                 {children}
                 {showButton && (
                     <div className={backButtonDiv}>
-                        <button 
-                            className={button} 
-                            aria-label="back" 
-                            onClick={()=>{navigate(`${navPath}`)}}
-                        >
-                            {backButText}
-                        </button>
+                        <ValButton 
+                            buttonText = {backButText}
+                            navPath = {navPath}
+                        />
                     </div>
                 )}
             </body>

@@ -1,12 +1,11 @@
 import * as React from 'react'
-import { navigate } from 'gatsby'
 import Seo from '../components/seo'
 import ValLayout from '../components/val_layout'
+import ValButton from '../components/val_button'
 import {
     buttonDiv,
     topButtonDiv,
-    botButtonDiv,
-    button
+    botButtonDiv
 } from '../components/val_layout.module.css'
 
 const ValComp = () => {
@@ -17,14 +16,14 @@ const ValComp = () => {
         >
                 <div className={buttonDiv}>
                     <div className={topButtonDiv}>
-                        <button className={button} onClick={()=>{underConstruction()}}>Tools</button>
-                        <button className={button} onClick={()=>{underConstruction()}}>Weapons</button>
-                        <button className={button} onClick={()=>{underConstruction()}}>Armor</button>
+                        <ValButton clickFunction={underConstruction} buttonText={"Tools"}/>
+                        <ValButton clickFunction={underConstruction} buttonText={"Weapons"}/>
+                        <ValButton clickFunction={underConstruction} buttonText={"Armor"}/>
                     </div>
                     <div className={botButtonDiv}>
-                        <button className={button} onClick={()=>{navigate("food")}}>Food</button>
-                        <button className={button} onClick={()=>{navigate("farm")}}>Farming/Fishing</button>
-                        <button className={button} onClick={()=>{navigate("mead")}}>Mead</button>
+                        <ValButton navPath={"food"} buttonText={"Food"}/>
+                        <ValButton navPath={"farm"} buttonText={"Farming/Fishing"}/>
+                        <ValButton navPath={"mead"} buttonText={"Mead"}/>
                     </div>
                 </div>
         </ValLayout>

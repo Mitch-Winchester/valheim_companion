@@ -1,0 +1,14 @@
+When you are in the "Enter Text" box you can just enter text as usual or you can add a simple tag in the beginning to format the text.
+
+If you want to bold your text put "<b>" ( minus the quotes ) at the beginning and anything afterwards will be bold.
+So if you want to bold the word "Wood" in your sign you would simply put "<b>Wood" in the sign text box and when you hit "Ok" it will be bold!
+
+Working tags found so far:
+<b>Makes text Bold
+<i>Makes text Italic
+<u>Underlines Text
+<color=white>Changes Text Color ( Use color names only - No Hex )
+<sub>Makes Subscript Text ( Smaller text at the bottom )
+<sup>Makes Superscript Text ( Smaller text at the top )
+<mark>Puts A Yellow Background Behind The Text ( My new favorite! )
+<br>Breaks Into A New Line ( Stack words up to 2 rows )
