@@ -39,7 +39,7 @@
             "Healing": 2,
             "Duration": 30,
             "Biome": "Meadows",
-            "Recipe": "1 boar meat, 1 honey"
+            "Recipe": ["1 boar meat", "1 honey"]
         },
         {
             "Item": "Grilled neck tail",
@@ -109,7 +109,7 @@
             "Healing": 2,
             "Duration": 20,
             "Biome": "Black Forest",
-            "Recipe": "8 raspberries, 6 blueberries"
+            "Recipe": ["8 raspberries", "6 blueberries"]
         },
         {
             "Item": "Minced meat sauce",
@@ -119,7 +119,7 @@
             "Healing": 3,
             "Duration": 25,
             "Biome": "Black Forest",
-            "Recipe": "1 boar meat, 1 necktail, 1 carrot"
+            "Recipe": ["1 boar meat", "1 necktail", "1 carrot"]
         },
         {
             "Item": "Cooked fish",
@@ -139,7 +139,7 @@
             "Healing": 2,
             "Duration": 25,
             "Biome": "Black Forest",
-            "Recipe": "3 carrots, 1 mushroom"
+            "Recipe": ["3 carrots", "1 mushroom"]
         },
         {
             "Item": "Deer stew",
@@ -149,7 +149,7 @@
             "Healing": 3,
             "Duration": 25,
             "Biome": "Black Forest",
-            "Recipe": "1 cooked deer meat, 1 blueberries, 1 carrot"
+            "Recipe": ["1 cooked deer meat", "1 blueberries", "1 carrot"]
         },
         {
             "Item": "Muckshake",
@@ -159,7 +159,7 @@
             "Healing": 1,
             "Duration": 20,
             "Biome": "Swamp",
-            "Recipe": "1 ooze, 2 raspberries, 2 blueberries"
+            "Recipe": ["1 ooze", "2 raspberries", "2 blueberries"]
         },
         {
             "Item": "Black soup",
@@ -169,7 +169,7 @@
             "Healing": 3,
             "Duration": 20,
             "Biome": "Swamp",
-            "Recipe": "1 bloodbag, 1 honey, 1 turnip"
+            "Recipe": ["1 bloodbag", "1 honey", "1 turnip"]
         },
         {
             "Item": "Sausages",
@@ -179,7 +179,7 @@
             "Healing": 3,
             "Duration": 25,
             "Biome": "Swamp",
-            "Recipe": "4 entrails, 1 boar meat, 1 thistle"
+            "Recipe": ["4 entrails", "1 boar meat", "1 thistle"]
         },
         {
             "Item": "Turnip stew",
@@ -189,7 +189,7 @@
             "Healing": 2,
             "Duration": 25,
             "Biome": "Swamp",
-            "Recipe": "3 turnips, 1 boar meat"
+            "Recipe": ["3 turnips", "1 boar meat"]
         },
         {
             "Item": "Wolf jerky",
@@ -199,7 +199,7 @@
             "Healing": 3,
             "Duration": 30,
             "Biome": "Mountains",
-            "Recipe": "1 wolf meat, 1 honey"
+            "Recipe": ["1 wolf meat", "1 honey"]
         },
         {
             "Item": "Onion soup",
@@ -209,7 +209,7 @@
             "Healing": 1,
             "Duration": 20,
             "Biome": "Mountains",
-            "Recipe": "3 onions"
+            "Recipe": ["3 onions"]
         },
         {
             "Item": "Eyescream",
@@ -219,7 +219,7 @@
             "Healing": 1,
             "Duration": 25,
             "Biome": "Mountains",
-            "Recipe": "3 greydwarf eye, 1 freeze gland"
+            "Recipe": ["3 greydwarf eye", "1 freeze gland"]
         },
         {
             "Item": "Wolf skewer",
@@ -229,7 +229,7 @@
             "Healing": 3,
             "Duration": 25,
             "Biome": "Mountains",
-            "Recipe": "1 wolf meat, 2 mushrooms, 1 onion"
+            "Recipe": ["1 wolf meat", "2 mushrooms", "1 onion"]
         },
         {
             "Item": "Cloudberries",
@@ -259,7 +259,7 @@
             "Healing": 4,
             "Duration": 25,
             "Biome": "Plains",
-            "Recipe": "2 cooked fish, 4 barley flour"
+            "Recipe": ["2 cooked fish", "4 barley flour"]
         },
         {
             "Item": "Bread",
@@ -269,7 +269,7 @@
             "Healing": 2,
             "Duration": 25,
             "Biome": "Plains",
-            "Recipe": "10 barley flour"
+            "Recipe": ["10 barley flour"]
         },
         {
             "Item": "Blood pudding",
@@ -279,7 +279,7 @@
             "Healing": 2,
             "Duration": 30,
             "Biome": "Plains",
-            "Recipe": "2 thistle, 2 bloodbag, 4 barley flour"
+            "Recipe": ["2 thistle", "2 bloodbag", "4 barley flour"]
         },
         {
             "Item": "Lox meat pie",
@@ -289,15 +289,15 @@
             "Healing": 4,
             "Duration": 30,
             "Biome": "Plains",
-            "Recipe": "2 lox meat, 2 cloudberries, 4 barley flour"
+            "Recipe": ["2 lox meat", "2 cloudberries", "4 barley flour"]
         },
         {
             "Item": "Cooked serpent meat",
             "Health": 70,
             "Stamina": 23,
             "Eitr": null,
-            "Healing": 3,
-            "Duration": 25,
+            "Healing": 5,
+            "Duration": 40,
             "Biome": "Ocean",
             "Recipe": null
         },
@@ -307,9 +307,9 @@
             "Stamina": 26,
             "Eitr": null,
             "Healing": 4,
-            "Duration": 30,
+            "Duration": 40,
             "Biome": "Ocean",
-            "Recipe": "1 cooked serpent meat, 1 mushroom, 2 honey"
+            "Recipe": ["1 cooked serpent meat", "2 honey", "1 mushroom"]
         },
         {
             "Item": "Royal jelly",
@@ -349,7 +349,7 @@
             "Healing": 2,
             "Duration": 20,
             "Biome": "Mistlands",
-            "Recipe": "1 egg"
+            "Recipe": ["1 egg"]
         },
         {
             "Item": "Cooked chicken meat",
@@ -389,7 +389,7 @@
             "Healing": 3,
             "Duration": 25,
             "Biome": "Mistlands",
-            "Recipe": "3 magecaps, 1 blood clot, 2 turnips"
+            "Recipe": ["3 magecaps", "1 blood clot", "2 turnips"]
         },
         {
             "Item": "Salad",
@@ -399,7 +399,7 @@
             "Healing": 3,
             "Duration": 25,
             "Biome": "Mistlands",
-            "Recipe": "3 jotun puffs, 3 onions, 3 cloudberries"
+            "Recipe": ["3 jotun puffs", "3 onions", "3 cloudberries"]
         },
         {
             "Item": "Meat platter",
@@ -409,7 +409,7 @@
             "Healing": 5,
             "Duration": 30,
             "Biome": "Mistlands",
-            "Recipe": "1 seeker meat, 1 lox meat, 1 hare meat"
+            "Recipe": ["1 seeker meat", "1 lox meat", "1 hare meat"]
         },
         {
             "Item": "Honey glazed chicken",
@@ -419,7 +419,7 @@
             "Healing": 5,
             "Duration": 30,
             "Biome": "Mistlands",
-            "Recipe": "1 chicken meat, 3 honey, 2 jotun puffs"
+            "Recipe": ["1 chicken meat", "3 honey", "2 jotun puffs"]
         },
         {
             "Item": "Yggdrasil porridge",
@@ -429,7 +429,7 @@
             "Healing": 3,
             "Duration": 25,
             "Biome": "Mistlands",
-            "Recipe": "4 sap, 3 barley, 2 royal jelly"
+            "Recipe": ["4 sap", "3 barley", "2 royal jelly"]
         },
         {
             "Item": "Misthare supreme",
@@ -439,7 +439,7 @@
             "Healing": 5,
             "Duration": 25,
             "Biome": "Mistlands",
-            "Recipe": "1 hare meat, 3 jotun puffs, 2 carrots"
+            "Recipe": ["1 hare meat", "3 jotun puffs", "2 carrots"]
         },
         {
             "Item": "Mushroom omelette",
@@ -449,7 +449,7 @@
             "Healing": 3,
             "Duration": 25,
             "Biome": "Mistlands",
-            "Recipe": "3 eggs, 3 jotun puffs"
+            "Recipe": ["3 eggs", "3 jotun puffs"]
         },
         {
             "Item": "Seeker aspic",
@@ -459,7 +459,7 @@
             "Healing": 3,
             "Duration": 30,
             "Biome": "Mistlands",
-            "Recipe": "2 seeker meat, 2 magecap, 2 royal jelly"
+            "Recipe": ["2 seeker meat", "2 magecap", "2 royal jelly"]
         },
         {
             "Item": "Fish n bread",
@@ -469,7 +469,7 @@
             "Healing": 3,
             "Duration": 30,
             "Biome": "Mistlands",
-            "Recipe": "1 anglerfish, 2 bread dough"
+            "Recipe": ["1 anglerfish", "2 bread dough"]
         },
         {
             "Item": "Smoke puff",
@@ -509,7 +509,7 @@
             "Healing": 6,
             "Duration": 20,
             "Biome": "Ashlands",
-            "Recipe": "1 asksvin tail"
+            "Recipe": ["1 asksvin tail"]
         },
         {
             "Item": "Cooked volture meat",
@@ -519,7 +519,7 @@
             "Healing": 6,
             "Duration": 20,
             "Biome": "Ashlands",
-            "Recipe": "1 volture meat"
+            "Recipe": ["1 volture meat"]
         },
         {
             "Item": "Cooked bonemaw meat",
@@ -529,7 +529,7 @@
             "Healing": 6,
             "Duration": 25,
             "Biome": "Ashlands",
-            "Recipe": "1 bonemaw meat"
+            "Recipe": ["1 bonemaw meat"]
         },
         {
             "Item": "Fiery svinstew",
@@ -539,7 +539,7 @@
             "Healing": 6,
             "Duration": 25,
             "Biome": "Ashlands",
-            "Recipe": "1 asksvin tail, 2 vineberry cluster, 1 smokepuff"
+            "Recipe": ["1 asksvin tail", "2 vineberry cluster", "1 smokepuff"]
         },
         {
             "Item": "Mashed meat",
@@ -549,7 +549,7 @@
             "Healing": 6,
             "Duration": 25,
             "Biome": "Ashlands",
-            "Recipe": "1 asksvin tail, 1 volture meat, 1 fiddlehead"
+            "Recipe": ["1 asksvin tail", "1 volture meat", "1 fiddlehead"]
         },
         {
             "Item": "Piquant pie",
@@ -559,7 +559,7 @@
             "Healing": 6,
             "Duration": 30,
             "Biome": "Ashlands",
-            "Recipe": "2 asksvin tail, 2 vineberry cluster, 4 barley flour"
+            "Recipe": ["2 asksvin tail", "2 vineberry cluster", "4 barley flour"]
         },
         {
             "Item": "Spicy marmalade",
@@ -569,7 +569,7 @@
             "Healing": 4,
             "Duration": 25,
             "Biome": "Ashlands",
-            "Recipe": "3 vineberry cluster, 1 honey, 1 fiddlehead"
+            "Recipe": ["3 vineberry cluster", "1 honey", "1 fiddlehead"]
         },
         {
             "Item": "Scorching medley",
@@ -579,7 +579,7 @@
             "Healing": 4,
             "Duration": 25,
             "Biome": "Ashlands",
-            "Recipe": "3 jotun puffs, 3 onion, 3 fiddlehead"
+            "Recipe": ["3 jotun puffs", "3 onion", "3 fiddlehead"]
         },
         {
             "Item": "Roasted crust pie",
@@ -589,7 +589,7 @@
             "Healing": 4,
             "Duration": 30,
             "Biome": "Ashlands",
-            "Recipe": "1 volture egg, 2 vineberry cluster, 4 barley flour"
+            "Recipe": ["1 volture egg", "2 vineberry cluster", "4 barley flour"]
         },
         {
             "Item": "Sizzling berry broth",
@@ -599,7 +599,7 @@
             "Healing": 4,
             "Duration": 25,
             "Biome": "Ashlands",
-            "Recipe": "3 sap, 2 vineberry cluster, 2 fiddlehead"
+            "Recipe": ["3 sap", "2 vineberry cluster", "2 fiddlehead"]
         },
         {
             "Item": "Sparkling shroomshake",
@@ -609,7 +609,7 @@
             "Healing": 4,
             "Duration": 25,
             "Biome": "Ashlands",
-            "Recipe": "4 sap, 2 magecap, 2 vineberry cluster, 2 smoke puff"
+            "Recipe": ["4 sap", "2 magecap", "2 vineberry cluster", "2 smoke puff"]
         },
         {
             "Item": "Marinated greens",
@@ -619,7 +619,7 @@
             "Healing": 4,
             "Duration": 30,
             "Biome": "Ashlands",
-            "Recipe": "3 sap, 2 magecap, 2 fiddlehead, 2 smoke puff"
+            "Recipe": ["3 sap", "2 magecap", "2 fiddlehead", "2 smoke puff"]
         }
     ]
 }

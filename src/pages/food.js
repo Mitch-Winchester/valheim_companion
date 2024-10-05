@@ -11,7 +11,7 @@ const ValFood = ({ data }) => {
     const foodFilter = (food, filter) => {
             const item = food.Item.toLowerCase();
             const biome = food.Biome.toLowerCase();
-            const recipe = food.Recipe?.toLowerCase();
+            const recipe = food.Recipe;
             const health = parseFloat(food.Health) || 0;
             const stamina = parseFloat(food.Stamina) || 0;
             const eitr = parseFloat(food.Eitr) || 0;
@@ -47,8 +47,9 @@ const ValFood = ({ data }) => {
                 setFilter = {setFilter}
                 filterFunction = {foodFilter}
                 data = {data.allDataJson.nodes}
-                headers = {["Item", "Health", "Stamina", "Eitr", "Healing", "Duration", "Biome", "Recipe"]}
+                headers = {["Item", "Health", "Stamina", "Eitr", "Healing (hp/tick)", "Duration (m)", "Biome", "Recipe"]}
                 imgBasePath = {"/images/food"}
+                contentNames = {["Item", "Health", "Stamina", "Eitr", "Healing", "Duration", "Biome", "Recipe"]}
             />
         </ValLayout>
     )

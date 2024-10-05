@@ -2,6 +2,7 @@ import * as React from 'react'
 import {
     tableDiv,
     table,
+    tableList,
     searchContainer
 } from './val_layout.module.css'
 
@@ -68,9 +69,21 @@ const ValTableLayout = ({
                                                 alt={item[0]}
                                             />
                                         </td>
-                                        {contentNames.map(column => (
-                                            <td>{item[column]}</td>
-                                        ))}
+                                        {contentNames.map((column, colIndex) => {
+                                            if (Array.isArray(item[column])) {
+                                                return (
+                                                    <td key={colIndex} className={tableList}>
+                                                        {item[column].map((ingredient, ingIndex) => (
+                                                            <tr key={ingIndex}>
+                                                                <td>{ingredient}</td>
+                                                            </tr>
+                                                        ))}
+                                                    </td>
+                                                );
+                                            } else {
+                                                return <td key={colIndex}>{item[column]}</td>;
+                                            }
+                                        })}
                                     </tr>
                                 );
                         })}

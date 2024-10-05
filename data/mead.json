@@ -5,79 +5,79 @@
             "Item": "Tasty mead",
             "Effect": "Health regen -50% & stamina regen +300%",
             "Duration": 10,
-            "Recipe": "10 honey, 10 raspberries, 5 blueberries"
+            "Recipe": ["10 honey", "10 raspberries", "5 blueberries"]
         },
         {
             "Item": "Minor healing mead",
             "Effect": "Restores 50 health",
             "Duration": 10,
-            "Recipe": "10 honey, 5 blueberries, 10 raspberries, 1 dandelion"
+            "Recipe": ["10 honey", "5 blueberries", "10 raspberries", "1 dandelion"]
         },
         {
             "Item": "Medium healing mead",
             "Effect": "Restores 75 health",
             "Duration": 10,
-            "Recipe": "10 honey, 4 bloodbag, 10 raspberries, 1 dandelion"
+            "Recipe": ["10 honey", "4 bloodbag", "10 raspberries", "1 dandelion"]
         },
         {
             "Item": "Major healing mead",
             "Effect": "Restores 125 health",
             "Duration": 10,
-            "Recipe": "10 honey, 4 blood clot, 5 royal jelly"
+            "Recipe": ["10 honey", "4 blood clot", "5 royal jelly"]
         },
         {
             "Item": "Lingering healing mead",
             "Effect": "Health Regen +25%",
             "Duration": 300,
-            "Recipe": "10 sap, 10 vineberry cluster, 10 smoke puff"
+            "Recipe": ["10 sap", "10 vineberry cluster", "10 smoke puff"]
         },
         {
             "Item": "Minor stamina mead",
             "Effect": "Restores 80 stamina",
             "Duration": 2,
-            "Recipe": "10 honey, 10 raspberries, 10 yellow mushrooms"
+            "Recipe": ["10 honey", "10 raspberries", "10 yellow mushrooms"]
         },
         {
             "Item": "Medium stamina mead",
             "Effect": "Restores 150 stamina",
             "Duration": 2,
-            "Recipe": "10 honey, 10 cloudberries, 10 yellow mushrooms"
+            "Recipe": ["10 honey", "10 cloudberries", "10 yellow mushrooms"]
         },
         {
             "Item": "Lingering stamina mead",
             "Effect": "stamina Regen +25%",
             "Duration": 300,
-            "Recipe": "10 sap, 10 cloudberries, 10 jotun puffs"
+            "Recipe": ["10 sap", "10 cloudberries", "10 jotun puffs"]
         },
         {
             "Item": "Poison resistance mead",
-            "Effect": "Posion resistance",
+            "Effect": "Poison resistance",
             "Duration": 600,
-            "Recipe": "10 honey, 5 thistle, 1 neck tail, 10 coal"
+            "Recipe": ["10 honey", "5 thistle", "1 neck tail", "10 coal"]
         },
         {
             "Item": "Frost resistance mead",
             "Effect": "Frost resistance",
             "Duration": 600,
-            "Recipe": "10 honey, 5 thistle, 2 bloodbag, 1 greydwarf eye"
+            "Recipe": ["10 honey", "5 thistle", "2 bloodbag", "1 greydwarf eye"]
         },
         {
             "Item": "Fire resistance barley wine",
             "Effect": "Fire resistance",
             "Duration": 600,
-            "Recipe": "10 barley, 10 cloudberries"
+            "Recipe": ["10 barley", "10 cloudberries"]
         },
         {
             "Item": "Minor eitr mead",
             "Effect": "Restores 125 eitr",
             "Duration": 10,
-            "Recipe": "10 honey, 5 sap, 2 jotun puffs, 5 magecaps"
+            "Recipe": ["10 honey", "5 sap", "2 jotun puffs", "5 magecaps"]
         },
         {
             "Item": "Lingering eitr mead",
             "Effect": "eitr Regen +25%",
             "Duration": 300,
-            "Recipe": "10 sap, 10 vineberry cluster, 10 magecap"
+            "Recipe": ["10 sap", "10 vineberry cluster", "10 magecap"]
         }
     ]
 }

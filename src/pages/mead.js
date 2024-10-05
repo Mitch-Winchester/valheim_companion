@@ -11,7 +11,7 @@ const ValMead = ({ data }) => {
     const meadFilter = (mead, filter) => {
             const item = mead.Item.toLowerCase();
             const effect = mead.Effect.toLowerCase();
-            const recipe = mead.Recipe.toLowerCase();
+            const recipe = mead.Recipe;
             return (
                 item.includes(filter) ||
                 effect.includes(filter) ||
@@ -29,8 +29,9 @@ const ValMead = ({ data }) => {
                 setFilter = {setFilter}
                 filterFunction = {meadFilter}
                 data = {data.allDataJson.nodes}
-                headers = {["Item", "Effect", "Duration", "Recipe"]}
+                headers = {["Item", "Effect", "Duration (s)", "Recipe"]}
                 imgBasePath = {"/images/mead"}
+                contentNames = {["Item", "Effect", "Duration", "Recipe"]}
             />
         </ValLayout>
     )
