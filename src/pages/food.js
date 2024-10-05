@@ -26,7 +26,7 @@ const ValFood = ({ data }) => {
             const balanced = health === stamina && filter.toLowerCase().includes("bal");
             const healthFilter = Math.max(health, stamina, eitr) === health && health !== stamina && filter.toLowerCase().includes("hea");
             const staminaFilter = Math.max(health, stamina, eitr) === stamina && health !== stamina && filter.toLowerCase().includes("sta");
-            const eitrFilter = Math.max(health, stamina, eitr) === eitr && health !== stamina && filter.toLowerCase().includes("eit");
+            const eitrFilter = Math.max(health, stamina, eitr) === eitr && health !== stamina && filter.toLowerCase().includes("ei");
 
             return (
                 textFilters ||
