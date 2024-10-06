@@ -17,6 +17,42 @@ const ValTools = ({ data }) => {
                 imgBasePath = {"/images/tools"}
                 showSearch = {false}
                 contentFlag = 'building'
+                contentNames = {["Item", "Qualities", "Durability", "Recipe", "CraftingStation"]}
+            />
+            <div style={{marginBottom: '2%'}}></div>
+            <ValTableLayout
+                data = {data.allDataJson.nodes}
+                headers = {["Item", "Qualities", "Durability", "Recipe", "Forge"]}
+                imgBasePath = {"/images/tools"}
+                showSearch = {false}
+                contentFlag = 'farming'
+                contentNames = {["Item", "Qualities", "Durability", "Recipe", "CraftingStation"]}
+            />
+            <div style={{marginBottom: '2%'}}></div>
+            <ValTableLayout
+                data = {data.allDataJson.nodes}
+                headers = {["Item", "Qualities", "Durability", "Recipe", "Workbench"]}
+                imgBasePath = {"/images/tools"}
+                showSearch = {false}
+                contentFlag = 'fishing'
+            />
+            <div style={{marginBottom: '2%'}}></div>
+            <ValTableLayout
+                data = {data.allDataJson.nodes}
+                headers = {["Item", "Tree Types", "Qualities", "Durability", "Recipe", "Workbench/Forge"]}
+                imgBasePath = {"/images/tools"}
+                showSearch = {false}
+                contentFlag = 'logging'
+                contentNames = {["Item", "Uses", "Qualities", "Durability", "Recipe", "CraftingStation"]}
+            />
+            <div style={{marginBottom: '2%'}}></div>
+            <ValTableLayout
+                data = {data.allDataJson.nodes}
+                headers = {["Item", "Ore Types", "Qualities", "Durability", "Recipe", "Workbench/Forge"]}
+                imgBasePath = {"/images/tools"}
+                showSearch = {false}
+                contentFlag = 'mining'
+                contentNames = {["Item", "Uses", "Qualities", "Durability", "Recipe", "CraftingStation"]}
             />
         </ValLayout>
     )
@@ -36,7 +72,55 @@ export const query = graphql`
                             Material
                             Quantity
                         }
-                        Workbench
+                        CraftingStation
+                    }
+                }
+                farming {
+                    Item
+                    Qualities {
+                        Level
+                        Durability
+                        Recipe {
+                            Material
+                            Quantity
+                        }
+                        CraftingStation
+                    }
+                }
+                fishing {
+                    Item
+                    Qualities {
+                        Level
+                        Recipe {
+                            Material
+                            Quantity
+                        }
+                    }
+                }
+                logging {
+                    Item
+                    Uses
+                    Qualities {
+                        Level
+                        Durability
+                        Recipe {
+                            Material
+                            Quantity
+                        }
+                        CraftingStation
+                    }
+                }
+                mining {
+                    Item
+                    Uses
+                    Qualities {
+                        Level
+                        Durability
+                        Recipe {
+                            Material
+                            Quantity
+                        }
+                        CraftingStation
                     }
                 }
             }

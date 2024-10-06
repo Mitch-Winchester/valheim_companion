@@ -12,7 +12,7 @@
                         { "Material": "Wood", "Quantity": 3 },
                         { "Material": "Stone", "Quantity": 2 }
                     ],
-                    "Workbench": 1
+                    "CraftingStation": 1
                 },
                 {
                     "Level": 2,
@@ -21,7 +21,7 @@
                         { "Material": "Wood", "Quantity": 1 },
                         { "Material": "Stone", "Quantity": 1 }
                     ],
-                    "Workbench": 2
+                    "CraftingStation": 2
                 },
                 {
                     "Level": 3,
@@ -30,7 +30,7 @@
                         { "Material": "Wood", "Quantity": 2 },
                         { "Material": "Stone", "Quantity": 2 }
                     ],
-                    "Workbench": 3
+                    "CraftingStation": 3
                 }
             ]
         },
@@ -44,7 +44,7 @@
                         { "Material": "Wood", "Quantity": 5 },
                         { "Material": "Stone", "Quantity": 2 }
                     ],
-                    "Workbench": 1
+                    "CraftingStation": 1
                 },
                 {
                     "Level": 2,
@@ -53,7 +53,7 @@
                         { "Material": "Wood", "Quantity": 1 },
                         { "Material": "Stone", "Quantity": 1 }
                     ],
-                    "Workbench": 2
+                    "CraftingStation": 2
                 },
                 {
                     "Level": 3,
@@ -62,13 +62,563 @@
                         { "Material": "Wood", "Quantity": 2 },
                         { "Material": "Stone", "Quantity": 2 }
                     ],
-                    "Workbench": 3
+                    "CraftingStation": 3
                 }
             ]
         }
     ],
-    "farming": [],
-    "fishing": [],
-    "logging": [],
-    "mining": []
+    "farming": [
+        {
+            "Item": "Cultivator",
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 200,
+                    "Recipe": [
+                        { "Material": "Core wood", "Quantity": 5 },
+                        { "Material": "Bronze", "Quantity": 5 }
+                    ],
+                    "CraftingStation": 1
+                },
+                {
+                    "Level": 2,
+                    "Durability": 400,
+                    "Recipe": [
+                        { "Material": "Core wood", "Quantity": 1 },
+                        { "Material": "Bronze", "Quantity": 1 }
+                    ],
+                    "CraftingStation": 2
+                },
+                {
+                    "Level": 3,
+                    "Durability": 600,
+                    "Recipe": [
+                        { "Material": "Core wood", "Quantity": 2 },
+                        { "Material": "Bronze", "Quantity": 2 }
+                    ],
+                    "CraftingStation": 3
+                }
+            ]
+        },
+        {
+            "Item": "Butcher knife",
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 200,
+                    "Recipe": [
+                        { "Material": "Wood", "Quantity": 2 },
+                        { "Material": "Tin", "Quantity": 4 }
+                    ],
+                    "CraftingStation": 1
+                }
+            ]
+        }
+    ],
+    "fishing": [
+        {
+            "Item": "Fishing rod",
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": null,
+                    "Recipe": [
+                        { "Material": "Coins", "Quantity": 350 }
+                    ],
+                    "CraftingStation": null
+                }
+            ]
+        }
+    ],
+    "logging": [
+        {
+            "Item": "Stone axe",
+            "Uses": ["Beech", "Fir", "Pine"],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 100,
+                    "Recipe": [
+                        { "Material": "Wood", "Quantity": 5 },
+                        { "Material": "Stone", "Quantity": 4 }
+                    ],
+                    "CraftingStation": 1
+                },
+                {
+                    "Level": 2,
+                    "Durability": 130,
+                    "Recipe": [
+                        { "Material": "Stone", "Quantity": 2 }
+                    ],
+                    "CraftingStation": 2
+                },
+                {
+                    "Level": 3,
+                    "Durability": 160,
+                    "Recipe": [
+                        { "Material": "Stone", "Quantity": 4 }
+                    ],
+                    "CraftingStation": 3
+                },
+                {
+                    "Level": 4,
+                    "Durability": 190,
+                    "Recipe": [
+                        { "Material": "Stone", "Quantity": 6 }
+                    ],
+                    "CraftingStation": 4
+                }
+            ]
+        },
+        {
+            "Item": "Flint axe",
+            "Uses": ["Beech", "Fir", "Pine"],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 100,
+                    "Recipe": [
+                        { "Material": "Wood", "Quantity": 4 },
+                        { "Material": "Flint", "Quantity": 6 }
+                    ],
+                    "CraftingStation": 1
+                },
+                {
+                    "Level": 2,
+                    "Durability": 130,
+                    "Recipe": [
+                        { "Material": "Flint", "Quantity": 3 },
+                        { "Material": "Leather scraps", "Quantity": 2 }
+                    ],
+                    "CraftingStation": 2
+                },
+                {
+                    "Level": 3,
+                    "Durability": 160,
+                    "Recipe": [
+                        { "Material": "Flint", "Quantity": 6 },
+                        { "Material": "Leather scraps", "Quantity": 4 }
+                    ],
+                    "CraftingStation": 3
+                },
+                {
+                    "Level": 4,
+                    "Durability": 190,
+                    "Recipe": [
+                        { "Material": "Flint", "Quantity": 9 },
+                        { "Material": "Leather scraps", "Quantity": 6 }
+                    ],
+                    "CraftingStation": 4
+                }
+            ]
+        },
+        {
+            "Item": "Bronze axe",
+            "Uses": ["Ancient", "Beech", "Birch", "Fir","Oak", "Pine"],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 125,
+                    "Recipe": [
+                        { "Material": "Wood", "Quantity": 4 },
+                        { "Material": "Bronze", "Quantity": 8 },
+                        { "Material": "Lether scraps", "Quantity": 2 }
+                    ],
+                    "CraftingStation": 1
+                },
+                {
+                    "Level": 2,
+                    "Durability": 175,
+                    "Recipe": [
+                        { "Material": "Bronze", "Quantity": 4 },
+                        { "Material": "Lether scraps", "Quantity": 1 }
+                    ],
+                    "CraftingStation": 2
+                },
+                {
+                    "Level": 3,
+                    "Durability": 225,
+                    "Recipe": [
+                        { "Material": "Bronze", "Quantity": 8 },
+                        { "Material": "Lether scraps", "Quantity": 2 }
+                    ],
+                    "CraftingStation": 3
+                },
+                {
+                    "Level": 4,
+                    "Durability": 250,
+                    "Recipe": [
+                        { "Material": "Bronze", "Quantity": 12 },
+                        { "Material": "Lether scraps", "Quantity": 3 }
+                    ],
+                    "CraftingStation": 4
+                }
+            ]
+        },
+        {
+            "Item": "Battleaxe",
+            "Uses": ["Ancient", "Beech", "Birch", "Fir","Oak", "Pine"],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 200,
+                    "Recipe": [
+                        { "Material": "Ancient bark", "Quantity": 30 },
+                        { "Material": "Iron", "Quantity": 35 },
+                        { "Material": "Lether scraps", "Quantity": 4 }
+                    ],
+                    "CraftingStation": 2
+                },
+                {
+                    "Level": 2,
+                    "Durability": 250,
+                    "Recipe": [
+                        { "Material": "Ancient bark", "Quantity": 5 },
+                        { "Material": "Iron", "Quantity": 15 }
+                    ],
+                    "CraftingStation": 3
+                },
+                {
+                    "Level": 3,
+                    "Durability": 300,
+                    "Recipe": [
+                        { "Material": "Ancient bark", "Quantity": 10 },
+                        { "Material": "Iron", "Quantity": 30 }
+                    ],
+                    "CraftingStation": 4
+                },
+                {
+                    "Level": 4,
+                    "Durability": 350,
+                    "Recipe": [
+                        { "Material": "Ancient bark", "Quantity": 15 },
+                        { "Material": "Iron", "Quantity": 45 }
+                    ],
+                    "CraftingStation": 5
+                }
+            ]
+        },
+        {
+            "Item": "Iron axe",
+            "Uses": ["Ancient", "Beech", "Birch", "Fir","Oak", "Pine"],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 175,
+                    "Recipe": [
+                        { "Material": "Wood", "Quantity": 4 },
+                        { "Material": "Iron", "Quantity": 20 },
+                        { "Material": "Lether scraps", "Quantity": 2 }
+                    ],
+                    "CraftingStation": 2
+                },
+                {
+                    "Level": 2,
+                    "Durability": 225,
+                    "Recipe": [
+                        { "Material": "Iron", "Quantity": 10 },
+                        { "Material": "Lether scraps", "Quantity": 1 }
+                    ],
+                    "CraftingStation": 3
+                },
+                {
+                    "Level": 3,
+                    "Durability": 275,
+                    "Recipe": [
+                        { "Material": "Iron", "Quantity": 20 },
+                        { "Material": "Lether scraps", "Quantity": 2 }
+                    ],
+                    "CraftingStation": 4
+                },
+                {
+                    "Level": 4,
+                    "Durability": 325,
+                    "Recipe": [
+                        { "Material": "Iron", "Quantity": 30 },
+                        { "Material": "Lether scraps", "Quantity": 3 }
+                    ],
+                    "CraftingStation": 5
+                }
+            ]
+        },
+        {
+            "Item": "Crystal battleaxe",
+            "Uses": ["Ancient", "Beech", "Birch", "Fir","Oak", "Pine"],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 200,
+                    "Recipe": [
+                        { "Material": "Ancient bark", "Quantity": 40 },
+                        { "Material": "Silver", "Quantity": 30 },
+                        { "Material": "Crystal", "Quantity": 10 }
+                    ],
+                    "CraftingStation": 3
+                },
+                {
+                    "Level": 2,
+                    "Durability": 250,
+                    "Recipe": [
+                        { "Material": "Ancient bark", "Quantity": 5 },
+                        { "Material": "Silver", "Quantity": 15 }
+                    ],
+                    "CraftingStation": 4
+                },
+                {
+                    "Level": 3,
+                    "Durability": 300,
+                    "Recipe": [
+                        { "Material": "Ancient bark", "Quantity": 10 },
+                        { "Material": "Silver", "Quantity": 30 }
+                    ],
+                    "CraftingStation": 5
+                },
+                {
+                    "Level": 4,
+                    "Durability": 350,
+                    "Recipe": [
+                        { "Material": "Ancient bark", "Quantity": 15 },
+                        { "Material": "Silver", "Quantity": 45 }
+                    ],
+                    "CraftingStation": 6
+                }
+            ]
+        },
+        {
+            "Item": "Blackmetal axe",
+            "Uses": ["Ancient", "Beech", "Birch", "Fir","Oak", "Pine", "Yggdrasil"],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 175,
+                    "Recipe": [
+                        { "Material": "Fine wood", "Quantity": 6 },
+                        { "Material": "Black metal", "Quantity": 20 },
+                        { "Material": "Linen thread", "Quantity": 5 }
+                    ],
+                    "CraftingStation": 4
+                },
+                {
+                    "Level": 2,
+                    "Durability": 225,
+                    "Recipe": [
+                        { "Material": "Black metal", "Quantity": 10 },
+                        { "Material": "Linen thread", "Quantity": 5 }
+                    ],
+                    "CraftingStation": 5
+                },
+                {
+                    "Level": 3,
+                    "Durability": 275,
+                    "Recipe": [
+                        { "Material": "Black metal", "Quantity": 20 },
+                        { "Material": "Linen thread", "Quantity": 10 }
+                    ],
+                    "CraftingStation": 6
+                },
+                {
+                    "Level": 4,
+                    "Durability": 325,
+                    "Recipe": [
+                        { "Material": "Black metal", "Quantity": 30 },
+                        { "Material": "Linen thread", "Quantity": 15 }
+                    ],
+                    "CraftingStation": 7
+                }
+            ]
+        },
+        {
+            "Item": "Jotun Bane",
+            "Uses": ["Ancient", "Beech", "Birch", "Fir","Oak", "Pine", "Yggdrasil"],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 175,
+                    "Recipe": [
+                        { "Material": "Yggdrasil wood", "Quantity": 5 },
+                        { "Material": "Iron", "Quantity": 15 },
+                        { "Material": "Bilebag", "Quantity": 3 },
+                        { "Material": "Refined eitr", "Quantity": 10 }
+                    ],
+                    "CraftingStation": 1
+                },
+                {
+                    "Level": 2,
+                    "Durability": 225,
+                    "Recipe": [
+                        { "Material": "Iron", "Quantity": 10 },
+                        { "Material": "Bilebag", "Quantity": 1 },
+                        { "Material": "Refined eitr", "Quantity": 1 }
+                    ],
+                    "CraftingStation": 2
+                },
+                {
+                    "Level": 3,
+                    "Durability": 275,
+                    "Recipe": [
+                        { "Material": "Iron", "Quantity": 20 },
+                        { "Material": "Bilebag", "Quantity": 2 },
+                        { "Material": "Refined eitr", "Quantity": 2 }
+                    ],
+                    "CraftingStation": 3
+                },
+                {
+                    "Level": 4,
+                    "Durability": 325,
+                    "Recipe": [
+                        { "Material": "Iron", "Quantity": 30 },
+                        { "Material": "Bilebag", "Quantity": 3 },
+                        { "Material": "Refined eitr", "Quantity": 3 }
+                    ],
+                    "CraftingStation": 4
+                }
+            ]
+        }
+    ],
+    "mining": [
+        {
+            "Item": "Antler pickaxe",
+            "Uses": ["Stone", "Copper", "Tin", "Muddy scrap pile", "Abyssal barnacle"],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 100,
+                    "Recipe": [
+                        { "Material": "Wood", "Quantity": 10 },
+                        { "Material": "Hard antler", "Quantity": 1 }
+                    ],
+                    "CraftingStation": 1
+                }
+            ]
+        },
+        {
+            "Item": "Bronze pickaxe",
+            "Uses": ["Stone", "Copper", "Tin", "Muddy scrap pile", "Abyssal barnacle"],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 120,
+                    "Recipe": [
+                        { "Material": "Core wood", "Quantity": 3 },
+                        { "Material": "Bronze", "Quantity": 10 }
+                    ],
+                    "CraftingStation": 1
+                },
+                {
+                    "Level": 2,
+                    "Durability": 170,
+                    "Recipe": [
+                        { "Material": "Core wood", "Quantity": 1 },
+                        { "Material": "Bronze", "Quantity": 5 }
+                    ],
+                    "CraftingStation": 2
+                },
+                {
+                    "Level": 3,
+                    "Durability": 220,
+                    "Recipe": [
+                        { "Material": "Core wood", "Quantity": 2 },
+                        { "Material": "Bronze", "Quantity": 10 }
+                    ],
+                    "CraftingStation": 2
+                },
+                {
+                    "Level": 4,
+                    "Durability": 270,
+                    "Recipe": [
+                        { "Material": "Core wood", "Quantity": 3 },
+                        { "Material": "Bronze", "Quantity": 15 }
+                    ],
+                    "CraftingStation": 4
+                }
+            ]
+        },
+        {
+            "Item": "Iron pickaxe",
+            "Uses": ["Stone", "Copper", "Tin", "Muddy scrap pile",
+                "Abyssal barnacle", "Obsidian", "Silver", "Glowing metal"],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 150,
+                    "Recipe": [
+                        { "Material": "Core wood", "Quantity": 3 },
+                        { "Material": "Iron", "Quantity": 20 }
+                    ],
+                    "CraftingStation": 2
+                },
+                {
+                    "Level": 2,
+                    "Durability": 200,
+                    "Recipe": [
+                        { "Material": "Core wood", "Quantity": 1 },
+                        { "Material": "Iron", "Quantity": 10 }
+                    ],
+                    "CraftingStation": 3
+                },
+                {
+                    "Level": 3,
+                    "Durability": 250,
+                    "Recipe": [
+                        { "Material": "Core wood", "Quantity": 2 },
+                        { "Material": "Iron", "Quantity": 20 }
+                    ],
+                    "CraftingStation": 4
+                },
+                {
+                    "Level": 4,
+                    "Durability": 300,
+                    "Recipe": [
+                        { "Material": "Core wood", "Quantity": 3 },
+                        { "Material": "Iron", "Quantity": 30 }
+                    ],
+                    "CraftingStation": 5
+                }
+            ]
+        },
+        {
+            "Item": "Black metal pickaxe",
+            "Uses": ["Stone", "Copper", "Tin", "Muddy scrap pile",
+                "Abyssal barnacle", "Obsidian", "Silver", "Black marble",
+                "Soft tissue", "Glowing metal", "Flametal"],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 210,
+                    "Recipe": [
+                        { "Material": "Yggdrasil wood", "Quantity": 3 },
+                        { "Material": "Black metal", "Quantity": 25 }
+                    ],
+                    "CraftingStation": 2
+                },
+                {
+                    "Level": 2,
+                    "Durability": 260,
+                    "Recipe": [
+                        { "Material": "Yggdrasil wood", "Quantity": 1 },
+                        { "Material": "Black metal", "Quantity": 15 }
+                    ],
+                    "CraftingStation": 3
+                },
+                {
+                    "Level": 3,
+                    "Durability": 310,
+                    "Recipe": [
+                        { "Material": "Yggdrasil wood", "Quantity": 2 },
+                        { "Material": "Black metal", "Quantity": 30 }
+                    ],
+                    "CraftingStation": 4
+                },
+                {
+                    "Level": 4,
+                    "Durability": 360,
+                    "Recipe": [
+                        { "Material": "Yggdrasil wood", "Quantity": 3 },
+                        { "Material": "Black metal", "Quantity": 45 }
+                    ],
+                    "CraftingStation": 5
+                }
+            ]
+        }
+    ]
 }
