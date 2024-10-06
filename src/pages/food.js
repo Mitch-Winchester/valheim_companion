@@ -11,7 +11,9 @@ const ValFood = ({ data }) => {
     const foodFilter = (food, filter) => {
             const item = food.Item.toLowerCase();
             const biome = food.Biome.toLowerCase();
-            const recipe = food.Recipe;
+            const recipe = food.Recipe?.some(ingredient =>
+                ingredient.Material.toLowerCase().includes(filter)
+            );
             const health = parseFloat(food.Health) || 0;
             const stamina = parseFloat(food.Stamina) || 0;
             const eitr = parseFloat(food.Eitr) || 0;
@@ -20,7 +22,7 @@ const ValFood = ({ data }) => {
             const textFilters =
                 item.includes(filter) ||
                 biome.includes(filter) ||
-                recipe?.includes(filter);
+                recipe
 
             //"math" filters
             const balanced = health === stamina && filter.toLowerCase().includes("bal");
@@ -67,7 +69,10 @@ export const query = graphql`
                     Healing
                     Duration
                     Biome
-                    Recipe
+                    Recipe {
+                        Material
+                        Quantity
+                    }
                 }
             }
         }

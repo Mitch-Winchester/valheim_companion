@@ -4,8 +4,8 @@ import ValLayout from '../components/val_layout'
 import ValButton from '../components/val_button'
 import {
     buttonDiv,
-    topButtonDiv,
-    botButtonDiv
+    buttonRow,
+    botButtonRow
 } from '../components/val_layout.module.css'
 
 const ValComp = () => {
@@ -14,18 +14,21 @@ const ValComp = () => {
             background = {`url("/images/backgrounds/ebrithil_base.png")`}
             title = "Main"
         >
-                <div className={buttonDiv}>
-                    <div className={topButtonDiv}>
-                        <ValButton clickFunction={underConstruction} buttonText={"Tools"}/>
-                        <ValButton clickFunction={underConstruction} buttonText={"Weapons"}/>
-                        <ValButton clickFunction={underConstruction} buttonText={"Armor"}/>
-                    </div>
-                    <div className={botButtonDiv}>
-                        <ValButton navPath={"food"} buttonText={"Food"}/>
-                        <ValButton navPath={"farm"} buttonText={"Farming/Fishing"}/>
-                        <ValButton navPath={"mead"} buttonText={"Mead"}/>
-                    </div>
+            <div className={buttonDiv}>
+                <div className={buttonRow}>
+                    <ValButton navPath={"food"} buttonText={"Food"}/>
+                    <ValButton navPath={"farm"} buttonText={"Farming/Fishing"}/>
+                    <ValButton navPath={"mead"} buttonText={"Mead"}/>
                 </div>
+                <div className={buttonRow}>
+                    <ValButton clickFunction={underConstruction} buttonText={"Tools"}/>
+                    <ValButton clickFunction={underConstruction} buttonText={"Weapons"}/>
+                    <ValButton clickFunction={underConstruction} buttonText={"Armor"}/>
+                </div>
+                <div className={buttonRow}>
+                <ValButton clickFunction={underConstruction} buttonText={"Tips"}/>
+                </div>
+            </div>
         </ValLayout>
         
     )

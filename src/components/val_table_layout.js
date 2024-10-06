@@ -70,12 +70,12 @@ const ValTableLayout = ({
                                             />
                                         </td>
                                         {contentNames.map((column, colIndex) => {
-                                            if (Array.isArray(item[column])) {
+                                            if (typeof item[column] === 'object' && item[column] !== null) {
                                                 return (
                                                     <td key={colIndex} className={tableList}>
                                                         {item[column].map((ingredient, ingIndex) => (
                                                             <tr key={ingIndex}>
-                                                                <td>{ingredient}</td>
+                                                                <td>{ingredient.Material}: {ingredient.Quantity}</td>
                                                             </tr>
                                                         ))}
                                                     </td>

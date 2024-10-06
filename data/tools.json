@@ -1,0 +1,74 @@
+{
+    "title": "Tools",
+    "adventuring": [],
+    "building": [
+        {
+            "Item": "Hammer",
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 100,
+                    "Recipe": [
+                        { "Material": "Wood", "Quantity": 3 },
+                        { "Material": "Stone", "Quantity": 2 }
+                    ],
+                    "Workbench": 1
+                },
+                {
+                    "Level": 2,
+                    "Durability": 200,
+                    "Recipe": [
+                        { "Material": "Wood", "Quantity": 1 },
+                        { "Material": "Stone", "Quantity": 1 }
+                    ],
+                    "Workbench": 2
+                },
+                {
+                    "Level": 3,
+                    "Durability": 300,
+                    "Recipe": [
+                        { "Material": "Wood", "Quantity": 2 },
+                        { "Material": "Stone", "Quantity": 2 }
+                    ],
+                    "Workbench": 3
+                }
+            ]
+        },
+        {
+            "Item": "Hoe",
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 200,
+                    "Recipe": [
+                        { "Material": "Wood", "Quantity": 5 },
+                        { "Material": "Stone", "Quantity": 2 }
+                    ],
+                    "Workbench": 1
+                },
+                {
+                    "Level": 2,
+                    "Durability": 400,
+                    "Recipe": [
+                        { "Material": "Wood", "Quantity": 1 },
+                        { "Material": "Stone", "Quantity": 1 }
+                    ],
+                    "Workbench": 2
+                },
+                {
+                    "Level": 3,
+                    "Durability": 600,
+                    "Recipe": [
+                        { "Material": "Wood", "Quantity": 2 },
+                        { "Material": "Stone", "Quantity": 2 }
+                    ],
+                    "Workbench": 3
+                }
+            ]
+        }
+    ],
+    "farming": [],
+    "fishing": [],
+    "logging": [],
+    "mining": []
+}

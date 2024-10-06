@@ -11,11 +11,14 @@ const ValMead = ({ data }) => {
     const meadFilter = (mead, filter) => {
             const item = mead.Item.toLowerCase();
             const effect = mead.Effect.toLowerCase();
-            const recipe = mead.Recipe;
+            const recipe = mead.Recipe.some(ingredient => 
+                ingredient.Material.toLowerCase().includes(filter)
+            );
+
             return (
                 item.includes(filter) ||
                 effect.includes(filter) ||
-                recipe.includes(filter)
+                recipe
             );
     };
 
@@ -45,7 +48,10 @@ export const query = graphql`
                     Item
                     Effect
                     Duration
-                    Recipe
+                    Recipe {
+                        Material
+                        Quantity
+                    }
                 }
             }
         }

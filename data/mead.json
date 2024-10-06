@@ -1,83 +1,140 @@
 {
     "title": "Mead",
     "content": [
-        {
-            "Item": "Tasty mead",
-            "Effect": "Health regen -50% & stamina regen +300%",
-            "Duration": 10,
-            "Recipe": ["10 honey", "10 raspberries", "5 blueberries"]
-        },
-        {
-            "Item": "Minor healing mead",
-            "Effect": "Restores 50 health",
-            "Duration": 10,
-            "Recipe": ["10 honey", "5 blueberries", "10 raspberries", "1 dandelion"]
-        },
-        {
-            "Item": "Medium healing mead",
-            "Effect": "Restores 75 health",
-            "Duration": 10,
-            "Recipe": ["10 honey", "4 bloodbag", "10 raspberries", "1 dandelion"]
-        },
-        {
-            "Item": "Major healing mead",
-            "Effect": "Restores 125 health",
-            "Duration": 10,
-            "Recipe": ["10 honey", "4 blood clot", "5 royal jelly"]
-        },
-        {
-            "Item": "Lingering healing mead",
-            "Effect": "Health Regen +25%",
-            "Duration": 300,
-            "Recipe": ["10 sap", "10 vineberry cluster", "10 smoke puff"]
-        },
-        {
-            "Item": "Minor stamina mead",
-            "Effect": "Restores 80 stamina",
-            "Duration": 2,
-            "Recipe": ["10 honey", "10 raspberries", "10 yellow mushrooms"]
-        },
-        {
-            "Item": "Medium stamina mead",
-            "Effect": "Restores 150 stamina",
-            "Duration": 2,
-            "Recipe": ["10 honey", "10 cloudberries", "10 yellow mushrooms"]
-        },
-        {
-            "Item": "Lingering stamina mead",
-            "Effect": "stamina Regen +25%",
-            "Duration": 300,
-            "Recipe": ["10 sap", "10 cloudberries", "10 jotun puffs"]
-        },
-        {
-            "Item": "Poison resistance mead",
-            "Effect": "Poison resistance",
-            "Duration": 600,
-            "Recipe": ["10 honey", "5 thistle", "1 neck tail", "10 coal"]
-        },
-        {
-            "Item": "Frost resistance mead",
-            "Effect": "Frost resistance",
-            "Duration": 600,
-            "Recipe": ["10 honey", "5 thistle", "2 bloodbag", "1 greydwarf eye"]
-        },
-        {
-            "Item": "Fire resistance barley wine",
-            "Effect": "Fire resistance",
-            "Duration": 600,
-            "Recipe": ["10 barley", "10 cloudberries"]
-        },
-        {
-            "Item": "Minor eitr mead",
-            "Effect": "Restores 125 eitr",
-            "Duration": 10,
-            "Recipe": ["10 honey", "5 sap", "2 jotun puffs", "5 magecaps"]
-        },
-        {
-            "Item": "Lingering eitr mead",
-            "Effect": "eitr Regen +25%",
-            "Duration": 300,
-            "Recipe": ["10 sap", "10 vineberry cluster", "10 magecap"]
-        }
+      {
+        "Item": "Tasty mead",
+        "Effect": "Health regen -50% & stamina regen +300%",
+        "Duration": 10,
+        "Recipe": [
+          { "Material": "Honey", "Quantity": 10 },
+          { "Material": "Raspberries", "Quantity": 10 },
+          { "Material": "Blueberries", "Quantity": 5 }
+        ]
+      },
+      {
+        "Item": "Minor healing mead",
+        "Effect": "Restores 50 health",
+        "Duration": 10,
+        "Recipe": [
+          { "Material": "Honey", "Quantity": 10 },
+          { "Material": "Blueberries", "Quantity": 5 },
+          { "Material": "Raspberries", "Quantity": 10 },
+          { "Material": "Dandelion", "Quantity": 1 }
+        ]
+      },
+      {
+        "Item": "Medium healing mead",
+        "Effect": "Restores 75 health",
+        "Duration": 10,
+        "Recipe": [
+          { "Material": "Honey", "Quantity": 10 },
+          { "Material": "Bloodbag", "Quantity": 4 },
+          { "Material": "Raspberries", "Quantity": 10 },
+          { "Material": "Dandelion", "Quantity": 1 }
+        ]
+      },
+      {
+        "Item": "Major healing mead",
+        "Effect": "Restores 125 health",
+        "Duration": 10,
+        "Recipe": [
+          { "Material": "Honey", "Quantity": 10 },
+          { "Material": "Blood clot", "Quantity": 4 },
+          { "Material": "Royal jelly", "Quantity": 5 }
+        ]
+      },
+      {
+        "Item": "Lingering healing mead",
+        "Effect": "Health Regen +25%",
+        "Duration": 300,
+        "Recipe": [
+          { "Material": "Sap", "Quantity": 10 },
+          { "Material": "Vineberry cluster", "Quantity": 10 },
+          { "Material": "Smoke puff", "Quantity": 10 }
+        ]
+      },
+      {
+        "Item": "Minor stamina mead",
+        "Effect": "Restores 80 stamina",
+        "Duration": 2,
+        "Recipe": [
+          { "Material": "Honey", "Quantity": 10 },
+          { "Material": "Raspberries", "Quantity": 10 },
+          { "Material": "Yellow mushrooms", "Quantity": 10 }
+        ]
+      },
+      {
+        "Item": "Medium stamina mead",
+        "Effect": "Restores 150 stamina",
+        "Duration": 2,
+        "Recipe": [
+          { "Material": "Honey", "Quantity": 10 },
+          { "Material": "Cloudberries", "Quantity": 10 },
+          { "Material": "Yellow mushrooms", "Quantity": 10 }
+        ]
+      },
+      {
+        "Item": "Lingering stamina mead",
+        "Effect": "Stamina Regen +25%",
+        "Duration": 300,
+        "Recipe": [
+          { "Material": "Sap", "Quantity": 10 },
+          { "Material": "Cloudberries", "Quantity": 10 },
+          { "Material": "Jotun puffs", "Quantity": 10 }
+        ]
+      },
+      {
+        "Item": "Poison resistance mead",
+        "Effect": "Poison resistance",
+        "Duration": 600,
+        "Recipe": [
+          { "Material": "Honey", "Quantity": 10 },
+          { "Material": "Thistle", "Quantity": 5 },
+          { "Material": "Neck tail", "Quantity": 1 },
+          { "Material": "Coal", "Quantity": 10 }
+        ]
+      },
+      {
+        "Item": "Frost resistance mead",
+        "Effect": "Frost resistance",
+        "Duration": 600,
+        "Recipe": [
+          { "Material": "Honey", "Quantity": 10 },
+          { "Material": "Thistle", "Quantity": 5 },
+          { "Material": "Bloodbag", "Quantity": 2 },
+          { "Material": "Greydwarf eye", "Quantity": 1 }
+        ]
+      },
+      {
+        "Item": "Fire resistance barley wine",
+        "Effect": "Fire resistance",
+        "Duration": 600,
+        "Recipe": [
+          { "Material": "Barley", "Quantity": 10 },
+          { "Material": "Cloudberries", "Quantity": 10 }
+        ]
+      },
+      {
+        "Item": "Minor eitr mead",
+        "Effect": "Restores 125 eitr",
+        "Duration": 10,
+        "Recipe": [
+          { "Material": "Honey", "Quantity": 10 },
+          { "Material": "Sap", "Quantity": 5 },
+          { "Material": "Jotun puffs", "Quantity": 2 },
+          { "Material": "Magecaps", "Quantity": 5 }
+        ]
+      },
+      {
+        "Item": "Lingering eitr mead",
+        "Effect": "Eitr Regen +25%",
+        "Duration": 300,
+        "Recipe": [
+          { "Material": "Sap", "Quantity": 10 },
+          { "Material": "Vineberry cluster", "Quantity": 10 },
+          { "Material": "Magecap", "Quantity": 10 }
+        ]
+      }
     ]
-}
+  }
+  

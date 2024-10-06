@@ -69,30 +69,21 @@
 /* Buttons */
 .button-div {
   display: flex;
-  position: relative;
+  flex-direction: column;
+  gap: 10vw; /* Space between the two button divs */
   margin: 10vw;
 }
-.top-button-div {
+.button-row {
   display: flex;
-  justify-content: space-between;
-  position: absolute;
-  margin-left: 15%;
-  margin-right: 15%;
-  width: 70%;
-}
-.bot-button-div {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  margin-top: 10vw;
-  margin-left: 20%;
-  width: 60%;
+  justify-content: center;
+  gap: 10vw; /* Space between each button */
+  padding: 0 15%; /* Adjusts space on the sides */
 }
 .back-button-div {
   display: flex;
   justify-content: center;
   position: relative;
-  margin: 20%;
+  margin: 15%;
 }
 
 .button {
