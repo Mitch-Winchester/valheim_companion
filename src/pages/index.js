@@ -21,7 +21,7 @@ const ValComp = () => {
                     <ValButton navPath={"mead"} buttonText={"Mead"}/>
                 </div>
                 <div className={buttonRow}>
-                    <ValButton clickFunction={underConstruction} buttonText={"Tools"}/>
+                    <ValButton navPath={"tools"} buttonText={"Tools"}/>
                     <ValButton clickFunction={underConstruction} buttonText={"Weapons"}/>
                     <ValButton clickFunction={underConstruction} buttonText={"Armor"}/>
                 </div>

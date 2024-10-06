@@ -59,11 +59,21 @@
   color: white;
   background-color: rgb(94, 102, 111, 0.75);
 }
+.table-head {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .table-list {
   text-align: left;
   padding-left: 15px;
   padding-right: 5px;
   padding-bottom: 10px;
+}
+.quality-table-row {
+  border: 4px solid black;
+}
+.quality-table-data {
+  padding: 10px 60px;
 }
 
 /* Buttons */

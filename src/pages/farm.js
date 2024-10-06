@@ -48,7 +48,10 @@ export const query = graphql`
                 bait {
                     Item
                     Use
-                    Recipe
+                    Recipe {
+                        Material
+                        Quantity
+                    }
                 }
                 crop {
                     Crop
