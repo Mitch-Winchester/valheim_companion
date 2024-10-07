@@ -33,11 +33,11 @@ const ValTableLayout = ({
 
     return (
         <> 
-        {showTitle && (
+        {showTitle && filteredItems.length !== 0 ? (
             <div>
                 <h1 className={tableHeader}>{contentFlag.charAt(0).toUpperCase()+contentFlag.slice(1)}</h1>
             </div>
-        )}
+        ) : null}
         {/* If search returns no results, will not display table */}
         {filteredItems.length !== 0 ?  (
             <div className={tableDiv}>
