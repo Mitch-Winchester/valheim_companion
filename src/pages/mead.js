@@ -25,7 +25,6 @@ const ValMead = ({ data }) => {
         <ValLayout 
             background = {`url("/images/backgrounds/ebrithil_mead.png")`}
             title = "Mead Recipes"
-            showSearch = {true}
         >
             <ValTableLayout
                 filterFunction = {meadFilter}

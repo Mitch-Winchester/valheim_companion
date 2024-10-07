@@ -37,9 +37,9 @@ const ValTableLayout = ({
                     <thead>
                         <tr>
                             <th aria-label='image'></th>
-                                {headers.map(column => (
-                                    <th className={tableHead}>{column}</th>
-                                ))}
+                            {headers.map(column => (
+                                <th className={tableHead}>{column}</th>
+                            ))}
                         </tr>
                     </thead>
                     <tbody>

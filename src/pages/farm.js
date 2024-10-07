@@ -23,7 +23,6 @@ const ValFarm = ({ data }) => {
         <ValLayout
             background = {`url("/images/backgrounds/ebrithil_farm.png")`}
             title = "Farming & Fishing Recipes"
-            showSearch = {true}
         >
             <ValTableLayout
                 filterFunction = {farmFilter}

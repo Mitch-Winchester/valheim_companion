@@ -12,6 +12,7 @@ const ValComp = () => {
         <ValLayout
             background = {`url("/images/backgrounds/ebrithil_base.png")`}
             title = "Main"
+            showSearch = {false}
         >
             <div className={buttonDiv}>
                 <div className={buttonRow}>

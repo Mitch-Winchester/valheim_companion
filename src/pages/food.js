@@ -43,7 +43,6 @@ const ValFood = ({ data }) => {
         <ValLayout
             background = {`url("/images/backgrounds/ebrithil_food.png")`}
             title = "Food Recipes"
-            showSearch = {true}
         >
             <ValTableLayout
                 filter = {filter}

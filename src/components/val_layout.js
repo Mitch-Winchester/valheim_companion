@@ -12,7 +12,7 @@ const ValLayout = ({
     background,
     title,
     children,
-    showSearch = false
+    showSearch = true
 }) => {
     // Set initial filter & setFilter state
     const [filter, setFilter] = React.useState("");
