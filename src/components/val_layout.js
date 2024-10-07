@@ -4,10 +4,27 @@ import {
     backButtonDiv,
     valBody,
     header,
-    mainHeader
+    mainHeader,
+    searchContainer
 } from './val_layout.module.css'
 
-const ValLayout = ({ background, title, children }) => {
+const ValLayout = ({
+    background,
+    title,
+    children,
+    showSearch = false
+}) => {
+    // Set initial filter & setFilter state
+    const [filter, setFilter] = React.useState("");
+
+    // Handle user input for the search
+    const inputChange = (e) => {
+        if (setFilter) {
+            setFilter(e.target.value.toLowerCase());
+        }
+    };
+
+    // Handle differences between home page and secondary pages
     let head = header;
     let navPath = "/";
     let backButText = "Back to Home Page";
@@ -23,6 +40,7 @@ const ValLayout = ({ background, title, children }) => {
             backButText = "Back to Main Site";
         }
     }
+
     return (
         <>
             <body 
@@ -30,7 +48,20 @@ const ValLayout = ({ background, title, children }) => {
                 style={{backgroundImage: background}}
             >
                 <header className={head}>{title}</header>
-                {children}
+                {showSearch && setFilter && (
+                    <div className={searchContainer}>
+                        <input 
+                            type="text" 
+                            placeholder="Search..." 
+                            onChange={inputChange}
+                            aria-label="search label"
+                        />
+                    </div>
+                )}
+                {/* Pass filter & setFilter to children as props */}
+                {React.Children.map(children, (child) =>
+                    React.cloneElement(child, { filter, setFilter })
+                )}
                 {showButton && (
                     <div className={backButtonDiv}>
                         <ValButton 

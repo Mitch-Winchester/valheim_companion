@@ -5,7 +5,6 @@ import ValLayout from '../components/val_layout'
 import ValTableLayout from '../components/val_table_layout'
 
 const ValMead = ({ data }) => {
-    const [filter, setFilter] = React.useState("");
 
     // filterFunction to pass to tableLayout
     const meadFilter = (mead, filter) => {
@@ -26,10 +25,9 @@ const ValMead = ({ data }) => {
         <ValLayout 
             background = {`url("/images/backgrounds/ebrithil_mead.png")`}
             title = "Mead Recipes"
+            showSearch = {true}
         >
             <ValTableLayout
-                filter = {filter}
-                setFilter = {setFilter}
                 filterFunction = {meadFilter}
                 data = {data.allDataJson.nodes}
                 headers = {["Item", "Effect", "Duration (s)", "Recipe"]}

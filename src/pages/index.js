@@ -4,8 +4,7 @@ import ValLayout from '../components/val_layout'
 import ValButton from '../components/val_button'
 import {
     buttonDiv,
-    buttonRow,
-    botButtonRow
+    buttonRow
 } from '../components/val_layout.module.css'
 
 const ValComp = () => {
