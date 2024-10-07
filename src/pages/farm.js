@@ -32,6 +32,7 @@ const ValFarm = ({ data }) => {
                 showSearch = {false}
                 contentFlag = 'crop'
                 contentNames = {["Crop", "Biome", "Growth", "Space"]}
+                showTitle = {true}
             />
             <div style={{marginBottom: '2%'}}></div>
             <ValTableLayout
@@ -42,6 +43,7 @@ const ValFarm = ({ data }) => {
                 showSearch = {false}
                 contentFlag = 'feed'
                 contentNames = {["Animal", "Feed", "Growth", "Space"]}
+                showTitle = {true}
             />
             <div style={{marginBottom: '2%'}}></div>
             <ValTableLayout
@@ -52,6 +54,7 @@ const ValFarm = ({ data }) => {
                 showSearcy = {false}
                 contentFlag = 'bait'
                 contentNames = {["Item", "Use", "Recipe"]}
+                showTitle = {true}
             />
         </ValLayout>
     )

@@ -26,8 +26,20 @@ const ValTools = ({ data }) => {
                 headers = {["Item", "Qualities", "Durability", "Recipe", "Crafting Station"]}
                 imgBasePath = {"/images/tools"}
                 showSearch = {false}
+                contentFlag = 'adventuring'
+                contentNames = {["Item", "Qualities", "Durability", "Recipe", "CraftingStation"]}
+                showTitle = {true}
+            />
+            <div style={{marginBottom: '2%'}}></div>
+            <ValTableLayout
+                filterFunction = {toolFilter}
+                data = {data.allDataJson.nodes}
+                headers = {["Item", "Qualities", "Durability", "Recipe", "Crafting Station"]}
+                imgBasePath = {"/images/tools"}
+                showSearch = {false}
                 contentFlag = 'building'
                 contentNames = {["Item", "Qualities", "Durability", "Recipe", "CraftingStation"]}
+                showTitle = {true}
             />
             <div style={{marginBottom: '2%'}}></div>
             <ValTableLayout
@@ -38,6 +50,7 @@ const ValTools = ({ data }) => {
                 showSearch = {false}
                 contentFlag = 'farming'
                 contentNames = {["Item", "Qualities", "Durability", "Recipe", "CraftingStation"]}
+                showTitle = {true}
             />
             <div style={{marginBottom: '2%'}}></div>
             <ValTableLayout
@@ -47,6 +60,7 @@ const ValTools = ({ data }) => {
                 imgBasePath = {"/images/tools"}
                 showSearch = {false}
                 contentFlag = 'fishing'
+                showTitle = {true}
             />
             <div style={{marginBottom: '2%'}}></div>
             <ValTableLayout
@@ -57,6 +71,7 @@ const ValTools = ({ data }) => {
                 showSearch = {false}
                 contentFlag = 'logging'
                 contentNames = {["Item", "Uses", "Qualities", "Durability", "Recipe", "CraftingStation"]}
+                showTitle = {true}
             />
             <div style={{marginBottom: '2%'}}></div>
             <ValTableLayout
@@ -67,6 +82,7 @@ const ValTools = ({ data }) => {
                 showSearch = {false}
                 contentFlag = 'mining'
                 contentNames = {["Item", "Uses", "Qualities", "Durability", "Recipe", "CraftingStation"]}
+                showTitle = {true}
             />
         </ValLayout>
     )
@@ -77,6 +93,21 @@ export const query = graphql`
     query MyQuery {
         allDataJson(filter: {title: {eq: "Tools"}}) {
             nodes {
+                adventuring {
+                    Item
+                    Qualities {
+                        Level
+                        Durability
+                        Recipe {
+                            Material
+                            Quantity
+                        }
+                        CraftingStation {
+                            Station
+                            Level
+                        }
+                    }
+                }
                 building {
                     Item
                     Qualities {

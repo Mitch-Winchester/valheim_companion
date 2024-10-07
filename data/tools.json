@@ -1,6 +1,84 @@
 {
     "title": "Tools",
-    "adventuring": [],
+    "adventuring": [
+        {
+            "Item": "Tankard",
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": null,
+                    "Recipe": [
+                        { "Material": "Fine wood", "Quantity": 5 },
+                        { "Material": "Resin", "Quantity": 2 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 1 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Horn of Celebration",
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": null,
+                    "Recipe": [
+                        { "Material": "Bronze", "Quantity": 2 },
+                        { "Material": "Troll hide", "Quantity": 2 },
+                        { "Material": "Iron", "Quantity": 2 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 1 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Dvergr tankard",
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": null,
+                    "Recipe": null,
+                    "CraftingStation": null
+                }
+            ]
+        },
+        {
+            "Item": "Torch",
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 20,
+                    "Recipe": [
+                        { "Material": "Wood", "Quantity": 1 },
+                        { "Material": "Resin", "Quantity": 1 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 1 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Dvergr lantern",
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": null,
+                    "Recipe": [
+                        { "Material": "Bronze", "Quantity": 2 },
+                        { "Material": "Surtling core", "Quantity": 1 },
+                        { "Material": "Crystal", "Quantity": 1 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Black forge", "Level": 1 }
+                    ]
+                }
+            ]
+        }
+    ],
     "building": [
         {
             "Item": "Hammer",

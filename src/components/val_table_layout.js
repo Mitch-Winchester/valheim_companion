@@ -1,5 +1,6 @@
 import * as React from 'react'
 import {
+    tableHeader,
     tableDiv,
     table,
     tableHead,
@@ -15,7 +16,8 @@ const ValTableLayout = ({
     headers,
     imgBasePath,
     contentFlag = 'content',
-    contentNames = headers
+    contentNames = headers,
+    showTitle = false
 }) => {
     // get first column name
     let firstKey = contentNames[0];
@@ -30,7 +32,13 @@ const ValTableLayout = ({
     console.log(filteredItems);
 
     return (
-        <> {/* If search returns no results, will not display table */}
+        <> 
+        {showTitle && (
+            <div>
+                <h1 className={tableHeader}>{contentFlag.charAt(0).toUpperCase()+contentFlag.slice(1)}</h1>
+            </div>
+        )}
+        {/* If search returns no results, will not display table */}
         {filteredItems.length !== 0 ?  (
             <div className={tableDiv}>
                 <table className={table}>
@@ -62,7 +70,7 @@ const ValTableLayout = ({
                                                                 <td className={qualityTableData}>{quality.Level}</td>
                                                                 <td className={qualityTableData}>{quality.Durability}</td>
                                                                 <td className={qualityTableData}>
-                                                                    {quality.Recipe.map((ingredient, ingIndex) => (
+                                                                    {quality.Recipe?.map((ingredient, ingIndex) => (
                                                                         <div key={ingIndex}>
                                                                             {ingredient.Material}: {ingredient.Quantity}
                                                                         </div>
