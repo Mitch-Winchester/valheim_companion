@@ -41,7 +41,7 @@ const ValFood = ({ data }) => {
 
     return (
         <ValLayout
-            background = {`url("/val_images/backgrounds/ebrithil_food.png")`}
+            background = {`url("/images/backgrounds/ebrithil_food.png")`}
             title = "Food Recipes"
         >
             <ValTableLayout
@@ -50,7 +50,7 @@ const ValFood = ({ data }) => {
                 filterFunction = {foodFilter}
                 data = {data.allDataJson.nodes}
                 headers = {["Item", "Health", "Stamina", "Eitr", "Healing (hp/tick)", "Duration (m)", "Biome", "Recipe"]}
-                imgBasePath = {"/val_images/food"}
+                imgBasePath = {"/images/food"}
                 contentNames = {["Item", "Health", "Stamina", "Eitr", "Healing", "Duration", "Biome", "Recipe"]}
             />
         </ValLayout>

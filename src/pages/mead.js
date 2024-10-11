@@ -23,14 +23,14 @@ const ValMead = ({ data }) => {
 
     return (
         <ValLayout 
-            background = {`url("/val_images/backgrounds/ebrithil_mead.png")`}
+            background = {`url("/images/backgrounds/ebrithil_mead.png")`}
             title = "Mead Recipes"
         >
             <ValTableLayout
                 filterFunction = {meadFilter}
                 data = {data.allDataJson.nodes}
                 headers = {["Item", "Effect", "Duration (s)", "Recipe"]}
-                imgBasePath = {"/val_images/mead"}
+                imgBasePath = {"/images/mead"}
                 contentNames = {["Item", "Effect", "Duration", "Recipe"]}
             />
         </ValLayout>
