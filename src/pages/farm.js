@@ -21,14 +21,14 @@ const ValFarm = ({ data }) => {
 
     return (
         <ValLayout
-            background = {`url("/images/backgrounds/ebrithil_farm.png")`}
+            background = {`url("/val_images/backgrounds/ebrithil_farm.png")`}
             title = "Farming & Fishing Recipes"
         >
             <ValTableLayout
                 filterFunction = {farmFilter}
                 data = {data.allDataJson.nodes}
                 headers = {["Crop", "Biome(s) needed to grow", "Grow Time (s)", "Required Space (m)"]}
-                imgBasePath = {"/images/crops"}
+                imgBasePath = {"/val_images/crops"}
                 showSearch = {false}
                 contentFlag = 'crop'
                 contentNames = {["Crop", "Biome", "Growth", "Space"]}
@@ -39,7 +39,7 @@ const ValFarm = ({ data }) => {
                 filterFunction = {farmFilter}
                 data = {data.allDataJson.nodes}
                 headers = {["Animal", "Feed", "Grow Time (min)", "Space Needed"]}
-                imgBasePath = {"/images/animals"}
+                imgBasePath = {"/val_images/animals"}
                 showSearch = {false}
                 contentFlag = 'feed'
                 contentNames = {["Animal", "Feed", "Growth", "Space"]}
@@ -50,7 +50,7 @@ const ValFarm = ({ data }) => {
                 filterFunction = {farmFilter}
                 data = {data.allDataJson.nodes}
                 headers = {["Bait Type", "Use", "Recipe"]}
-                imgBasePath = {"/images/bait"}
+                imgBasePath = {"/val_images/bait"}
                 showSearcy = {false}
                 contentFlag = 'bait'
                 contentNames = {["Item", "Use", "Recipe"]}

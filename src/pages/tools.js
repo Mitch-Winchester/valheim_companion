@@ -17,14 +17,14 @@ const ValTools = ({ data }) => {
 
     return (
         <ValLayout
-            background = {`url("/images/backgrounds/ebrithil_base.png")`}
+            background = {`url("/val_images/backgrounds/ebrithil_base.png")`}
             title = "Tool Recipes"
         >
             <ValTableLayout
                 filterFunction = {toolFilter}
                 data = {data.allDataJson.nodes}
                 headers = {["Item", "Qualities", "Durability", "Recipe", "Crafting Station"]}
-                imgBasePath = {"/images/tools"}
+                imgBasePath = {"/val_images/tools"}
                 showSearch = {false}
                 contentFlag = 'adventuring'
                 contentNames = {["Item", "Qualities", "Durability", "Recipe", "CraftingStation"]}
@@ -35,7 +35,7 @@ const ValTools = ({ data }) => {
                 filterFunction = {toolFilter}
                 data = {data.allDataJson.nodes}
                 headers = {["Item", "Qualities", "Durability", "Recipe", "Crafting Station"]}
-                imgBasePath = {"/images/tools"}
+                imgBasePath = {"/val_images/tools"}
                 showSearch = {false}
                 contentFlag = 'building'
                 contentNames = {["Item", "Qualities", "Durability", "Recipe", "CraftingStation"]}
@@ -46,7 +46,7 @@ const ValTools = ({ data }) => {
                 filterFunction = {toolFilter}
                 data = {data.allDataJson.nodes}
                 headers = {["Item", "Qualities", "Durability", "Recipe", "Crafting Station"]}
-                imgBasePath = {"/images/tools"}
+                imgBasePath = {"/val_images/tools"}
                 showSearch = {false}
                 contentFlag = 'farming'
                 contentNames = {["Item", "Qualities", "Durability", "Recipe", "CraftingStation"]}
@@ -57,7 +57,7 @@ const ValTools = ({ data }) => {
                 filterFunction = {toolFilter}
                 data = {data.allDataJson.nodes}
                 headers = {["Item", "Qualities", "Durability", "Recipe", "Crafting Station"]}
-                imgBasePath = {"/images/tools"}
+                imgBasePath = {"/val_images/tools"}
                 showSearch = {false}
                 contentFlag = 'fishing'
                 showTitle = {true}
@@ -67,7 +67,7 @@ const ValTools = ({ data }) => {
                 filterFunction = {toolFilter}
                 data = {data.allDataJson.nodes}
                 headers = {["Item", "Tree Types", "Qualities", "Durability", "Recipe", "Crafting Station"]}
-                imgBasePath = {"/images/tools"}
+                imgBasePath = {"/val_images/tools"}
                 showSearch = {false}
                 contentFlag = 'logging'
                 contentNames = {["Item", "Uses", "Qualities", "Durability", "Recipe", "CraftingStation"]}
@@ -78,7 +78,7 @@ const ValTools = ({ data }) => {
                 filterFunction = {toolFilter}
                 data = {data.allDataJson.nodes}
                 headers = {["Item", "Ore Types", "Qualities", "Durability", "Recipe", "Crafting Station"]}
-                imgBasePath = {"/images/tools"}
+                imgBasePath = {"/val_images/tools"}
                 showSearch = {false}
                 contentFlag = 'mining'
                 contentNames = {["Item", "Uses", "Qualities", "Durability", "Recipe", "CraftingStation"]}
