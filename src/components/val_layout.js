@@ -2,11 +2,13 @@ import * as React from 'react'
 import ValButton from './val_button'
 import styled from 'styled-components'
 import { Container } from 'react-bootstrap'
+import { useLocation } from '@reach/router'
 import {
     header,
     mainHeader
 } from './val_layout.module.css'
 
+// styled-components
 const ValBody = styled(Container)`
     background-repeat: no-repeat;
     background-position: center center;
@@ -41,19 +43,15 @@ const ValLayout = ({
     children,
     showSearch = true
 }) => {
-    // Set initial filter & setFilter state
-    const [filter, setFilter] = React.useState("");
+    // Get the current pathname from the location object
+    const location = useLocation();
 
-    // Handle user input for the search
-    const inputChange = (e) => {
-        if (setFilter) {
-            setFilter(e.target.value.toLowerCase());
-        }
-    };
+    // Determine if val_comp is running as submodule or not
+    const isStandalone = location.pathname.startsWith("/val_comp");
 
-    // Handle differences between home page and secondary pages
+    // Set default values for back button logic
     let head = header;
-    let navPath = "/";
+    let navPath = isStandalone ? "/val_comp/src/pages" : "/";
     let backButText = "Back to Home Page";
     let showButton = true;
 
@@ -67,6 +65,16 @@ const ValLayout = ({
             backButText = "Back to Main Site";
         }
     }
+        
+    // Set initial filter & setFilter state
+    const [filter, setFilter] = React.useState("");
+
+    // Handle user input for the search
+    const inputChange = (e) => {
+        if (setFilter) {
+            setFilter(e.target.value.toLowerCase());
+        }
+    };
 
     return (
         <ValBody fluid
