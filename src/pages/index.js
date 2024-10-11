@@ -16,7 +16,7 @@ const ButRow = styled.div`
 const ValComp = () => {
     return (
         <ValLayout
-            background = {`url("/images/backgrounds/ebrithil_base.png")`}
+            background = {`url("/val_images/backgrounds/ebrithil_base.png")`}
             title = "Main"
             showSearch = {false}
         >
