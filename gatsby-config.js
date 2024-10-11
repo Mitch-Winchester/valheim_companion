@@ -17,5 +17,6 @@ module.exports = {
         path: `./data/`
       }
     },
+    `gatsby-plugin-styled-components`
   ],
 }

@@ -1,13 +1,57 @@
 import * as React from 'react'
+import styled from 'styled-components'
+import { Container } from 'react-bootstrap'
 import {
-    tableHeader,
-    tableDiv,
-    table,
     tableHead,
     tableList,
     tableRow,
     qualityTableData
 } from './val_layout.module.css'
+
+const TableHead = styled.h1`
+    display: flex;
+    justify-content: center center;
+    color: rgb(255, 98, 0);
+    text-shadow: 0 0.2vh lightgrey;
+    font-size: 3vw;
+    font-weight: 700;
+    padding: 5px 10px;
+    margin: auto;
+    width: fit-content;
+    border-radius: 15px;
+    background-color: rgb(94, 102, 111, 0.75);
+`;
+const TableCon = styled(Container)`
+    justify-content: center;
+    zoom: 85%;
+
+    @media (max-width: 1200px) {
+        zoom: 82%;
+    }
+    @media (max-width: 768px) {
+        zoom: 80%;
+    }
+    
+    @media (max-width: 576px) {
+        zoom: 75%;
+    }
+`;
+
+const ValTable = styled.table`
+    border: 4px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 3vw;
+    color: white;
+    background-color: rgb(94, 102, 111, 0.75);
+    margin: 0 auto;
+    max-width: 80vw;    
+
+    @media (max-width: 576px) {
+        font-size: 2.5vw;
+        max-width: 90vw;
+    }
+`
 
 const ValTableLayout = ({
     filter,
@@ -33,21 +77,21 @@ const ValTableLayout = ({
 
     return (
         <> 
-        {showTitle && filteredItems.length !== 0 ? (
+        {showTitle && filteredItems.length !== 0 ?  (
             <div>
-                <h1 className={tableHeader}>{contentFlag.charAt(0).toUpperCase()+contentFlag.slice(1)}</h1>
+                <TableHead>{contentFlag.charAt(0).toUpperCase()+contentFlag.slice(1)}</TableHead>
             </div>
         ) : null}
         {/* If search returns no results, will not display table */}
         {filteredItems.length !== 0 ?  (
-            <div className={tableDiv}>
-                <table className={table}>
+            <TableCon fluid>
+                <ValTable>
                     <thead>
                         <tr>
                             <th aria-label='image'></th>
-                            {headers.map(column => (
-                                <th className={tableHead}>{column}</th>
-                            ))}
+                                {headers.map(column => (
+                                    <th className={tableHead}>{column}</th>
+                                ))}
                         </tr>
                     </thead>
                     <tbody>
@@ -116,8 +160,8 @@ const ValTableLayout = ({
                             );
                         })}
                     </tbody>
-                </table>
-            </div>
+                </ValTable>
+            </TableCon>
         ) : null}
         </>
     )
