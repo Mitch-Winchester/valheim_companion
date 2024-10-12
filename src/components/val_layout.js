@@ -79,11 +79,12 @@ const ValLayout = ({
     if (title === "Main") {
         if (isSubmodule) {
             backButText = "Back to Main Site";
+            navPath = "/";
         } else {
             showButton = false;
         }
     }
-        
+    console.log(navPath);   
     // Set initial filter & setFilter state
     const [filter, setFilter] = React.useState("");
 

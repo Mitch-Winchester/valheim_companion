@@ -95,7 +95,7 @@ const ValTableLayout = ({
           )
         : data.flatMap(node => node[contentFlag] // return all items if no filter
     );
-    console.log(filteredItems);
+    //console.log(filteredItems);
 
     const nonDetailCards = ['content', 'bait', 'crop', 'feed'];
     const usesItems = ['logging', 'mining'];
