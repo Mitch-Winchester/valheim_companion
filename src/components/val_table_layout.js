@@ -49,9 +49,9 @@ const ValTable = styled.table`
         }
     }
     @media (max-width: 576px) {
-        font-size: 2.5vw;
+        font-size: 2vw;
         th {
-            font-size: 4vw;
+            font-size: 1.75vw;
         }
     }
 `;
@@ -68,6 +68,11 @@ const QualList = styled.ul`
     list-style: none;
     text-align: left;
     padding: 0;
+`;
+const Strong = styled.strong`
+    @media (max-width: 576px) {
+        font-size: 1.75vw;
+    }
 `;
 
 const ValTableLayout = ({
@@ -204,7 +209,7 @@ const ValTableLayout = ({
                                         } else { // Handle non-object values
                                             return (
                                                 colIndex === 0 ? (
-                                                    <td key={colIndex}><strong>{item[column]}</strong></td>
+                                                    <td key={colIndex}><Strong>{item[column]}</Strong></td>
                                                 ) : (
                                                     <td key={colIndex}>{item[column]}</td>
                                                 )
