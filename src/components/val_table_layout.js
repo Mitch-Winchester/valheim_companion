@@ -30,25 +30,13 @@ const TableHead = styled.h1`
 `;
 const TableCon = styled(Container)`
     justify-content: center;
-    zoom: 85%;
-
-    @media (max-width: 1200px) {
-        zoom: 82%;
-    }
-    @media (max-width: 768px) {
-        zoom: 80%;
-    }
-    
-    @media (max-width: 576px) {
-        zoom: 75%;
-    }
 `;
 
 const ValTable = styled.table`
     border: 4px solid black;
     border-collapse: collapse;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1vw;
     color: white;
     background-color: rgb(94, 102, 111, 0.75);
     margin: 0 auto;
@@ -59,7 +47,7 @@ const ValTable = styled.table`
     }
 
     @media (max-width: 768px) {
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
     @media (max-width: 576px) {
         font-size: 2.5vw;
