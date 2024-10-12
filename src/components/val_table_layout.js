@@ -6,7 +6,7 @@ import {
     Col,
     Card,
     CardBody,
-    CardTitle,
+    CardHeader,
     CardText
 } from 'react-bootstrap'
 
@@ -63,6 +63,16 @@ const QualCard = styled(Card)`
     color: white;
     background-color: rgb(0, 0, 0, 0.3);
     width: fit-content;
+`;
+const QualBody = styled(CardBody)`
+    padding: .1rem .75rem;
+`;
+const QualHeader = styled(CardHeader)`
+    font-size: .9rem;
+    font-weight: bold;
+    padding-bottom: 0;
+    margin-bottom: .5rem;
+    border-bottom: 2px solid white;
 `;
 const QualList = styled.ul`
     list-style: none;
@@ -152,28 +162,40 @@ const ValTableLayout = ({
                                                                 {item[column].map((quality, qualIndex) => (
                                                                     <Col key={qualIndex}>
                                                                         <QualCard>
-                                                                            <CardBody>
-                                                                                <CardTitle>Level: {quality.Level}</CardTitle>
-                                                                                <CardText>
-                                                                                    Durability: {quality.Durability}
-                                                                                </CardText>
-                                                                                <strong>Recipe:</strong>
-                                                                                <QualList>
-                                                                                    {quality.Recipe?.map((ingredient, ingIndex) => (
-                                                                                        <li key={ingIndex}>
-                                                                                            {ingredient.Material}: {ingredient.Quantity}
-                                                                                        </li>
-                                                                                    ))}
-                                                                                </QualList>
-                                                                                <strong>Crafting Station:</strong>
-                                                                                <QualList>
-                                                                                    {quality.CraftingStation?.map((station, staIndex) => (
-                                                                                        <li key={staIndex}>
-                                                                                            {station.Station}: {station.Level}
-                                                                                        </li>
-                                                                                    ))}
-                                                                                </QualList>
-                                                                            </CardBody>
+                                                                            <QualBody>
+                                                                                <QualHeader>Level: {quality.Level}</QualHeader>
+                                                                                {quality.Durability ? (
+                                                                                    <>
+                                                                                    <CardText>
+                                                                                        <strong>Durability:</strong> {quality.Durability}
+                                                                                    </CardText>
+                                                                                    </>
+                                                                                ) : null}
+                                                                                {quality.Recipe ? (
+                                                                                    <>
+                                                                                    <strong>Recipe:</strong>
+                                                                                    <QualList>
+                                                                                        {quality.Recipe?.map((ingredient, ingIndex) => (
+                                                                                            <li key={ingIndex}>
+                                                                                                {ingredient.Material}: {ingredient.Quantity}
+                                                                                            </li>
+                                                                                        ))}
+                                                                                    </QualList>
+                                                                                    </>
+                                                                                ) : null}
+                                                                                {quality.CraftingStation ? (
+                                                                                    <>
+                                                                                    <strong>Crafting Station:</strong>
+                                                                                    <QualList style={{textAlign: 'center'}}>
+                                                                                        {quality.CraftingStation?.map((station, staIndex) => (
+                                                                                            <li key={staIndex}>
+                                                                                                {station.Station}: {station.Level}
+                                                                                            </li>
+                                                                                        ))}
+                                                                                    </QualList>
+                                                                                    </>
+                                                                                ) : null}
+                                                                            </QualBody>
                                                                         </QualCard>
                                                                     </Col>
                                                                 ))}
