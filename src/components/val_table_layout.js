@@ -9,13 +9,8 @@ import {
     CardTitle,
     CardText
 } from 'react-bootstrap'
-import {
-    tableHead,
-    tableList,
-    tableRow
-} from './val_layout.module.css'
 
-const TableHead = styled.h1`
+const TableTitle = styled.h1`
     display: flex;
     justify-content: center center;
     color: rgb(255, 98, 0);
@@ -44,13 +39,20 @@ const ValTable = styled.table`
 
     th {
         text-align: center;
+        font-size: 2vw;
     }
 
     @media (max-width: 768px) {
         font-size: 1.5vw;
+        th {
+            font-size: 3vw;
+        }
     }
     @media (max-width: 576px) {
         font-size: 2.5vw;
+        th {
+            font-size: 4vw;
+        }
     }
 `;
 const QualCon = styled(Container)`
@@ -97,7 +99,7 @@ const ValTableLayout = ({
         <> 
         {showTitle && filteredItems.length !== 0 ?  (
             <div>
-                <TableHead>{contentFlag.charAt(0).toUpperCase()+contentFlag.slice(1)}</TableHead>
+                <TableTitle>{contentFlag.charAt(0).toUpperCase()+contentFlag.slice(1)}</TableTitle>
             </div>
         ) : null}
         {/* If search returns no results, will not display table */}
@@ -109,7 +111,7 @@ const ValTableLayout = ({
                             <th aria-label='image'></th>
                             {nonDetailCards.includes(contentFlag) ? (
                                 headers.map(column => (
-                                    <th className={tableHead}>{column}</th>
+                                    <th>{column}</th>
                                 ))
                             ) : (usesItems.includes(contentFlag) ? (
                             <>
@@ -130,7 +132,7 @@ const ValTableLayout = ({
                             let imagePath = `${imgBasePath}/${item[firstKey].replaceAll(' ', '_')}.png`;
                         
                             return (
-                                <tr key={index} className={tableRow}>
+                                <tr key={index}>
                                     <td>
                                         <img src={imagePath} alt={item[0]}/>
                                     </td>
@@ -176,27 +178,37 @@ const ValTableLayout = ({
                                                 );
                                             } else if (column === 'Recipe') { // Handle Recipes Object
                                                 return (
-                                                    <td key={colIndex} className={tableList}>
-                                                        {item[column].map((ingredient, ingIndex) => (
-                                                            <tr key={ingIndex}>
-                                                                <td>{ingredient.Material}: {ingredient.Quantity}</td>
-                                                            </tr>
-                                                        ))}
+                                                    <td>
+                                                        <QualList style={{paddingLeft: '1rem'}}>
+                                                            {item[column].map((ingredient, ingIndex) => (
+                                                                <li key={ingIndex}>
+                                                                    {ingredient.Material}: {ingredient.Quantity}
+                                                                </li>
+                                                            ))}
+                                                        </QualList>
                                                     </td>
                                                 );
                                             } else { // Handle array values
                                                 return (
-                                                    <td key={colIndex} className={tableList}>
-                                                        {item[column].map((type, typeIndex) => (
-                                                            <tr key={typeIndex}>
-                                                                <td>{type}</td>
-                                                            </tr>
-                                                        ))}
+                                                    <td>
+                                                        <QualList>
+                                                            {item[column].map((type, typeIndex) => (
+                                                                <li key={typeIndex}>
+                                                                    {type}
+                                                                </li>
+                                                            ))}
+                                                        </QualList>
                                                     </td>
-                                                )
+                                                );
                                             }
                                         } else { // Handle non-object values
-                                            return <td key={colIndex}>{item[column]}</td>;
+                                            return (
+                                                colIndex === 0 ? (
+                                                    <td key={colIndex}><strong>{item[column]}</strong></td>
+                                                ) : (
+                                                    <td key={colIndex}>{item[column]}</td>
+                                                )
+                                            );
                                         }
                                     })}
                                 </tr>
