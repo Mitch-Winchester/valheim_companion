@@ -1,11 +1,18 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import { Container } from 'react-bootstrap'
+import { 
+    Container,
+    Row,
+    Col,
+    Card,
+    CardBody,
+    CardTitle,
+    CardText
+} from 'react-bootstrap'
 import {
     tableHead,
     tableList,
-    tableRow,
-    qualityTableData
+    tableRow
 } from './val_layout.module.css'
 
 const TableHead = styled.h1`
@@ -41,17 +48,37 @@ const ValTable = styled.table`
     border: 4px solid black;
     border-collapse: collapse;
     text-align: center;
-    font-size: 3vw;
+    font-size: 1.5vw;
     color: white;
     background-color: rgb(94, 102, 111, 0.75);
     margin: 0 auto;
-    max-width: 80vw;    
+    max-width: 90vw;
 
+    th {
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2vw;
+    }
     @media (max-width: 576px) {
         font-size: 2.5vw;
-        max-width: 90vw;
     }
-`
+`;
+const QualCon = styled(Container)`
+    margin-bottom: 1rem;
+`;
+const QualCard = styled(Card)`
+    margin-bottom: 1rem;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.3);
+    width: fit-content;
+`;
+const QualList = styled.ul`
+    list-style: none;
+    text-align: left;
+    padding: 0;
+`;
 
 const ValTableLayout = ({
     filter,
@@ -75,6 +102,9 @@ const ValTableLayout = ({
     );
     console.log(filteredItems);
 
+    const nonDetailCards = ['content', 'bait', 'crop', 'feed'];
+    const usesItems = ['logging', 'mining'];
+
     return (
         <> 
         {showTitle && filteredItems.length !== 0 ?  (
@@ -89,9 +119,22 @@ const ValTableLayout = ({
                     <thead>
                         <tr>
                             <th aria-label='image'></th>
-                                {headers.map(column => (
+                            {nonDetailCards.includes(contentFlag) ? (
+                                headers.map(column => (
                                     <th className={tableHead}>{column}</th>
-                                ))}
+                                ))
+                            ) : (usesItems.includes(contentFlag) ? (
+                            <>
+                                <th>Item</th>
+                                <th>Uses</th>
+                                <th>Details</th>
+                            </>
+                            ) : (
+                            <>
+                                <th>Item</th>
+                                <th>Details</th>
+                            </>
+                            ))}
                         </tr>
                     </thead>
                     <tbody>
@@ -108,27 +151,39 @@ const ValTableLayout = ({
                                             // Handle Qualities Object
                                             if (column === 'Qualities') {
                                                 return (
-                                                    <td key={colIndex} className={tableList} colSpan={4}>
-                                                        {item[column].map((quality, qualIndex) => (
-                                                            <tr key={qualIndex} className={tableRow}>
-                                                                <td className={qualityTableData}>{quality.Level}</td>
-                                                                <td className={qualityTableData}>{quality.Durability}</td>
-                                                                <td className={qualityTableData}>
-                                                                    {quality.Recipe?.map((ingredient, ingIndex) => (
-                                                                        <div key={ingIndex}>
-                                                                            {ingredient.Material}: {ingredient.Quantity}
-                                                                        </div>
-                                                                    ))}
-                                                                </td>
-                                                                <td className={qualityTableData}>
-                                                                    {quality.CraftingStation?.map((ingredient, ingIndex) => (
-                                                                        <div key={ingIndex}>
-                                                                            {ingredient.Station}: {ingredient.Level}
-                                                                        </div>
-                                                                    ))}
-                                                                </td>
-                                                            </tr>
-                                                        ))}
+                                                    <td>
+                                                        <QualCon>
+                                                            <Row>
+                                                                {item[column].map((quality, qualIndex) => (
+                                                                    <Col key={qualIndex}>
+                                                                        <QualCard>
+                                                                            <CardBody>
+                                                                                <CardTitle>Level: {quality.Level}</CardTitle>
+                                                                                <CardText>
+                                                                                    Durability: {quality.Durability}
+                                                                                </CardText>
+                                                                                <strong>Recipe:</strong>
+                                                                                <QualList>
+                                                                                    {quality.Recipe?.map((ingredient, ingIndex) => (
+                                                                                        <li key={ingIndex}>
+                                                                                            {ingredient.Material}: {ingredient.Quantity}
+                                                                                        </li>
+                                                                                    ))}
+                                                                                </QualList>
+                                                                                <strong>Crafting Station:</strong>
+                                                                                <QualList>
+                                                                                    {quality.CraftingStation?.map((station, staIndex) => (
+                                                                                        <li key={staIndex}>
+                                                                                            {station.Station}: {station.Level}
+                                                                                        </li>
+                                                                                    ))}
+                                                                                </QualList>
+                                                                            </CardBody>
+                                                                        </QualCard>
+                                                                    </Col>
+                                                                ))}
+                                                            </Row>
+                                                        </QualCon>
                                                     </td>
                                                 );
                                             } else if (column === 'Recipe') { // Handle Recipes Object
