@@ -3,10 +3,6 @@ import ValButton from './val_button'
 import styled from 'styled-components'
 import { Container } from 'react-bootstrap'
 import { useLocation } from '@reach/router'
-import {
-    header,
-    mainHeader
-} from './val_layout.module.css'
 
 // styled-components
 const ValBody = styled(Container)`
@@ -16,7 +12,8 @@ const ValBody = styled(Container)`
     background-attachment: fixed;
     min-height: 100vh;
     overflow-x: hidden;
-    overflow-y: auto ;
+    overflow-y: auto;
+    padding: 2rem 0;
 `;
 const BackButCon = styled(Container)`
     display: flex;
@@ -36,6 +33,29 @@ const SearchInput = styled.input`
         font-size: 3vw;
     }
 `;
+const MainHead = styled(Container)`
+  background-image: url("/val_images/valheim_logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin: 0 auto 10vh;
+  width: 80vw;
+  height: 10rem;
+`;
+const PageHead = styled.header`
+  display: flex;
+  justify-content: center center;
+  color: rgb(255, 98, 0);
+  text-shadow: 0 0.25vh lightgrey;
+  font-size: 5vw;
+  font-weight: 700;
+  margin: 3rem auto;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-size: contain;
+  background-color: rgb(94, 102, 111, 0.75);
+`;
 
 const ValLayout = ({
     background,
@@ -47,22 +67,20 @@ const ValLayout = ({
     const location = useLocation();
 
     // Determine if val_comp is running as submodule or not
-    const isStandalone = location.pathname.startsWith("/val_comp");
+    const isSubmodule = location.pathname.startsWith("/val_comp");
 
     // Set default values for back button logic
-    let head = header;
-    let navPath = isStandalone ? "/val_comp/src/pages" : "/";
+    let navPath = isSubmodule ? "/val_comp/src/pages" : "/";
     let backButText = "Back to Home Page";
     let showButton = true;
 
+    // determine if val_comp home page needs a back button
+    // and set text
     if (title === "Main") {
-        head = mainHeader;
-        title = '';
-        if (navPath === "/") {
-            showButton = false;
-        } else {
-            navPath = "/";
+        if (isSubmodule) {
             backButText = "Back to Main Site";
+        } else {
+            showButton = false;
         }
     }
         
@@ -80,7 +98,11 @@ const ValLayout = ({
         <ValBody fluid
             style={{backgroundImage: background}}
         >
-            <header className={head}>{title}</header>
+            {title === "Main" ? (
+                <MainHead/>
+            ) : (
+                <PageHead>{title}</PageHead>
+            )}
             {showSearch && setFilter && (
                 <SearchBar>
                     <SearchInput 
@@ -103,7 +125,6 @@ const ValLayout = ({
                     />
                 </BackButCon>
             )}
-            <div style={{margin: "2rem"}}></div>
         </ValBody>
     )
 }
