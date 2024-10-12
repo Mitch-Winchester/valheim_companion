@@ -1,0 +1,197 @@
+{
+    "title": "Armor",
+    "capes": [
+        {
+            "Item": "Cape of Odin",
+            "Effects": null,
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 1500,
+                    "Armor": 1,
+                    "Recipe": [
+                        { "Material": "Leather scraps", "Quantity": 10 },
+                        { "Material": "Coal", "Quantity": 4 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 1 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 1550,
+                    "Armor": 2,
+                    "Recipe": [
+                        { "Material": "Leather scraps", "Quantity": 5 },
+                        { "Material": "Coal", "Quantity": 2 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 2 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 1600,
+                    "Armor": 3,
+                    "Recipe": [
+                        { "Material": "Leather scraps", "Quantity": 10 },
+                        { "Material": "Coal", "Quantity": 4 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 1,
+                    "Durability": 1650,
+                    "Armor": 4,
+                    "Recipe": [
+                        { "Material": "Leather scraps", "Quantity": 15 },
+                        { "Material": "Coal", "Quantity": 6 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 4 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Deer hide cape",
+            "Effects": null,
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 400,
+                    "Armor": 1,
+                    "Recipe": [
+                        { "Material": "Deer hide", "Quantity": 4 },
+                        { "Material": "Bone fragments", "Quantity": 5 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 2 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 500,
+                    "Armor": 2,
+                    "Recipe": [
+                        { "Material": "Deer hide", "Quantity": 4 },
+                        { "Material": "Bone fragments", "Quantity": 5 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 600,
+                    "Armor": 3,
+                    "Recipe": [
+                        { "Material": "Deer hide", "Quantity": 8 },
+                        { "Material": "Bone fragments", "Quantity": 10 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 4 }
+                    ]
+                },
+                {
+                    "Level": 4,
+                    "Durability": 700,
+                    "Armor": 4,
+                    "Recipe": [
+                        { "Material": "Deer hide", "Quantity": 12 },
+                        { "Material": "Bone fragments", "Quantity": 15 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 5 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Toll hide cape",
+            "Effects": ["+15 Sneak (Skill)"],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 500,
+                    "Armor": 1,
+                    "Recipe": [
+                        { "Material": "Troll hide", "Quantity": 10 },
+                        { "Material": "Bone fragments", "Quantity": 10 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 2 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 550,
+                    "Armor": 2,
+                    "Recipe": [
+                        { "Material": "Troll hide", "Quantity": 5 },
+                        { "Material": "Bone fragments", "Quantity": 5 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 600,
+                    "Armor": 3,
+                    "Recipe": [
+                        { "Material": "Troll hide", "Quantity": 10 },
+                        { "Material": "Bone fragments", "Quantity": 10 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 4 }
+                    ]
+                },
+                {
+                    "Level": 4,
+                    "Durability": 650,
+                    "Armor": 4,
+                    "Recipe": [
+                        { "Material": "Troll hide", "Quantity": 15 },
+                        { "Material": "Bone fragments", "Quantity": 15 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 5 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Wolf fur cape",
+            "Effects": ["Resistant(0.5x) vs Frost"],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": null,
+                    "Armor": 1,
+                    "Recipe": [],
+                    "CraftingStation": []
+                }
+            ]
+        }
+    ],
+    "helmets": [
+        {
+            "Item": null,
+            "Effects": null,
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": null,
+                    "Armor": 1,
+                    "Recipe": [],
+                    "CraftingStation": []
+                }
+            ]
+        }
+    ],
+    "chest": [],
+    "leg": []
+}
