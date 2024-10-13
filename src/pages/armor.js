@@ -6,13 +6,22 @@ import ValTableLayout from '../components/val_table_layout'
 
 // create armor page
 const ValArmor = ({ data }) => {
+    // filterFunction to pass to tableLayout
+    const armorFilter = (armor, filter) => {
+        const item = armor.Item.toLowerCase();
+
+        return (
+            item.includes(filter)
+        );
+    };
+
     return (
         <ValLayout
             background = {`url("/val_images/backgrounds/ebrithil_base.png")`}
             title = "Armor Recipes"
-            showSearch = {false}
         >
             <ValTableLayout
+                filterFunction = {armorFilter}
                 data = {data.allDataJson.nodes}
                 headers = {["Item", "Effects", "Qualities", "Durability", "Recipe", "Crafting Station"]}
                 imgBasePath = {"/val_images/armor"}
@@ -22,6 +31,7 @@ const ValArmor = ({ data }) => {
             />
             <div style={{marginBottom: '2%'}}></div>
             <ValTableLayout
+                filterFunction = {armorFilter}
                 data = {data.allDataJson.nodes}
                 headers = {["Item", "Effects", "Qualities", "Durability", "Recipe", "Crafting Station"]}
                 imgBasePath = {"/val_images/armor"}
@@ -32,6 +42,7 @@ const ValArmor = ({ data }) => {
             />
             <div style={{marginBottom: '2%'}}></div>
             <ValTableLayout
+                filterFunction = {armorFilter}
                 data = {data.allDataJson.nodes}
                 headers = {["Item", "Effects", "Qualities", "Durability", "Recipe", "Crafting Station"]}
                 imgBasePath = {"/val_images/armor"}
@@ -42,6 +53,7 @@ const ValArmor = ({ data }) => {
             />
             <div style={{marginBottom: '2%'}}></div>
             <ValTableLayout
+                filterFunction = {armorFilter}
                 data = {data.allDataJson.nodes}
                 headers = {["Item", "Effects", "Qualities", "Durability", "Recipe", "Crafting Station"]}
                 imgBasePath = {"/val_images/armor"}
