@@ -42,7 +42,7 @@
                     ]
                 },
                 {
-                    "Level": 1,
+                    "Level": 4,
                     "Durability": 1650,
                     "Armor": 4,
                     "Recipe": [
@@ -2095,15 +2095,30 @@
     ],
     "leg": [
         {
-            "Item": "null",
+            "Item": "Rag pants",
             "Effects": null,
             "Qualities": [
                 {
                     "Level": 1,
-                    "Durability": null,
+                    "Durability": 200,
                     "Armor": 1,
-                    "Recipe": [],
-                    "CraftingStation": []
+                    "Recipe": [
+                        { "Material": "Leather scraps", "Quantity": 5 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 1 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 250,
+                    "Armor": 2,
+                    "Recipe": [
+                        { "Material": "Leather scraps", "Quantity": 5 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 2 }
+                    ]
                 }
             ]
         }

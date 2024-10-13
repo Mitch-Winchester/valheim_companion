@@ -178,6 +178,13 @@ const ValTableLayout = ({
                                                                                     </CardText>
                                                                                     </>
                                                                                 ) : null}
+                                                                                {quality.Armor ? (
+                                                                                    <>
+                                                                                    <CardText>
+                                                                                        <strong>Armor:</strong> {quality.Armor}
+                                                                                    </CardText>
+                                                                                    </>
+                                                                                ) : null}
                                                                                 {quality.Recipe ? (
                                                                                     <>
                                                                                     <strong>Recipe:</strong>
