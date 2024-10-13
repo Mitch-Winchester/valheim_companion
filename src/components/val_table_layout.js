@@ -57,6 +57,7 @@ const ValTable = styled.table`
     }
 `;
 const QualCon = styled(Container)`
+    padding-left: 0;
     margin-bottom: 1rem;
 `;
 const QualCol = styled(Col)`
@@ -85,6 +86,15 @@ const QualList = styled.ul`
     list-style: none;
     text-align: left;
     padding: 0;
+`;
+const EffectList = styled.ul`
+    list-style: none;
+    text-align: left;
+    padding: 0;
+
+    @media (max-width: 576px) {
+        max-width: 6rem;
+    }
 `;
 const Strong = styled.strong`
     @media (max-width: 576px) {
@@ -242,19 +252,19 @@ const ValTableLayout = ({
                                             } else { // Handle array values
                                                 return (
                                                     <td>
-                                                        <QualList>
+                                                        <EffectList>
                                                             {item[column].map((type, typeIndex) => (
                                                                 <li key={typeIndex}>
                                                                     {type}
                                                                 </li>
                                                             ))}
-                                                        </QualList>
+                                                        </EffectList>
                                                     </td>
                                                 );
                                             }
                                         } else { // Handle non-object values
                                             return (
-                                                colIndex === 0 ? (
+                                                colIndex === 0 ? ( // gives title column the strong tag
                                                     <td key={colIndex}><Strong>{item[column]}</Strong></td>
                                                 ) : (
                                                     <td key={colIndex}>{item[column]}</td>
