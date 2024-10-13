@@ -29,6 +29,16 @@ const ValArmor = ({ data }) => {
                 contentNames = {["Item", "Effects", "Qualities", "Durability", "Recipe", "CraftingStation"]}
                 showTitle = {true}
             />
+            <div style={{marginBottom: '2%'}}></div>
+            <ValTableLayout
+                data = {data.allDataJson.nodes}
+                headers = {["Item", "Effects", "Qualities", "Durability", "Recipe", "Crafting Station"]}
+                imgBasePath = {"/val_images/armor"}
+                showSearch = {false}
+                contentFlag = 'chest'
+                contentNames = {["Item", "Effects", "Qualities", "Durability", "Recipe", "CraftingStation"]}
+                showTitle = {true}
+            />
         </ValLayout>
     )
 }
@@ -55,6 +65,23 @@ export const query = graphql`
                     }
                 }
                 helmets {
+                    Item
+                    Effects
+                    Qualities {
+                        Level
+                        Durability
+                        Armor
+                        Recipe {
+                            Material
+                            Quantity
+                        }
+                        CraftingStation {
+                            Station
+                            Level
+                        }
+                    }
+                }
+                chest {
                     Item
                     Effects
                     Qualities {
