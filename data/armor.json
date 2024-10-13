@@ -110,8 +110,8 @@
             ]
         },
         {
-            "Item": "Toll hide cape",
-            "Effects": ["+15 Sneak (Skill)"],
+            "Item": "Troll hide cape",
+            "Effects": ["Troll Set bonus: +15 Sneak (Skill)"],
             "Qualities": [
                 {
                     "Level": 1,
@@ -169,17 +169,1159 @@
             "Qualities": [
                 {
                     "Level": 1,
-                    "Durability": null,
+                    "Durability": 1000,
                     "Armor": 1,
-                    "Recipe": [],
-                    "CraftingStation": []
+                    "Recipe": [
+                        { "Material": "Wolf pelt", "Quantity": 6 },
+                        { "Material": "Silver", "Quantity": 4 }, 
+                        { "Material": "Wolf trophy", "Quantity": 1 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Workbench", "Level": 2 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 1050,
+                    "Armor": 2,
+                    "Recipe": [
+                        { "Material": "Wolf pelt", "Quantity": 4 },
+                        { "Material": "Silver", "Quantity": 2 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Workbench", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 1100,
+                    "Armor": 3,
+                    "Recipe": [
+                        { "Material": "Wolf pelt", "Quantity": 8 },
+                        { "Material": "Silver", "Quantity": 4 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Workbench", "Level": 4 }
+                    ]
+                },
+                {
+                    "Level": 4,
+                    "Durability": 1150,
+                    "Armor": 4,
+                    "Recipe": [
+                        { "Material": "Wolf pelt", "Quantity": 12 },
+                        { "Material": "Silver", "Quantity": 6 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Workbench", "Level": 5 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Lox cape",
+            "Effects": ["Resistant(0.5x) vs Frost"],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 1200,
+                    "Armor": 1,
+                    "Recipe": [
+                        { "Material": "Lox pelt", "Quantity": 6 },
+                        { "Material": "Silver", "Quantity": 2 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Workbench", "Level": 2 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 1250,
+                    "Armor": 2,
+                    "Recipe": [
+                        { "Material": "Lox pelt", "Quantity": 2 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Workbench", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 1300,
+                    "Armor": 3,
+                    "Recipe": [
+                        { "Material": "Lox pelt", "Quantity": 4 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Workbench", "Level": 4 }
+                    ]
+                },
+                {
+                    "Level": 4,
+                    "Durability": 1350,
+                    "Armor": 4,
+                    "Recipe": [
+                        { "Material": "Lox pelt", "Quantity": 6 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Workbench", "Level": 5 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Linen cape",
+            "Effects": null,
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 1500,
+                    "Armor": 1,
+                    "Recipe": [
+                        { "Material": "Linen thread", "Quantity": 20 },
+                        { "Material": "Silver", "Quantity": 1 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Workbench", "Level": 2 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 1550,
+                    "Armor": 2,
+                    "Recipe": [
+                        { "Material": "Linen thread", "Quantity": 4 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Workbench", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 1600,
+                    "Armor": 3,
+                    "Recipe": [
+                        { "Material": "Linen thread", "Quantity": 8 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Workbench", "Level": 4 }
+                    ]
+                },
+                {
+                    "Level": 4,
+                    "Durability": 1650,
+                    "Armor": 4,
+                    "Recipe": [
+                        { "Material": "Linen thread", "Quantity": 12 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Workbench", "Level": 5 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Feather cape",
+            "Effects": [
+                "Resistant(0.5x) vs Frost",
+                "Very Weak(2x) vs Fire",
+                "Fall damage: -100%",
+                "Limit fall speed: 5 m/s"
+            ],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 1200,
+                    "Armor": 1,
+                    "Recipe": [
+                        { "Material": "Feathers", "Quantity": 10 },
+                        { "Material": "Scale hide", "Quantity": 5 },
+                        { "Material": "Refined eitr", "Quantity": 20 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Galdr table", "Level": 1 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 1250,
+                    "Armor": 2,
+                    "Recipe": [
+                        { "Material": "Feathers", "Quantity": 2 },
+                        { "Material": "Scale hide", "Quantity": 5 },
+                        { "Material": "Refined eitr", "Quantity": 3 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Galdr table", "Level": 2 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 1300,
+                    "Armor": 3,
+                    "Recipe": [
+                        { "Material": "Feathers", "Quantity": 4 },
+                        { "Material": "Scale hide", "Quantity": 10 },
+                        { "Material": "Refined eitr", "Quantity": 6 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Galdr table", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 4,
+                    "Durability": 1350,
+                    "Armor": 4,
+                    "Recipe": [
+                        { "Material": "Feathers", "Quantity": 6 },
+                        { "Material": "Scale hide", "Quantity": 15 },
+                        { "Material": "Refined eitr", "Quantity": 9 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Galdr table", "Level": 4 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Asksvin cloak",
+            "Effects": [
+                "Resistant(0.5x) vs Frost",
+                "Wind Run",
+                "Dodge stamina usage: -15%"
+            ],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 1500,
+                    "Armor": 1,
+                    "Recipe": [
+                        { "Material": "Asksvin hide", "Quantity": 6 },
+                        { "Material": "Morgan sinew", "Quantity": 2 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Galdr table", "Level": 2 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 1550,
+                    "Armor": 2,
+                    "Recipe": [
+                        { "Material": "Asksvin hide", "Quantity": 2 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Galdr table", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 1600,
+                    "Armor": 3,
+                    "Recipe": [
+                        { "Material": "Asksvin hide", "Quantity": 4 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Galdr table", "Level": 4 }
+                    ]
+                },
+                {
+                    "Level": 4,
+                    "Durability": 1650,
+                    "Armor": 4,
+                    "Recipe": [
+                        { "Material": "Asksvin hide", "Quantity": 6 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Galdr table", "Level": 5 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Ashen cape",
+            "Effects": [
+                "Resistant(0.5x) vs Frost",
+                "Attack/Stamina Usage: -10%",
+                "Block Stamina Usage: -20%"
+            ],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 1200,
+                    "Armor": 12,
+                    "Recipe": [
+                        { "Material": "Asksvin hide", "Quantity": 6 },
+                        { "Material": "Morgan sinew", "Quantity": 2 },
+                        { "Material": "Flametal", "Quantity": 5 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Black Forge", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 1250,
+                    "Armor": 14,
+                    "Recipe": [
+                        { "Material": "Asksvin hide", "Quantity": 2 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Black Forge", "Level": 4 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 1300,
+                    "Armor": 16,
+                    "Recipe": [
+                        { "Material": "Asksvin hide", "Quantity": 4 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Black Forge", "Level": 5 }
+                    ]
+                },
+                {
+                    "Level": 4,
+                    "Durability": 1350,
+                    "Armor": 18,
+                    "Recipe": [
+                        { "Material": "Asksvin hide", "Quantity": 6 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Black Forge", "Level": 6 }
+                    ]
                 }
             ]
         }
     ],
     "helmets": [
         {
-            "Item": null,
+            "Item": "Midsummer Crown",
+            "Effects": null,
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": null,
+                    "Armor": 1,
+                    "Recipe": [
+                        { "Material": "Dandelion", "Quantity": 10 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 1 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Yule hat",
+            "Effects": null,
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": null,
+                    "Armor": 1,
+                    "Recipe": [
+                        { "Material": "Coins", "Quantity": 100 }
+                    ],
+                    "CraftingStation": null
+                }
+            ]
+        },
+        {
+            "Item": "Dverger circlet",
+            "Effects": ["Cone shaped light source"],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": null,
+                    "Armor": 2,
+                    "Recipe": [
+                        { "Material": "Coins", "Quantity": 620 }
+                    ],
+                    "CraftingStation": null
+                }
+            ]
+        },
+        {
+            "Item": "Hood of Odin",
+            "Effects": null,
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 300,
+                    "Armor": 1,
+                    "Recipe": [
+                        { "Material": "Leather scraps", "Quantity": 10 },
+                        { "Material": "Coal", "Quantity": 4 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 1 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 400,
+                    "Armor": 2,
+                    "Recipe": [
+                        { "Material": "Leather scraps", "Quantity": 5 },
+                        { "Material": "Coal", "Quantity": 2 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 2 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 500,
+                    "Armor": 3,
+                    "Recipe": [
+                        { "Material": "Leather scraps", "Quantity": 10 },
+                        { "Material": "Coal", "Quantity": 4 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 4,
+                    "Durability": 600,
+                    "Armor": 4,
+                    "Recipe": [
+                        { "Material": "Leather scraps", "Quantity": 15 },
+                        { "Material": "Coal", "Quantity": 6 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 4 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Leather helmet",
+            "Effects": null,
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 400,
+                    "Armor": 2,
+                    "Recipe": [
+                        { "Material": "Deer hide", "Quantity": 6 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 2 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 500,
+                    "Armor": 4,
+                    "Recipe": [
+                        { "Material": "Deer hide", "Quantity": 6 },
+                        { "Material": "Bone fragments", "Quantity": 5 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 600,
+                    "Armor": 6,
+                    "Recipe": [
+                        { "Material": "Deer hide", "Quantity": 12 },
+                        { "Material": "Bone fragments", "Quantity": 10 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 4 }
+                    ]
+                },
+                {
+                    "Level": 4,
+                    "Durability": 700,
+                    "Armor": 8,
+                    "Recipe": [
+                        { "Material": "Deer hide", "Quantity": 18 },
+                        { "Material": "Bone fragments", "Quantity": 15 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 5 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Troll leather helmet",
+            "Effects": ["Troll Set bonus: +15 Sneak (Skill)"],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 500,
+                    "Armor": 6,
+                    "Recipe": [
+                        { "Material": "Troll hide", "Quantity": 5 },
+                        { "Material": "Bone fragments", "Quantity": 3 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 2 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 700,
+                    "Armor": 8,
+                    "Recipe": [
+                        { "Material": "Troll hide", "Quantity": 2 },
+                        { "Material": "Bone fragments", "Quantity": 1 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 900,
+                    "Armor": 10,
+                    "Recipe": [
+                        { "Material": "Troll hide", "Quantity": 4 },
+                        { "Material": "Bone fragments", "Quantity": 2 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 4 }
+                    ]
+                },
+                {
+                    "Level": 4,
+                    "Durability": 1100,
+                    "Armor": 12,
+                    "Recipe": [
+                        { "Material": "Troll hide", "Quantity": 6 },
+                        { "Material": "Bone fragments", "Quantity": 3 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 5 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Bronze helmet",
+            "Effects": null,
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 1000,
+                    "Armor": 8,
+                    "Recipe": [
+                        { "Material": "Bronze", "Quantity": 5 },
+                        { "Material": "Deer hide", "Quantity": 2 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Forge", "Level": 1 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 1200,
+                    "Armor": 10,
+                    "Recipe": [
+                        { "Material": "Bronze", "Quantity": 3 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Forge", "Level": 2 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 1400,
+                    "Armor": 12,
+                    "Recipe": [
+                        { "Material": "Bronze", "Quantity": 6 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Forge", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 4,
+                    "Durability": 1600,
+                    "Armor": 14,
+                    "Recipe": [
+                        { "Material": "Bronze", "Quantity": 9 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Forge", "Level": 4 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Root mask",
+            "Effects": [
+                "Resistant(0.5x) vs Poison",
+                "Weak(1.5x) vs Fire",
+                "Root Set bonus: +15 Bows (Skill)"
+            ],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 800,
+                    "Armor": 8,
+                    "Recipe": [
+                        { "Material": "Root", "Quantity": 10 },
+                        { "Material": "Ancient bark", "Quantity": 10 },
+                        { "Material": "Leather scraps", "Quantity": 4 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 2 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 900,
+                    "Armor": 10,
+                    "Recipe": [
+                        { "Material": "Root", "Quantity": 2 },
+                        { "Material": "Ancient bark", "Quantity": 5 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 1000,
+                    "Armor": 12,
+                    "Recipe": [
+                        { "Material": "Root", "Quantity": 4 },
+                        { "Material": "Ancient bark", "Quantity": 10 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 4 }
+                    ]
+                },
+                {
+                    "Level": 4,
+                    "Durability": 1100,
+                    "Armor": 14,
+                    "Recipe": [
+                        { "Material": "Root", "Quantity": 6 },
+                        { "Material": "Ancient bark", "Quantity": 15 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 5 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Iron helmet",
+            "Effects": null,
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 1200,
+                    "Armor": 14,
+                    "Recipe": [
+                        { "Material": "Iron", "Quantity": 20 },
+                        { "Material": "Deer hide", "Quantity": 2 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Forge", "Level": 1 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 1400,
+                    "Armor": 16,
+                    "Recipe": [
+                        { "Material": "Iron", "Quantity": 5 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Forge", "Level": 2 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 1600,
+                    "Armor": 18,
+                    "Recipe": [
+                        { "Material": "Iron", "Quantity": 10 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Forge", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 4,
+                    "Durability": 1800,
+                    "Armor": 20,
+                    "Recipe": [
+                        { "Material": "Iron", "Quantity": 15 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Forge", "Level": 4 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Fenris hood",
+            "Effects": [
+                "+3% Movement speed",
+                "Fenris Set bonus: +15 Fists (Skill)",
+                "Resistant(0.5x) vs Fire"
+            ],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 1000,
+                    "Armor": 10,
+                    "Recipe": [
+                        { "Material": "Fenris hair", "Quantity": 20 },
+                        { "Material": "Wolf pelt", "Quantity": 2 },
+                        { "Material": "Cultist trophy", "Quantity": 1 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 2 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 1200,
+                    "Armor": 12,
+                    "Recipe": [
+                        { "Material": "Fenris hair", "Quantity": 5 },
+                        { "Material": "Wolf pelt", "Quantity": 4 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 1400,
+                    "Armor": 14,
+                    "Recipe": [
+                        { "Material": "Fenris hair", "Quantity": 10 },
+                        { "Material": "Wolf pelt", "Quantity": 8 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 4 }
+                    ]
+                },
+                {
+                    "Level": 4,
+                    "Durability": 1600,
+                    "Armor": 16,
+                    "Recipe": [
+                        { "Material": "Fenris hair", "Quantity": 15 },
+                        { "Material": "Wolf pelt", "Quantity": 12 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 5 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Drake helmet",
+            "Effects": null,
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 1000,
+                    "Armor": 20,
+                    "Recipe": [
+                        { "Material": "Silver", "Quantity": 20 },
+                        { "Material": "Wolf pelt", "Quantity": 2 },
+                        { "Material": "Drake trophy", "Quantity": 2 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Forge", "Level": 1 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 1200,
+                    "Armor": 22,
+                    "Recipe": [
+                        { "Material": "Silver", "Quantity": 5 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Forge", "Level": 2 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 1400,
+                    "Armor": 24,
+                    "Recipe": [
+                        { "Material": "Silver", "Quantity": 10 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Forge", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 4,
+                    "Durability": 1600,
+                    "Armor": 26,
+                    "Recipe": [
+                        { "Material": "Silver", "Quantity": 15 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Forge", "Level": 4 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Padded helmet",
+            "Effects": null,
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 1000,
+                    "Armor": 26,
+                    "Recipe": [
+                        { "Material": "Iron", "Quantity": 10 },
+                        { "Material": "Linen thread", "Quantity": 15 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Forge", "Level": 1 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 1200,
+                    "Armor": 28,
+                    "Recipe": [
+                        { "Material": "Iron", "Quantity": 5 },
+                        { "Material": "Linen thread", "Quantity": 10 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Forge", "Level": 2 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 1400,
+                    "Armor": 30,
+                    "Recipe": [
+                        { "Material": "Iron", "Quantity": 10 },
+                        { "Material": "Linen thread", "Quantity": 20 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Forge", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 4,
+                    "Durability": 1600,
+                    "Armor": 32,
+                    "Recipe": [
+                        { "Material": "Iron", "Quantity": 15 },
+                        { "Material": "Linen thread", "Quantity": 30 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Forge", "Level": 4 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Eitr-weave hood",
+            "Effects": ["+20% Eitr regen"],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 1000,
+                    "Armor": 16,
+                    "Recipe": [
+                        { "Material": "Iron", "Quantity": 2 },
+                        { "Material": "Linen thread", "Quantity": 16 },
+                        { "Material": "Refined eitr", "Quantity": 15 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Galdr table", "Level": 1 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 1200,
+                    "Armor": 18,
+                    "Recipe": [
+                        { "Material": "Linen thread", "Quantity": 8 },
+                        { "Material": "Refined eitr", "Quantity": 5 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Galdr table", "Level": 2 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 1400,
+                    "Armor": 20,
+                    "Recipe": [
+                        { "Material": "Linen thread", "Quantity": 16 },
+                        { "Material": "Refined eitr", "Quantity": 10 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Galdr table", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 4,
+                    "Durability": 1600,
+                    "Armor": 22,
+                    "Recipe": [
+                        { "Material": "Linen thread", "Quantity": 24 },
+                        { "Material": "Refined eitr", "Quantity": 15 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Galdr table", "Level": 4 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Carapace helmet",
+            "Effects": null,
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 1200,
+                    "Armor": 32,
+                    "Recipe": [
+                        { "Material": "Carapace", "Quantity": 16 },
+                        { "Material": "Scale hide", "Quantity": 3 },
+                        { "Material": "Mandible", "Quantity": 2 },
+                        { "Material": "Refined eitr", "Quantity": 4 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Black Forge", "Level": 1 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 1400,
+                    "Armor": 34,
+                    "Recipe": [
+                        { "Material": "Carapace", "Quantity": 8 },
+                        { "Material": "Scale hide", "Quantity": 1 },
+                        { "Material": "Refined eitr", "Quantity": 2 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Black Forge", "Level": 2 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 1600,
+                    "Armor": 36,
+                    "Recipe": [
+                        { "Material": "Carapace", "Quantity": 16 },
+                        { "Material": "Scale hide", "Quantity": 2 },
+                        { "Material": "Refined eitr", "Quantity": 4 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Black Forge", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 4,
+                    "Durability": 1800,
+                    "Armor": 38,
+                    "Recipe": [
+                        { "Material": "Carapace", "Quantity": 24 },
+                        { "Material": "Scale hide", "Quantity": 3 },
+                        { "Material": "Refined eitr", "Quantity": 6 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Black Forge", "Level": 4 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Hood of Embla",
+            "Effects": ["+30% Eitr regen"],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 1000,
+                    "Armor": 19,
+                    "Recipe": [
+                        { "Material": "Linen thread", "Quantity": 16 },
+                        { "Material": "Refined eitr", "Quantity": 15 },
+                        { "Material": "Asksvin hide", "Quantity": 2 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Galdr table", "Level": 2 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 1200,
+                    "Armor": 21,
+                    "Recipe": [
+                        { "Material": "Linen thread", "Quantity": 8 },
+                        { "Material": "Refined eitr", "Quantity": 5 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Galdr table", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 1400,
+                    "Armor": 23,
+                    "Recipe": [
+                        { "Material": "Linen thread", "Quantity": 16 },
+                        { "Material": "Refined eitr", "Quantity": 10 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Galdr table", "Level": 4 }
+                    ]
+                },
+                {
+                    "Level": 4,
+                    "Durability": 1600,
+                    "Armor": 25,
+                    "Recipe": [
+                        { "Material": "Linen thread", "Quantity": 24 },
+                        { "Material": "Refined eitr", "Quantity": 15 }
+                    ],
+                    "CraftingStation": [
+                        {"Station": "Galdr table", "Level": 5 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Hood of Ask",
+            "Effects": [
+                "Ask's Endurance Set bonus:", "Run/Jump stamina usage -10%", "Attack stamina usage -20%", "Pierce +10%"
+            ],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 1000,
+                    "Armor": 28,
+                    "Recipe": [
+                        { "Material": "Linen thread", "Quantity": 15 },
+                        { "Material": "Lox pelt", "Quantity": 4 },
+                        { "Material": "Asksvin hide", "Quantity": 10 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Black Forge", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 1200,
+                    "Armor": 30,
+                    "Recipe": [
+                        { "Material": "Linen thread", "Quantity": 10 },
+                        { "Material": "Lox pelt", "Quantity": 2 },
+                        { "Material": "Asksvin hide", "Quantity": 5 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Black Forge", "Level": 4 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 1400,
+                    "Armor": 32,
+                    "Recipe": [
+                        { "Material": "Linen thread", "Quantity": 20 },
+                        { "Material": "Lox pelt", "Quantity": 4 },
+                        { "Material": "Asksvin hide", "Quantity": 10 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Black Forge", "Level": 5 }
+                    ]
+                },
+                {
+                    "Level": 4,
+                    "Durability": 1600,
+                    "Armor": 34,
+                    "Recipe": [
+                        { "Material": "Linen thread", "Quantity": 30 },
+                        { "Material": "Lox pelt", "Quantity": 6 },
+                        { "Material": "Asksvin hide", "Quantity": 15 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Black Forge", "Level": 6 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Flametal helmet",
+            "Effects": null,
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 800,
+                    "Armor": 38,
+                    "Recipe": [
+                        { "Material": "Flametal", "Quantity": 16 },
+                        { "Material": "Asksvin hide", "Quantity": 3 },
+                        { "Material": "Charred bone", "Quantity": 2 },
+                        { "Material": "Refined eitr", "Quantity": 4 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Black Forge", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 900,
+                    "Armor": 40,
+                    "Recipe": [
+                        { "Material": "Flametal", "Quantity": 8 },
+                        { "Material": "Asksvin hide", "Quantity": 1 },
+                        { "Material": "Refined eitr", "Quantity": 2 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Black Forge", "Level": 4 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 1000,
+                    "Armor": 42,
+                    "Recipe": [
+                        { "Material": "Flametal", "Quantity": 16 },
+                        { "Material": "Asksvin hide", "Quantity": 2 },
+                        { "Material": "Refined eitr", "Quantity": 4 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Black Forge", "Level": 5 }
+                    ]
+                },
+                {
+                    "Level": 4,
+                    "Durability": 1000,
+                    "Armor": 44,
+                    "Recipe": [
+                        { "Material": "Flametal", "Quantity": 24 },
+                        { "Material": "Asksvin hide", "Quantity": 3 },
+                        { "Material": "Refined eitr", "Quantity": 6 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Black Forge", "Level": 6 }
+                    ]
+                }
+            ]
+        }
+    ],
+    "chest": [
+        {
+            "Item": "null",
             "Effects": null,
             "Qualities": [
                 {
@@ -192,6 +1334,19 @@
             ]
         }
     ],
-    "chest": [],
-    "leg": []
+    "leg": [
+        {
+            "Item": "null",
+            "Effects": null,
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": null,
+                    "Armor": 1,
+                    "Recipe": [],
+                    "CraftingStation": []
+                }
+            ]
+        }
+    ]
 }

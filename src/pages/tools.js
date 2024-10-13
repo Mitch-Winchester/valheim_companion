@@ -25,7 +25,6 @@ const ValTools = ({ data }) => {
                 data = {data.allDataJson.nodes}
                 headers = {["Item", "Qualities", "Durability", "Recipe", "Crafting Station"]}
                 imgBasePath = {"/val_images/tools"}
-                showSearch = {false}
                 contentFlag = 'adventuring'
                 contentNames = {["Item", "Qualities", "Durability", "Recipe", "CraftingStation"]}
                 showTitle = {true}
@@ -36,7 +35,6 @@ const ValTools = ({ data }) => {
                 data = {data.allDataJson.nodes}
                 headers = {["Item", "Qualities", "Durability", "Recipe", "Crafting Station"]}
                 imgBasePath = {"/val_images/tools"}
-                showSearch = {false}
                 contentFlag = 'building'
                 contentNames = {["Item", "Qualities", "Durability", "Recipe", "CraftingStation"]}
                 showTitle = {true}
@@ -47,7 +45,6 @@ const ValTools = ({ data }) => {
                 data = {data.allDataJson.nodes}
                 headers = {["Item", "Qualities", "Durability", "Recipe", "Crafting Station"]}
                 imgBasePath = {"/val_images/tools"}
-                showSearch = {false}
                 contentFlag = 'farming'
                 contentNames = {["Item", "Qualities", "Durability", "Recipe", "CraftingStation"]}
                 showTitle = {true}
@@ -58,7 +55,6 @@ const ValTools = ({ data }) => {
                 data = {data.allDataJson.nodes}
                 headers = {["Item", "Qualities", "Durability", "Recipe", "Crafting Station"]}
                 imgBasePath = {"/val_images/tools"}
-                showSearch = {false}
                 contentFlag = 'fishing'
                 showTitle = {true}
             />
@@ -68,7 +64,6 @@ const ValTools = ({ data }) => {
                 data = {data.allDataJson.nodes}
                 headers = {["Item", "Tree Types", "Qualities", "Durability", "Recipe", "Crafting Station"]}
                 imgBasePath = {"/val_images/tools"}
-                showSearch = {false}
                 contentFlag = 'logging'
                 contentNames = {["Item", "Uses", "Qualities", "Durability", "Recipe", "CraftingStation"]}
                 showTitle = {true}
@@ -79,7 +74,6 @@ const ValTools = ({ data }) => {
                 data = {data.allDataJson.nodes}
                 headers = {["Item", "Ore Types", "Qualities", "Durability", "Recipe", "Crafting Station"]}
                 imgBasePath = {"/val_images/tools"}
-                showSearch = {false}
                 contentFlag = 'mining'
                 contentNames = {["Item", "Uses", "Qualities", "Durability", "Recipe", "CraftingStation"]}
                 showTitle = {true}
@@ -90,7 +84,7 @@ const ValTools = ({ data }) => {
 
 
 export const query = graphql`
-    query MyQuery {
+    query {
         allDataJson(filter: {title: {eq: "Tools"}}) {
             nodes {
                 adventuring {

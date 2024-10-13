@@ -109,6 +109,7 @@ const ValTableLayout = ({
 
     const nonDetailCards = ['content', 'bait', 'crop', 'feed'];
     const usesItems = ['logging', 'mining'];
+    const armor = ['capes', 'helmets'];
 
     return (
         <> 
@@ -132,6 +133,12 @@ const ValTableLayout = ({
                             <>
                                 <th>Item</th>
                                 <th>Uses</th>
+                                <th>Details</th>
+                            </>
+                            ) : (armor.includes(contentFlag)) ? (
+                            <>
+                                <th>Item</th>
+                                <th>Effects</th>
                                 <th>Details</th>
                             </>
                             ) : (
