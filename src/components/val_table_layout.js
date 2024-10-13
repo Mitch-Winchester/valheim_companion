@@ -36,7 +36,7 @@ const ValTable = styled.table`
     color: white;
     background-color: rgb(94, 102, 111, 0.75);
     margin: 0 auto;
-    max-width: 90vw;
+    max-width: 100vw;
 
     th {
         text-align: center;
@@ -59,6 +59,9 @@ const ValTable = styled.table`
 const QualCon = styled(Container)`
     margin-bottom: 1rem;
 `;
+const QualCol = styled(Col)`
+    padding-right: 0;
+`;
 const QualCard = styled(Card)`
     margin-bottom: 1rem;
     color: white;
@@ -66,12 +69,15 @@ const QualCard = styled(Card)`
     width: fit-content;
 `;
 const QualBody = styled(CardBody)`
-    padding: .1rem .75rem;
+    padding: .1rem .25rem;
 `;
 const QualHeader = styled(CardHeader)`
     font-size: .9rem;
     font-weight: bold;
+    padding-left: .5rem;
+    padding-right: .5rem;
     padding-bottom: 0;
+    white-space: nowrap;
     margin-bottom: .5rem;
     border-bottom: 2px solid white;
 `;
@@ -171,7 +177,7 @@ const ValTableLayout = ({
                                                         <QualCon>
                                                             <Row>
                                                                 {item[column].map((quality, qualIndex) => (
-                                                                    <Col key={qualIndex}>
+                                                                    <QualCol key={qualIndex}>
                                                                         <QualCard>
                                                                             <QualBody>
                                                                                 <QualHeader>Level: {quality.Level}</QualHeader>
@@ -215,7 +221,7 @@ const ValTableLayout = ({
                                                                                 ) : null}
                                                                             </QualBody>
                                                                         </QualCard>
-                                                                    </Col>
+                                                                    </QualCol>
                                                                 ))}
                                                             </Row>
                                                         </QualCon>
