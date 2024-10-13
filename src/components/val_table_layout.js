@@ -10,6 +10,7 @@ import {
     CardText
 } from 'react-bootstrap'
 
+// Create styled-components
 const TableTitle = styled.h1`
     display: flex;
     justify-content: center center;
@@ -85,6 +86,7 @@ const Strong = styled.strong`
     }
 `;
 
+// Create table
 const ValTableLayout = ({
     filter,
     filterFunction,
@@ -124,25 +126,26 @@ const ValTableLayout = ({
                 <ValTable>
                     <thead>
                         <tr>
-                            <th aria-label='image'></th>
-                            {nonDetailCards.includes(contentFlag) ? (
+                            <th aria-label='image'></th> {/* header space for image column */}
+                            { // handle standard headers
+                            nonDetailCards.includes(contentFlag) ? (
                                 headers.map(column => (
                                     <th>{column}</th>
                                 ))
                             ) : (usesItems.includes(contentFlag) ? (
-                            <>
+                            <> {/* Handle headers for tools with specific uses */}
                                 <th>Item</th>
                                 <th>Uses</th>
                                 <th>Details</th>
                             </>
                             ) : (armor.includes(contentFlag)) ? (
-                            <>
+                            <> {/* Handle headers for armor */}
                                 <th>Item</th>
                                 <th>Effects</th>
                                 <th>Details</th>
                             </>
                             ) : (
-                            <>
+                            <> {/* Handle headers for standard tools */}
                                 <th>Item</th>
                                 <th>Details</th>
                             </>
@@ -151,11 +154,12 @@ const ValTableLayout = ({
                     </thead>
                     <tbody>
                         {filteredItems.map((item, index) => {
+                            // create image path for image directory and item name
                             let imagePath = `${imgBasePath}/${item[firstKey].replaceAll(' ', '_')}.png`;
                         
                             return (
                                 <tr key={index}>
-                                    <td>
+                                    <td> {/* Get image */}
                                         <img src={imagePath} alt={item[0]}/>
                                     </td>
                                     {contentNames.map((column, colIndex) => {

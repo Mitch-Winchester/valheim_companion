@@ -4,6 +4,7 @@ import Seo from '../components/seo'
 import ValLayout from '../components/val_layout'
 import ValTableLayout from '../components/val_table_layout'
 
+// create mead page
 const ValMead = ({ data }) => {
 
     // filterFunction to pass to tableLayout
@@ -37,6 +38,7 @@ const ValMead = ({ data }) => {
     )
 }
 
+// query mead json object
 export const query = graphql`
     query {
         allDataJson(filter: {title: {eq: "Mead"}}) {
@@ -55,6 +57,7 @@ export const query = graphql`
     }
 `
 
+// create page title
 export const Head = () => <Seo title="Valheim Mead" />
 
 export default ValMead

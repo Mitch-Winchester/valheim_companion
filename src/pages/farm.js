@@ -4,6 +4,7 @@ import Seo from '../components/seo'
 import ValLayout from '../components/val_layout'
 import ValTableLayout from '../components/val_table_layout'
 
+// create farming page
 const ValFarm = ({ data }) => {
 
     // filterFunction to pass to tableLayout
@@ -60,6 +61,7 @@ const ValFarm = ({ data }) => {
     )
 }
 
+// query farming json objects
 export const query = graphql`
     {
         allDataJson(filter: {title: {eq: "Farm"}}) {
@@ -90,6 +92,7 @@ export const query = graphql`
     }
 `
 
+// create page title
 export const Head = () => <Seo title="Valheim Farming/Fishing" />
 
 export default ValFarm

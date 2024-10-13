@@ -5,6 +5,7 @@ import { Container } from 'react-bootstrap'
 import ValLayout from '../components/val_layout'
 import ValButton from '../components/val_button'
 
+// create styled component
 const ButRow = styled.div`
     display: flex;
     justify-content: center;
@@ -13,6 +14,7 @@ const ButRow = styled.div`
     margin-bottom: 5vh;
 `;
 
+// create val_comp home page
 const ValComp = () => {
     return (
         <ValLayout
@@ -49,6 +51,7 @@ function underConstruction() {
     )
 }
 
+// create page title
 export const Head = () => <Seo title="Valheim Companion App" />
 
 export default ValComp

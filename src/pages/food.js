@@ -4,6 +4,7 @@ import Seo from '../components/seo'
 import ValLayout from '../components/val_layout'
 import ValTableLayout from '../components/val_table_layout'
 
+// create food page
 const ValFood = ({ data }) => {
     const [filter, setFilter] = React.useState("");
 
@@ -57,6 +58,7 @@ const ValFood = ({ data }) => {
     )
 }
 
+// query food json object
 export const query = graphql`
     query {
         allDataJson(filter: {title: {eq: "Food"}}) {
@@ -79,6 +81,7 @@ export const query = graphql`
     }
 `
 
+// create page title
 export const Head = () => <Seo title="Valheim Food" />
 
 export default ValFood

@@ -4,6 +4,7 @@ import Seo from '../components/seo'
 import ValLayout from '../components/val_layout'
 import ValTableLayout from '../components/val_table_layout'
 
+// create armor page
 const ValArmor = ({ data }) => {
     return (
         <ValLayout
@@ -43,6 +44,7 @@ const ValArmor = ({ data }) => {
     )
 }
 
+// query armor json objects
 export const query = graphql`
     query {
         allDataJson(filter: {title: {eq: "Armor"}}) {
@@ -103,6 +105,7 @@ export const query = graphql`
     }
 `
 
+// Create page title
 export const Head = () => <Seo title="Valheim Armor"/>
 
 export default ValArmor
