@@ -21,30 +21,42 @@ const BackButCon = styled(Container)`
     margin: 4rem auto 0;
 `;
 const SearchBar = styled(Container)`
+    display: flex;
     justify-content: center;
     margin: 1% auto;
     width: fit-content;
 `;
 const SearchInput = styled.input`
-    max-width: 20vw;
-    border: none;
+    max-width: 25vw;
 
     @media (max-width: 576px) {
         font-size: 3vw;
     }
 `;
-const DropFilter = styled(Dropdown.Toggle)`
+const DropFilter = styled(Dropdown)`
+    margin-right: 10px;
+`;
+const DropFilterToggle = styled(Dropdown.Toggle)`
+    margin: auto;
     background-color: rgb(94, 102, 111);
+    border: none;
+    
     &:hover,
     &.active,
     &.show {
         background-color: rgb(80, 85, 91);
+    }    
+    @media (max-width: 576px) {
+        font-size: 3vw;
     }
 `;
 const DropFilterItem = styled(Dropdown.Item)`
     &:hover {
         color: white;
         background-color: rgb(94, 102, 111);
+    }    
+    @media (max-width: 576px) {
+        font-size: 3vw;
     }
 `;
 const MainHead = styled(Container)`
@@ -129,22 +141,22 @@ const ValLayout = ({
             {showSearch && setFilter && (
                 <SearchBar>
                     {content !== null ? (
-                    <Dropdown onSelect={dropSelect}>
-                        <DropFilter id="dropdownMenu">
+                    <DropFilter onSelect={dropSelect}>
+                        <DropFilterToggle id="dropdownMenu">
                             {contentFilter === null ? (
                                 title.replaceAll('Recipes', 'Types')
                             ) : contentFilter.charAt(0).toUpperCase()+contentFilter.slice(1)
                             }
-                        </DropFilter>
+                        </DropFilterToggle>
                         <Dropdown.Menu>
-                            <DropFilterItem eventKey={null}>{title.replaceAll('Recipes', 'Types')}</DropFilterItem>
+                            <DropFilterItem eventKey={null}>All</DropFilterItem>
                             {content.map((type, typeIndex) => (
                                 <DropFilterItem key={typeIndex} eventKey={type}>
                                     {type.charAt(0).toUpperCase()+type.slice(1)}
                                 </DropFilterItem>
                             ))}
                         </Dropdown.Menu>
-                    </Dropdown>
+                    </DropFilter>
                     ) : null}
                     <SearchInput 
                         type="text" 
