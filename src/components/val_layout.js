@@ -1,7 +1,7 @@
 import * as React from 'react'
 import ValButton from './val_button'
 import styled from 'styled-components'
-import { Container } from 'react-bootstrap'
+import { Container, Dropdown } from 'react-bootstrap'
 import { useLocation } from '@reach/router'
 
 // styled-components
@@ -33,6 +33,20 @@ const SearchInput = styled.input`
         font-size: 3vw;
     }
 `;
+const DropFilter = styled(Dropdown.Toggle)`
+    background-color: rgb(94, 102, 111);
+    &:hover,
+    &.active,
+    &.show {
+        background-color: rgb(80, 85, 91);
+    }
+`;
+const DropFilterItem = styled(Dropdown.Item)`
+    &:hover {
+        color: white;
+        background-color: rgb(94, 102, 111);
+    }
+`;
 const MainHead = styled(Container)`
   background-image: url("/val_images/valheim_logo.png");
   background-repeat: no-repeat;
@@ -61,7 +75,8 @@ const ValLayout = ({
     background,
     title,
     children,
-    showSearch = true
+    showSearch = true,
+    content = null
 }) => {
     // Get the current pathname from the location object
     const location = useLocation();
@@ -84,14 +99,21 @@ const ValLayout = ({
             showButton = false;
         }
     }
-    console.log(navPath);   
+
     // Set initial filter & setFilter state
     const [filter, setFilter] = React.useState("");
+    const [contentFilter, setContentFilter] = React.useState(null);
 
     // Handle user input for the search
     const inputChange = (e) => {
         if (setFilter) {
             setFilter(e.target.value.toLowerCase());
+        }
+    };
+    // Handle dropdown menu input
+    const dropSelect = (e) => {
+        if (setContentFilter) {
+            setContentFilter(e);
         }
     };
 
@@ -106,6 +128,24 @@ const ValLayout = ({
             )}
             {showSearch && setFilter && (
                 <SearchBar>
+                    {content !== null ? (
+                    <Dropdown onSelect={dropSelect}>
+                        <DropFilter id="dropdownMenu">
+                            {contentFilter === null ? (
+                                title.replaceAll('Recipes', 'Types')
+                            ) : contentFilter.charAt(0).toUpperCase()+contentFilter.slice(1)
+                            }
+                        </DropFilter>
+                        <Dropdown.Menu>
+                            <DropFilterItem eventKey={null}>{title.replaceAll('Recipes', 'Types')}</DropFilterItem>
+                            {content.map((type, typeIndex) => (
+                                <DropFilterItem key={typeIndex} eventKey={type}>
+                                    {type.charAt(0).toUpperCase()+type.slice(1)}
+                                </DropFilterItem>
+                            ))}
+                        </Dropdown.Menu>
+                    </Dropdown>
+                    ) : null}
                     <SearchInput 
                         type="text" 
                         placeholder="Search..." 
@@ -116,7 +156,7 @@ const ValLayout = ({
             )}
             {/* Pass filter & setFilter to children as props */}
             {React.Children.map(children, (child) =>
-                React.cloneElement(child, { filter, setFilter })
+                React.cloneElement(child, { filter, setFilter, contentFilter })
             )}
             {showButton && (
                 <BackButCon>

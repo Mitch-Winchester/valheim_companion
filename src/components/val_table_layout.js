@@ -108,6 +108,7 @@ const Strong = styled.strong`
 const ValTableLayout = ({
     filter,
     filterFunction,
+    contentFilter,
     data,
     headers,
     imgBasePath,
@@ -118,14 +119,17 @@ const ValTableLayout = ({
     // get first column name
     let firstKey = contentNames[0];
 
+    // Determine if a contentFilter was selected
+    const filteredContentFlag = contentFilter !== null ?
+        contentFilter : contentFlag;
+
     // Filter table items based on passed in filter function
     const filteredItems = filterFunction && filter !== undefined
         ? data.flatMap(node =>
-            node[contentFlag].filter(item => filterFunction(item, filter))
+            node[filteredContentFlag].filter(item => filterFunction(item, filter))
           )
-        : data.flatMap(node => node[contentFlag] // return all items if no filter
+        : data.flatMap(node => node[filteredContentFlag] // return all items if no filter
     );
-    //console.log(filteredItems);
 
     const nonDetailCards = ['content', 'bait', 'crop', 'feed'];
     const usesItems = ['logging', 'mining'];
@@ -133,13 +137,13 @@ const ValTableLayout = ({
 
     return (
         <> 
-        {showTitle && filteredItems.length !== 0 ?  (
+        {showTitle && filteredItems.length !== 0 && contentFlag === filteredContentFlag ?  (
             <div>
                 <TableTitle>{contentFlag.charAt(0).toUpperCase()+contentFlag.slice(1)}</TableTitle>
             </div>
         ) : null}
         {/* If search returns no results, will not display table */}
-        {filteredItems.length !== 0 ?  (
+        {filteredItems.length !== 0 && contentFlag === filteredContentFlag ?  (
             <TableCon fluid>
                 <ValTable>
                     <thead>

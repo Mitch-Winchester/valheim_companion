@@ -35,6 +35,7 @@ const ValTools = ({ data }) => {
         <ValLayout
             background = {`url("/val_images/backgrounds/ebrithil_base.png")`}
             title = "Tool Recipes"
+            content = {["adventuring", "building", "farming", "fishing", "logging", "mining"]}
         >
             <ValTableLayout
                 filterFunction = {toolFilter}
