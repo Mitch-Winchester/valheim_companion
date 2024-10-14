@@ -635,6 +635,57 @@
                     ]
                 }
             ]
+        },
+        {
+            "Item": "Berserkir axes",
+            "Uses":  ["Ancient", "Beech", "Birch", "Fir","Oak", "Pine", "Yggdrasil"],
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 175,
+                    "Recipe": [
+                        { "Material": "Charred bone", "Quantity": 15 },
+                        { "Material": "Flametal", "Quantity": 24 },
+                        { "Material": "Asksvin hide", "Quantity": 3 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Black forge", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 225,
+                    "Recipe": [
+                        { "Material": "Flametal", "Quantity": 15 },
+                        { "Material": "Asksvin hide", "Quantity": 1 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Black forge", "Level": 4 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 275,
+                    "Recipe": [
+                        { "Material": "Flametal", "Quantity": 30 },
+                        { "Material": "Asksvin hide", "Quantity": 2 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Black forge", "Level": 5 }
+                    ]
+                },
+                {
+                    "Level": 4,
+                    "Durability": 325,
+                    "Recipe": [
+                        { "Material": "Flametal", "Quantity": 45 },
+                        { "Material": "Asksvin hide", "Quantity": 3 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Black forge", "Level": 6 }
+                    ]
+                }
+            ]
         }
     ],
     "mining": [

@@ -1,0 +1,39 @@
+{
+    "title": "Weapons",
+    "axes": [
+        {
+            "Item": null,
+            "Stamina": null,
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": null,
+                    "Damage": [
+                        { "Type": "", "Amount": null }
+                    ],
+                    "Recipe": [
+                        { "Material": "", "Quantity": null }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "", "Level": 1 }
+                    ]
+                }
+            ]
+        }
+    ],
+    "clubs": [],
+    "swords": [],
+    "spears": [],
+    "polearms": [],
+    "knives": [],
+    "fists": [],
+    "shields": [],
+    "bows": [],
+    "crossbows": [],
+    "elemental": [],
+    "blood": [],
+    "arrows": [],
+    "bolts": [],
+    "missiles": [],
+    "bombs": []
+}
