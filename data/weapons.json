@@ -3,12 +3,17 @@
     "axes": [
         {
             "Item": null,
+            "Effects": null,
             "Stamina": null,
+            "Speed": null,
             "Qualities": [
                 {
                     "Level": 1,
                     "Durability": null,
                     "Damage": [
+                        { "Type": "", "Amount": null }
+                    ],
+                    "Block": [
                         { "Type": "", "Amount": null }
                     ],
                     "Recipe": [
