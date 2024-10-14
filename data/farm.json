@@ -131,7 +131,7 @@
             "Space": "An Ashvine must be planted near a wall. Needs 3.6 m"
         }
     ],
-    "feed": [
+    "animals": [
         {
             "Animal": "Boar",
             "Feed": "Blueberries, Raspberries, Red Mushrooms, Carrots, Turnips, or Onions",

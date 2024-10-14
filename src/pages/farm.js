@@ -24,6 +24,7 @@ const ValFarm = ({ data }) => {
         <ValLayout
             background = {`url("/val_images/backgrounds/ebrithil_farm.png")`}
             title = "Farming & Fishing Recipes"
+            content = {["animals", "bait", "crop"]}
         >
             <ValTableLayout
                 filterFunction = {farmFilter}
@@ -42,7 +43,7 @@ const ValFarm = ({ data }) => {
                 headers = {["Animal", "Feed", "Grow Time (min)", "Space Needed"]}
                 imgBasePath = {"/val_images/animals"}
                 showSearch = {false}
-                contentFlag = 'feed'
+                contentFlag = 'animals'
                 contentNames = {["Animal", "Feed", "Growth", "Space"]}
                 showTitle = {true}
             />
@@ -81,7 +82,7 @@ export const query = graphql`
                     Space
                     Produce
                 }
-                feed {
+                animals {
                     Animal
                     Feed
                     Growth
