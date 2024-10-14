@@ -9,9 +9,25 @@ const ValArmor = ({ data }) => {
     // filterFunction to pass to tableLayout
     const armorFilter = (armor, filter) => {
         const item = armor.Item.toLowerCase();
+        const effect = armor.Effects?.some(effect =>
+            effect.toLowerCase().includes(filter)
+        );
+        const recipe = armor.Qualities?.some(quality =>
+            quality.Recipe?.some(ingredient =>
+                ingredient.Material.toLowerCase().includes(filter)
+            )
+        );
+        const station = armor.Qualities?.some(quality =>
+            quality.CraftingStation?.some(station =>
+                station.Station.toLowerCase().includes(filter)
+            )
+        );
 
         return (
-            item.includes(filter)
+            item.includes(filter) ||
+            effect ||
+            recipe ||
+            station
         );
     };
 

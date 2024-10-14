@@ -6,13 +6,28 @@ import ValTableLayout from '../components/val_table_layout'
 
 // create tools page
 const ValTools = ({ data }) => {
-
     // filterFunction to pass to tableLayout
     const toolFilter = (tool, filter) => {
         const item = tool.Item.toLowerCase();
+        const use = tool.Uses?.some(use =>
+            use.toLowerCase().includes(filter)
+        );
+        const recipe = tool.Qualities?.some(quality =>
+            quality.Recipe?.some(ingredient =>
+                ingredient.Material.toLowerCase().includes(filter)
+            )
+        );
+        const station = tool.Qualities?.some(quality =>
+            quality.CraftingStation?.some(station =>
+                station.Station.toLowerCase().includes(filter)
+            )
+        );
 
         return (
-            item.includes(filter)
+            item.includes(filter) ||
+            use ||
+            recipe ||
+            station
         );
     };
 

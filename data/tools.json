@@ -336,7 +336,7 @@
                     "Recipe": [
                         { "Material": "Wood", "Quantity": 4 },
                         { "Material": "Bronze", "Quantity": 8 },
-                        { "Material": "Lether scraps", "Quantity": 2 }
+                        { "Material": "Leather scraps", "Quantity": 2 }
                     ],
                     "CraftingStation": [
                         { "Station": "Forge", "Level": 1 }
@@ -347,7 +347,7 @@
                     "Durability": 175,
                     "Recipe": [
                         { "Material": "Bronze", "Quantity": 4 },
-                        { "Material": "Lether scraps", "Quantity": 1 }
+                        { "Material": "Leather scraps", "Quantity": 1 }
                     ],
                     "CraftingStation": [
                         { "Station": "Forge", "Level": 2 }
@@ -358,7 +358,7 @@
                     "Durability": 225,
                     "Recipe": [
                         { "Material": "Bronze", "Quantity": 8 },
-                        { "Material": "Lether scraps", "Quantity": 2 }
+                        { "Material": "Leather scraps", "Quantity": 2 }
                     ],
                     "CraftingStation": [
                         { "Station": "Forge", "Level": 3 }
@@ -369,7 +369,7 @@
                     "Durability": 250,
                     "Recipe": [
                         { "Material": "Bronze", "Quantity": 12 },
-                        { "Material": "Lether scraps", "Quantity": 3 }
+                        { "Material": "Leather scraps", "Quantity": 3 }
                     ],
                     "CraftingStation": [
                         { "Station": "Forge", "Level": 4 }
@@ -387,7 +387,7 @@
                     "Recipe": [
                         { "Material": "Ancient bark", "Quantity": 30 },
                         { "Material": "Iron", "Quantity": 35 },
-                        { "Material": "Lether scraps", "Quantity": 4 }
+                        { "Material": "Leather scraps", "Quantity": 4 }
                     ],
                     "CraftingStation": [
                         { "Station": "Forge", "Level": 2 }
@@ -438,7 +438,7 @@
                     "Recipe": [
                         { "Material": "Wood", "Quantity": 4 },
                         { "Material": "Iron", "Quantity": 20 },
-                        { "Material": "Lether scraps", "Quantity": 2 }
+                        { "Material": "Leather scraps", "Quantity": 2 }
                     ],
                     "CraftingStation": [
                         { "Station": "Forge", "Level": 2 }
@@ -449,7 +449,7 @@
                     "Durability": 225,
                     "Recipe": [
                         { "Material": "Iron", "Quantity": 10 },
-                        { "Material": "Lether scraps", "Quantity": 1 }
+                        { "Material": "Leather scraps", "Quantity": 1 }
                     ],
                     "CraftingStation": [
                         { "Station": "Forge", "Level": 3 }
@@ -460,7 +460,7 @@
                     "Durability": 275,
                     "Recipe": [
                         { "Material": "Iron", "Quantity": 20 },
-                        { "Material": "Lether scraps", "Quantity": 2 }
+                        { "Material": "Leather scraps", "Quantity": 2 }
                     ],
                     "CraftingStation": [
                         { "Station": "Forge", "Level": 4 }
@@ -471,7 +471,7 @@
                     "Durability": 325,
                     "Recipe": [
                         { "Material": "Iron", "Quantity": 30 },
-                        { "Material": "Lether scraps", "Quantity": 3 }
+                        { "Material": "Leather scraps", "Quantity": 3 }
                     ],
                     "CraftingStation": [
                         { "Station": "Forge", "Level": 5 }
