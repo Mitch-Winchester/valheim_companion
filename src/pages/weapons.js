@@ -6,6 +6,22 @@ import ValTableLayout from '../components/val_table_layout'
 
 const ValWeapons = ({ data }) => {
     
+    return (
+        <ValLayout
+        background = {`url("/val_images/backgrounds/ebrithil_base.png")`}
+        title = "Weapon Recipes"
+        >
+            <ValTableLayout
+                data = {data.allDataJson.nodes}
+                headers = {["Item", "Type", "Effects", "Stamina", "Speed", "Qualities",
+                    "Durability", "Damage", "Block", "Recipe", "Crafting Station"]}
+                imgBasePath = {"/val_images/tools"}
+                contentFlag = 'axes'
+                contentNames = {["Item", "Type", "Effects", "Stamina", "Speed",
+                    "Qualities", "Durability", "Damage", "Block", "Recipe", "CraftingStation"]}
+            />
+        </ValLayout>
+    )
 }
 
 // query weapons json objects

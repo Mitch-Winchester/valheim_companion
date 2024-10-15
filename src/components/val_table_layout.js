@@ -62,8 +62,22 @@ const QualCon = styled(Container)`
 `;
 const QualCol = styled(Col)`
     padding-right: 0;
+    flex: 1 1 30%;
+
+    @media (max-width: 1300px) {
+        flex: 1 1 40%;
+    }
+    @media (max-width: 768px) {
+        flex: 1 1 50%;
+    }
 `;
 const QualCard = styled(Card)`
+    margin-bottom: 1rem;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.3);
+    width: fit-content;
+`;
+const DamageCard = styled(Card)`
     margin-bottom: 1rem;
     color: white;
     background-color: rgb(0, 0, 0, 0.3);
@@ -134,6 +148,7 @@ const ValTableLayout = ({
     const nonDetailCards = ['content', 'bait', 'crop', 'feed'];
     const usesItems = ['logging', 'mining'];
     const armor = ['capes', 'helmets', 'chest', 'legs'];
+    const weapons = ['axes'];
 
     return (
         <> 
@@ -164,6 +179,15 @@ const ValTableLayout = ({
                             <> {/* Handle headers for armor */}
                                 <th>Item</th>
                                 <th>Effects</th>
+                                <th>Details</th>
+                            </>
+                            ) : (weapons.includes(contentFlag)) ? (
+                            <> {/* Handle headers for weapons */}
+                                <th>Item</th>
+                                <th>Type</th>
+                                <th>Effects</th>
+                                <th>Stamina Use</th>
+                                <th>Speed</th>
                                 <th>Details</th>
                             </>
                             ) : (
@@ -211,6 +235,55 @@ const ValTableLayout = ({
                                                                                     </CardText>
                                                                                     </>
                                                                                 ) : null}
+                                                                                {quality.Damage ? (
+                                                                                    <>
+                                                                                    <p><strong>Damage:</strong></p>
+                                                                                    {quality.Damage.Primary ? (
+                                                                                    <Row style={{gap: '0', margin: '0', justifyContent: 'center'}}>
+                                                                                        <Col xs={12} md={6}>
+                                                                                            <DamageCard>
+                                                                                                <QualBody>
+                                                                                                    <CardText><strong>Primary:</strong></CardText>
+                                                                                                    <QualList>
+                                                                                                        {quality.Damage.Primary?.map((damage, damIndex) => (
+                                                                                                            <li key={damIndex}>
+                                                                                                                {damage.Type}: {damage.Amount}
+                                                                                                            </li>
+                                                                                                        ))}
+                                                                                                    </QualList>
+                                                                                                </QualBody>
+                                                                                            </DamageCard>
+                                                                                        </Col>
+                                                                                        <Col xs={12} md={6}>
+                                                                                            <DamageCard>
+                                                                                                <QualBody>
+                                                                                                    <CardText><strong>Secondary:</strong></CardText>
+                                                                                                    <QualList>
+                                                                                                        {quality.Damage.Secondary?.map((damage, damIndex) => (
+                                                                                                            <li key={damIndex}>
+                                                                                                                {damage.Type}: {damage.Amount}
+                                                                                                            </li>
+                                                                                                        ))}
+                                                                                                    </QualList>
+                                                                                                </QualBody>
+                                                                                            </DamageCard>
+                                                                                        </Col>
+                                                                                    </Row>
+                                                                                    ) : null}
+                                                                                    </>
+                                                                                ) : null}
+                                                                                {quality.Block ? (
+                                                                                    <>
+                                                                                    <strong>Block:</strong>
+                                                                                    <QualList>
+                                                                                        {quality.Block?.map((block, bloIndex) => (
+                                                                                            <li key={bloIndex}>
+                                                                                                {block.Type}: {block.Amount}
+                                                                                            </li>
+                                                                                        ))}
+                                                                                    </QualList>
+                                                                                    </>
+                                                                                ) : null}
                                                                                 {quality.Recipe ? (
                                                                                     <>
                                                                                     <strong>Recipe:</strong>
@@ -255,6 +328,16 @@ const ValTableLayout = ({
                                                         </QualList>
                                                     </td>
                                                 );
+                                            } else if (column === 'Stamina' || column === 'Speed') {
+                                                // Handle Stamina/Speed key-value pairs
+                                                return (
+                                                    <td>
+                                                        <QualList>
+                                                            <li>Primary: {item[column].Primary}</li>
+                                                            <li>Secondary: {item[column].Secondary}</li>
+                                                        </QualList>
+                                                    </td>
+                                                )
                                             } else { // Handle array values
                                                 return (
                                                     <td>
