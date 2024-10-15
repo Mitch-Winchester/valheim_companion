@@ -34,7 +34,7 @@ const ValComp = () => {
                 </ButRow>
                 <ButRow>
                     <ValButton navPath={"tools"} buttonText={"Tools"}/>
-                    <ValButton clickFunction={underConstruction} buttonText={"Weapons"}/>
+                    <ValButton navPath={"weapons"} buttonText={"Weapons"}/>
                     <ValButton navPath={"armor"} buttonText={"Armor"}/>
                 </ButRow>
                 <ButRow>
