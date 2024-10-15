@@ -80,11 +80,21 @@ const QualCard = styled(Card)`
     background-color: rgb(0, 0, 0, 0.3);
     width: fit-content;
 `;
+const DamageCol = styled(Col)`
+    display: flex;
+    justify-content: center;
+    padding: 0;
+`;
 const DamageCard = styled(Card)`
     margin-bottom: 1rem;
     color: white;
     background-color: rgb(0, 0, 0, 0.3);
     width: fit-content;
+
+    @media (max-width: 576px) {
+        margin: auto;
+        margin-bottom: 1rem;
+    }
 `;
 const QualBody = styled(CardBody)`
     padding: .1rem .25rem;
@@ -280,8 +290,8 @@ const ValTableLayout = ({
                                                                                     <>
                                                                                     <p><strong>Damage:</strong></p>
                                                                                     {quality.Damage.Primary ? (
-                                                                                    <Row style={{gap: '0', margin: '0', justifyContent: 'center'}}>
-                                                                                        <Col xs={12} md={6}>
+                                                                                    <Row className='g-2'>
+                                                                                        <DamageCol>
                                                                                             <DamageCard>
                                                                                                 <QualBody>
                                                                                                     <CardText><strong>Primary:</strong></CardText>
@@ -294,7 +304,7 @@ const ValTableLayout = ({
                                                                                                     </QualList>
                                                                                                 </QualBody>
                                                                                             </DamageCard>
-                                                                                        </Col>
+                                                                                        </DamageCol>
                                                                                         <Col xs={12} md={6}>
                                                                                             <DamageCard>
                                                                                                 <QualBody>
