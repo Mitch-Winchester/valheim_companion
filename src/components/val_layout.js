@@ -40,7 +40,7 @@ const DropFilterToggle = styled(Dropdown.Toggle)`
     margin: auto;
     background-color: rgb(94, 102, 111);
     border: none;
-    
+
     &:hover,
     &.active,
     &.show {
@@ -66,7 +66,7 @@ const MainHead = styled(Container)`
   background-position: center center;
   margin: 0 auto 10vh;
   width: 80vw;
-  height: 10rem;
+  height: 8rem;
 `;
 const PageHead = styled.header`
   display: flex;
@@ -104,7 +104,7 @@ const ValLayout = ({
     // determine if val_comp home page needs a back button
     // and set text
     if (title === "Main") {
-        if (isSubmodule) {
+        if (true) {
             backButText = "Back to Main Site";
             navPath = "/";
         } else {

@@ -22,6 +22,14 @@ const ValBut = styled.button`
         box-shadow: 0 0.25vh darkgray;
         transform: translateY(0.25vh);
     }
+
+    @media (max-width: 992px) {
+        font-size: 2.5vw;
+    }
+
+    @media (max-width: 776px) {
+        font-size: 3vw;
+    }
 `
 
 const ValButton = ({ 

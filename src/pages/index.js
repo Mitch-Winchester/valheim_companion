@@ -11,7 +11,11 @@ const ButRow = styled.div`
     justify-content: center;
     gap: 10vw; /* Space between each button */
     padding: 0 15%; /* Adjusts space on the sides */
-    margin-bottom: 5vh;
+    margin-bottom: 8vh;
+
+    @media (max-width: 576px) {
+        margin-bottom: 5vh
+    }
 `;
 
 // create val_comp home page
