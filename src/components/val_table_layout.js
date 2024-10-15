@@ -71,7 +71,7 @@ const QualCol = styled(Col)`
         flex: 1 1 50%;
     }
     @media (max-width: 576px) {
-        flex: 1 1 45%;
+        flex: 1 1 40%;
     }
 `;
 const QualCard = styled(Card)`
