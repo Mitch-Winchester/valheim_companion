@@ -17,7 +17,7 @@ const ValWeapons = ({ data }) => {
                     "Durability", "Damage", "Block", "Recipe", "Crafting Station"]}
                 imgBasePath = {"/val_images/tools"}
                 contentFlag = 'axes'
-                contentNames = {["Item", "Type", "Effects", "Stamina", "Speed",
+                contentNames = {["Item", "Type", "Effects", "StamUse", "Speed",
                     "Qualities", "Durability", "Damage", "Block", "Recipe", "CraftingStation"]}
             />
         </ValLayout>
@@ -33,7 +33,7 @@ export const query = graphql`
                     Item
                     Type
                     Effects
-                    Stamina {
+                    StamUse {
                         Primary
                         Secondary
                     }

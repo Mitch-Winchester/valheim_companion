@@ -5,7 +5,7 @@
             "Item": "Stone axe",
             "Type": "One handed",
             "Effects": ["-5% Movement speed"],
-            "Stamina": {
+            "StamUse": {
                 "Primary": 5,
                 "Secondary": 10
             },

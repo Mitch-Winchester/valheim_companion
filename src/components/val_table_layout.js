@@ -62,12 +62,15 @@ const QualCon = styled(Container)`
 `;
 const QualCol = styled(Col)`
     padding-right: 0;
-    flex: 1 1 20%;
+    flex: 1 1 25%;
 
     @media (max-width: 1300px) {
         flex: 1 1 30%;
     }
     @media (max-width: 768px) {
+        flex: 1 1 50%;
+    }
+    @media (max-width: 576px) {
         flex: 1 1 45%;
     }
 `;
@@ -184,10 +187,7 @@ const ValTableLayout = ({
                             ) : (weapons.includes(contentFlag)) ? (
                             <> {/* Handle headers for weapons */}
                                 <th>Item</th>
-                                <th>Type</th>
-                                <th>Effects</th>
-                                <th>Stamina Use</th>
-                                <th>Speed</th>
+                                <th>Base Stats</th>
                                 <th>Details</th>
                             </>
                             ) : (
@@ -206,9 +206,51 @@ const ValTableLayout = ({
                             return (
                                 <tr key={index}>
                                     <td> {/* Get image */}
-                                        <img src={imagePath} alt={item[0]}/>
+                                        <img src={imagePath} alt={item[firstKey]}/>
                                     </td>
-                                    {contentNames.map((column, colIndex) => {
+                                    <td> {/* Get item name */}
+                                        <Strong>{item[firstKey]}</Strong>
+                                    </td>
+                                    {item.Type || item.Effects || item.StamUse || item.Speed ? (
+                                    <td> {/* Combine Effects, Stamina, & Speed into one column */}
+                                        <EffectList>
+                                            {item.Type ? (
+                                                <li>
+                                                    <strong>Type:</strong>
+                                                    <p>{item.Type}</p>
+                                                </li>
+                                            ) : null}
+                                            {item.Effects ? (
+                                                <li>
+                                                    {!armor.includes(contentFlag) ? (<strong>Effects:</strong>) : null}
+                                                    {item.Effects.map((effect, effectIndex) => (
+                                                    <p key={effectIndex}>
+                                                        {effect}
+                                                    </p>
+                                                    ))}
+                                                </li>
+                                            ) : null}
+                                            {item.StamUse ? (
+                                                <li>
+                                                    <strong>Stamina Use:</strong>
+                                                    <p>Primary: {item.StamUse.Primary}</p>
+                                                    {item.StamUse.Secondary ? (<p>Secondary: {item.StamUse.Secondary}</p>) : null}
+                                                </li>
+                                            ) : null}
+                                            {item.Speed ? (
+                                                <li>
+                                                    <strong>Attack Speed:</strong>
+                                                    <p>Primary: {item.Speed.Primary}</p>
+                                                    {item.Speed.Seconday ? (<p>Secondary: {item.Speed.Secondary}</p>) : null}
+                                                </li>
+                                            ) : null}
+                                        </EffectList>
+                                    </td>
+                                    ) : armor.includes(contentFlag) ? (
+                                        <td></td> // Add blank column to armor items that have no effect
+                                    ) : null}
+                                    {contentNames.filter(column => column !== contentNames[0] && column !== 'Type' && column !== 'Effects' &&
+                                        column !== 'StamUse' && column !== 'Speed').map((column, colIndex) => {
                                         if (typeof item[column] === 'object' && item[column] !== null) {
                                             // Handle Qualities Object
                                             if (column === 'Qualities') {
@@ -328,16 +370,6 @@ const ValTableLayout = ({
                                                         </QualList>
                                                     </td>
                                                 );
-                                            } else if (column === 'Stamina' || column === 'Speed') {
-                                                // Handle Stamina/Speed key-value pairs
-                                                return (
-                                                    <td>
-                                                        <QualList>
-                                                            <li>Primary: {item[column].Primary}</li>
-                                                            <li>Secondary: {item[column].Secondary}</li>
-                                                        </QualList>
-                                                    </td>
-                                                )
                                             } else { // Handle array values
                                                 return (
                                                     <td>
@@ -353,11 +385,7 @@ const ValTableLayout = ({
                                             }
                                         } else { // Handle non-object values
                                             return (
-                                                colIndex === 0 ? ( // gives title column the strong tag
-                                                    <td key={colIndex}><Strong>{item[column]}</Strong></td>
-                                                ) : (
-                                                    <td key={colIndex}>{item[column]}</td>
-                                                )
+                                                <td key={colIndex}>{item[column]}</td>
                                             );
                                         }
                                     })}

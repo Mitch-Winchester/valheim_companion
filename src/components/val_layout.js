@@ -104,7 +104,7 @@ const ValLayout = ({
     // determine if val_comp home page needs a back button
     // and set text
     if (title === "Main") {
-        if (true) {
+        if (isSubmodule) {
             backButText = "Back to Main Site";
             navPath = "/";
         } else {
