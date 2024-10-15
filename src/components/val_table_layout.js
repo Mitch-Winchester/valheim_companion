@@ -91,7 +91,7 @@ const DamageCard = styled(Card)`
     background-color: rgb(0, 0, 0, 0.3);
     width: fit-content;
 
-    @media (max-width: 576px) {
+    @media (max-width: 767px) {
         margin: auto;
         margin-bottom: 1rem;
     }
