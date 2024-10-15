@@ -62,13 +62,13 @@ const QualCon = styled(Container)`
 `;
 const QualCol = styled(Col)`
     padding-right: 0;
-    flex: 1 1 30%;
+    flex: 1 1 20%;
 
     @media (max-width: 1300px) {
-        flex: 1 1 40%;
+        flex: 1 1 30%;
     }
     @media (max-width: 768px) {
-        flex: 1 1 50%;
+        flex: 1 1 45%;
     }
 `;
 const QualCard = styled(Card)`
@@ -145,7 +145,7 @@ const ValTableLayout = ({
         : data.flatMap(node => node[filteredContentFlag] // return all items if no filter
     );
 
-    const nonDetailCards = ['content', 'bait', 'crop', 'feed'];
+    const nonDetailCards = ['content', 'bait', 'crop', 'animals'];
     const usesItems = ['logging', 'mining'];
     const armor = ['capes', 'helmets', 'chest', 'legs'];
     const weapons = ['axes'];
