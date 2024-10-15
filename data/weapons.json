@@ -2,17 +2,183 @@
     "title": "Weapons",
     "axes": [
         {
+            "Item": "Stone axe",
+            "Type": "One handed",
+            "Effects": ["-5% Movement speed"],
+            "Stamina": {
+                "Primary": 5,
+                "Secondary": 10
+            },
+            "Speed": {
+                "Primary": "2.58s (1.11 + 0.65 + 0.82)",
+                "Secondary": "2.0s"
+            },
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 100,
+                    "Damage": {
+                        "Primary": [
+                            { "Type": "Slash", "Amount": 15 },
+                            { "Type": "Chop", "Amount": 20 },
+                            { "Type": "Stagger", "Amount": 15 },
+                            { "Type": "Knockback", "Amount": 50 },
+                            { "Type": "Backstab", "Amount": 3 }
+                        ],
+                        "Secondary": [
+                            { "Type": "Slash", "Amount": 22.5 },
+                            { "Type": "Chop", "Amount": 30 },
+                            { "Type": "Stagger", "Amount": 22.5 },
+                            { "Type": "Knockback", "Amount": 75 },
+                            { "Type": "Backstab", "Amount": 3 }
+                        ]
+                    },
+                    "Block": [
+                        { "Type": "Block armor (0 skill)", "Amount": 3 },
+                        { "Type": "Block armor (100 skill)", "Amount": 4.5 },
+                        { "Type": "Parry block armor {0 skill)", "Amount": 6 },
+                        { "Type": "Parry block armor {100 skill)", "Amount": 9 },
+                        { "Type": "Block force", "Amount": 20 },
+                        { "Type": "Parry bonus", "Amount": 2 }
+                    ],
+                    "Recipe": [
+                        { "Material": "Wood", "Quantity": 5 },
+                        { "Material": "Stone", "Quantity": 4 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 1 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 130,
+                    "Damage": {
+                        "Primary": [
+                            { "Type": "Slash", "Amount": 20 },
+                            { "Type": "Chop", "Amount": 23 },
+                            { "Type": "Stagger", "Amount": 20 },
+                            { "Type": "Knockback", "Amount": 50 },
+                            { "Type": "Backstab", "Amount": 3 }
+                        ],
+                        "Secondary": [
+                            { "Type": "Slash", "Amount": 30 },
+                            { "Type": "Chop", "Amount": 34.5 },
+                            { "Type": "Stagger", "Amount": 30 },
+                            { "Type": "Knockback", "Amount": 75 },
+                            { "Type": "Backstab", "Amount": 3 }
+                        ]
+                    },
+                    "Block": [
+                        { "Type": "Block armor (0 skill)", "Amount": 3 },
+                        { "Type": "Block armor (100 skill)", "Amount": 4.5 },
+                        { "Type": "Parry block armor {0 skill)", "Amount": 6 },
+                        { "Type": "Parry block armor {100 skill)", "Amount": 9 },
+                        { "Type": "Block force", "Amount": 25 },
+                        { "Type": "Parry bonus", "Amount": 2 }
+                    ],
+                    "Recipe": [
+                        { "Material": "Stone", "Quantity": 2 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 2 }
+                    ]
+                },
+                {
+                    "Level": 3,
+                    "Durability": 160,
+                    "Damage": {
+                        "Primary": [
+                            { "Type": "Slash", "Amount": 25 },
+                            { "Type": "Chop", "Amount": 26 },
+                            { "Type": "Stagger", "Amount": 25 },
+                            { "Type": "Knockback", "Amount": 50 },
+                            { "Type": "Backstab", "Amount": 3 }
+                        ],
+                        "Secondary": [
+                            { "Type": "Slash", "Amount": 37.5 },
+                            { "Type": "Chop", "Amount": 39 },
+                            { "Type": "Stagger", "Amount": 37.5 },
+                            { "Type": "Knockback", "Amount": 75 },
+                            { "Type": "Backstab", "Amount": 3 }
+                        ]
+                    },
+                    "Block": [
+                        { "Type": "Block armor (0 skill)", "Amount": 3 },
+                        { "Type": "Block armor (100 skill)", "Amount": 4.5 },
+                        { "Type": "Parry block armor {0 skill)", "Amount": 6 },
+                        { "Type": "Parry block armor {100 skill)", "Amount": 9 },
+                        { "Type": "Block force", "Amount": 30 },
+                        { "Type": "Parry bonus", "Amount": 2 }
+                    ],
+                    "Recipe": [
+                        { "Material": "Stone", "Quantity": 4 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 3 }
+                    ]
+                },
+                {
+                    "Level": 4,
+                    "Durability": 190,
+                    "Damage": {
+                        "Primary": [
+                            { "Type": "Slash", "Amount": 30 },
+                            { "Type": "Chop", "Amount": 29 },
+                            { "Type": "Stagger", "Amount": 30 },
+                            { "Type": "Knockback", "Amount": 50 },
+                            { "Type": "Backstab", "Amount": 3 }
+                        ],
+                        "Secondary": [
+                            { "Type": "Slash", "Amount": 45 },
+                            { "Type": "Chop", "Amount": 43.5 },
+                            { "Type": "Stagger", "Amount": 45 },
+                            { "Type": "Knockback", "Amount": 75 },
+                            { "Type": "Backstab", "Amount": 3 }
+                        ]
+                    },
+                    "Block": [
+                        { "Type": "Block armor (0 skill)", "Amount": 3 },
+                        { "Type": "Block armor (100 skill)", "Amount": 4.5 },
+                        { "Type": "Parry block armor {0 skill)", "Amount": 6 },
+                        { "Type": "Parry block armor {100 skill)", "Amount": 9 },
+                        { "Type": "Block force", "Amount": 35 },
+                        { "Type": "Parry bonus", "Amount": 2 }
+                    ],
+                    "Recipe": [
+                        { "Material": "Stone", "Quantity": 6 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Workbench", "Level": 4 }
+                    ]
+                }
+            ]
+        }
+    ],
+    "clubs": [
+        {
             "Item": null,
+            "Type": null,
             "Effects": null,
-            "Stamina": null,
-            "Speed": null,
+            "Stamina": {
+                "Primary": null,
+                "Secondary": null
+            },
+            "Speed": {
+                "Primary": "",
+                "Secondary": ""
+            },
             "Qualities": [
                 {
                     "Level": 1,
                     "Durability": null,
-                    "Damage": [
-                        { "Type": "", "Amount": null }
-                    ],
+                    "Damage": {
+                        "Primary": [
+                            { "Type": "", "Amount": null }
+                        ],
+                        "Secondary": [
+                            { "Type": "", "Amount": null }
+                        ]
+                    },
                     "Block": [
                         { "Type": "", "Amount": null }
                     ],
@@ -26,7 +192,6 @@
             ]
         }
     ],
-    "clubs": [],
     "swords": [],
     "spears": [],
     "polearms": [],
