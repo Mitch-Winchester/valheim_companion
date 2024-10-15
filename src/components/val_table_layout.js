@@ -107,11 +107,10 @@ const QualList = styled.ul`
 const EffectList = styled.ul`
     list-style: none;
     text-align: left;
-    margin: 2rem;
 
     @media (max-width: 576px) {
         padding: 0;
-        max-width: 6rem;
+        max-width: 5rem;
         margin: auto;
     }
 `;
