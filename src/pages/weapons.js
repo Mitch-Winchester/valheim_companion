@@ -5,6 +5,7 @@ import ValLayout from '../components/val_layout'
 import ValTableLayout from '../components/val_table_layout'
 
 const ValWeapons = ({ data }) => {
+    const weaponsImg = '/val_images/weapons';
     
     return (
         <ValLayout
@@ -15,10 +16,11 @@ const ValWeapons = ({ data }) => {
                 data = {data.allDataJson.nodes}
                 headers = {["Item", "Type", "Effects", "Stamina", "Speed", "Qualities",
                     "Durability", "Damage", "Block", "Recipe", "Crafting Station"]}
-                imgBasePath = {"/val_images/tools"}
+                imgBasePath = {"/val_images/axes"}
                 contentFlag = 'axes'
                 contentNames = {["Item", "Type", "Effects", "StamUse", "Speed",
                     "Qualities", "Durability", "Damage", "Block", "Recipe", "CraftingStation"]}
+                showTitle = {true}
             />
         </ValLayout>
     )
