@@ -64,10 +64,7 @@ const QualCol = styled(Col)`
     padding-right: 0;
     flex: 1 1 25%;
 
-    @media (max-width: 1300px) {
-        flex: 1 1 30%;
-    }
-    @media (max-width: 768px) {
+    @media (max-width: 2000px) {
         flex: 1 1 50%;
     }
     @media (max-width: 576px) {
