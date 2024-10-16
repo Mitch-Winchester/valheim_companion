@@ -57,17 +57,16 @@ const ValTable = styled.table`
     }
 `;
 const QualCon = styled(Container)`
-    padding-right: 0;
     padding-left: 0;
     margin-bottom: 1rem;
 
     @media (max-width: 576px) {
         margin: 0;
+        padding-right: 0;
         margin-bottom: 1rem;
     }
 `;
 const QualCol = styled(Col)`
-    padding-left: 0;
     padding-right: 0;
     flex: 1 1 25%;
 
@@ -123,6 +122,10 @@ const QualHeader = styled(CardHeader)`
     white-space: nowrap;
     margin-bottom: .5rem;
     border-bottom: 2px solid white;
+
+    @media (max-width: 576px) {
+        font-size: 3vw;
+    }
 `;
 const QualList = styled.ul`
     list-style: none;
@@ -236,7 +239,7 @@ const ValTableLayout = ({
                                         <Strong>{item[firstKey]}</Strong>
                                     </td>
                                     {item.Type || item.Effects || item.StamUse || item.Speed ? (
-                                    <td> {/* Combine Effects, Stamina, & Speed into one column */}
+                                    <td style={{width: '20%'}}> {/* Combine Effects, Stamina, & Speed into one column */}
                                         <EffectList>
                                             {item.Type ? (
                                                 <li>
