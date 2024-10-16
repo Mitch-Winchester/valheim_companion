@@ -57,18 +57,32 @@ const ValTable = styled.table`
     }
 `;
 const QualCon = styled(Container)`
+    padding-right: 0;
     padding-left: 0;
     margin-bottom: 1rem;
+
+    @media (max-width: 576px) {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
 `;
 const QualCol = styled(Col)`
+    padding-left: 0;
     padding-right: 0;
     flex: 1 1 25%;
 
     @media (max-width: 2000px) {
         flex: 1 1 50%;
     }
+    @media (max-width: 1500px) {
+        flex: 1 1 25%;
+    }
+    @media (max-width: 767px) {
+        flex: 1 1 50%;
+    }
     @media (max-width: 576px) {
-        flex: 1 1 30%;
+        flex: 1 1 20%;
+        max-width: 50%;
     }
 `;
 const QualCard = styled(Card)`
@@ -76,6 +90,10 @@ const QualCard = styled(Card)`
     color: white;
     background-color: rgb(0, 0, 0, 0.3);
     width: fit-content;
+
+    @media (max-width: 576px){
+        padding: 0;
+    }
 `;
 const DamageCol = styled(Col)`
     display: flex;
@@ -263,7 +281,7 @@ const ValTableLayout = ({
                                                 return (
                                                     <td>
                                                         <QualCon>
-                                                            <Row>
+                                                            <Row className='g-3'>
                                                                 {item[column].map((quality, qualIndex) => (
                                                                     <QualCol key={qualIndex}>
                                                                         <QualCard>
