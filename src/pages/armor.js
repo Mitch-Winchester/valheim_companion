@@ -9,6 +9,9 @@ const ValArmor = ({ data }) => {
     // set armor image path
     const armorImgs = "/val_images/armor"
 
+    // get content names for drop down menu
+    var conFlag = Object.keys(data.allDataJson.nodes[0])
+
     // filterFunction to pass to tableLayout
     const armorFilter = (armor, filter) => {
         const item = armor.Item.toLowerCase();
@@ -37,7 +40,7 @@ const ValArmor = ({ data }) => {
     return (
         <ValLayout
             title = "Armor Recipes"
-            content = {["capes", "helmets", "chest", "legs"]}
+            content = {conFlag}
         >
             <ValTableLayout
                 filterFunction = {armorFilter}

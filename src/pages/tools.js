@@ -9,6 +9,9 @@ const ValTools = ({ data }) => {
     // set base tool image path
     const toolsImgs = '/val_images/tools';
 
+    // get content names for drop down menu
+    var conFlag = Object.keys(data.allDataJson.nodes[0])
+
     // filterFunction to pass to tableLayout
     const toolFilter = (tool, filter) => {
         const item = tool.Item.toLowerCase();
@@ -37,7 +40,7 @@ const ValTools = ({ data }) => {
     return (
         <ValLayout
             title = "Tool Recipes"
-            content = {["adventuring", "building", "farming", "fishing", "logging", "mining"]}
+            content = {conFlag}
         >
             <ValTableLayout
                 filterFunction = {toolFilter}

@@ -8,6 +8,9 @@ const ValWeapons = ({ data }) => {
     // set weapons img path
     const weaponsImg = '/val_images/weapons';
 
+    // get content names for drop down menu
+    var conFlag = Object.keys(data.allDataJson.nodes[0])
+
     // filter function
     const weaponFilter = (weapon, filter) => {
         const item = weapon.Item.toLowerCase();
@@ -36,7 +39,7 @@ const ValWeapons = ({ data }) => {
     return (
         <ValLayout
             title = "Weapon Recipes"
-            content = {["axes"]}
+            content = {conFlag}
         >
             <ValTableLayout
                 filterFunction = {weaponFilter}
