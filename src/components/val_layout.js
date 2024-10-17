@@ -84,7 +84,7 @@ const PageHead = styled.header`
 `;
 
 const ValLayout = ({
-    background,
+    background = `url("/val_images/backgrounds/ebrithil_base.png")`,
     title,
     children,
     showSearch = true,

@@ -9,7 +9,6 @@ const ValWeapons = ({ data }) => {
     
     return (
         <ValLayout
-        background = {`url("/val_images/backgrounds/ebrithil_base.png")`}
         title = "Weapon Recipes"
         >
             <ValTableLayout

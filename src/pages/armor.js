@@ -33,7 +33,6 @@ const ValArmor = ({ data }) => {
 
     return (
         <ValLayout
-            background = {`url("/val_images/backgrounds/ebrithil_base.png")`}
             title = "Armor Recipes"
             content = {["capes", "helmets", "chest", "legs"]}
         >

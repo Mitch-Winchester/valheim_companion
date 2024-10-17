@@ -56,19 +56,24 @@ const ValTable = styled.table`
         }
     }
 `;
+const ValRow = styled.tr`
+    border-bottom: 2px solid rgb(0, 0, 0, 0.4);
+    padding-top: 1rem;
+`;
 const QualCon = styled(Container)`
     padding-left: 0;
-    margin-bottom: 1rem;
 
     @media (max-width: 576px) {
-        margin: 0;
         padding-right: 0;
         margin-bottom: 1rem;
+        margin-top: 1rem;
     }
 `;
 const QualCol = styled(Col)`
+    display: flex;
     padding-right: 0;
     flex: 1 1 25%;
+    justify-content: center;
 
     @media (max-width: 2000px) {
         flex: 1 1 50%;
@@ -85,6 +90,7 @@ const QualCol = styled(Col)`
     }
 `;
 const QualCard = styled(Card)`
+    margin-top: 1rem;
     margin-bottom: 1rem;
     color: white;
     background-color: rgb(0, 0, 0, 0.3);
@@ -104,11 +110,6 @@ const DamageCard = styled(Card)`
     color: white;
     background-color: rgb(0, 0, 0, 0.3);
     width: fit-content;
-
-    @media (max-width: 767px) {
-        margin: auto;
-        margin-bottom: 1rem;
-    }
 `;
 const QualBody = styled(CardBody)`
     padding: .1rem .25rem;
@@ -231,7 +232,7 @@ const ValTableLayout = ({
                             let imagePath = `${imgBasePath}/${item[firstKey].replaceAll(' ', '_')}.png`;
                         
                             return (
-                                <tr key={index}>
+                                <ValRow key={index}>
                                     <td> {/* Get image */}
                                         <img src={imagePath} alt={item[firstKey]}/>
                                     </td>
@@ -323,7 +324,7 @@ const ValTableLayout = ({
                                                                                                 </QualBody>
                                                                                             </DamageCard>
                                                                                         </DamageCol>
-                                                                                        <Col xs={12} md={6}>
+                                                                                        <DamageCol>
                                                                                             <DamageCard>
                                                                                                 <QualBody>
                                                                                                     <CardText><strong>Secondary:</strong></CardText>
@@ -336,7 +337,7 @@ const ValTableLayout = ({
                                                                                                     </QualList>
                                                                                                 </QualBody>
                                                                                             </DamageCard>
-                                                                                        </Col>
+                                                                                        </DamageCol>
                                                                                     </Row>
                                                                                     ) : null}
                                                                                     </>
@@ -387,7 +388,7 @@ const ValTableLayout = ({
                                                 );
                                             } else if (column === 'Recipe') { // Handle Recipes Object
                                                 return (
-                                                    <td>
+                                                    <td style={{paddingTop: '1rem'}}>
                                                         <QualList style={{paddingLeft: '1rem'}}>
                                                             {item[column].map((ingredient, ingIndex) => (
                                                                 <li key={ingIndex}>
@@ -416,7 +417,7 @@ const ValTableLayout = ({
                                             );
                                         }
                                     })}
-                                </tr>
+                                </ValRow>
                             );
                         })}
                     </tbody>
