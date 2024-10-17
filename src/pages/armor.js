@@ -6,6 +6,9 @@ import ValTableLayout from '../components/val_table_layout'
 
 // create armor page
 const ValArmor = ({ data }) => {
+    // set armor image path
+    const armorImgs = "/val_images/armor"
+
     // filterFunction to pass to tableLayout
     const armorFilter = (armor, filter) => {
         const item = armor.Item.toLowerCase();
@@ -40,7 +43,7 @@ const ValArmor = ({ data }) => {
                 filterFunction = {armorFilter}
                 data = {data.allDataJson.nodes}
                 headers = {["Item", "Effects", "Qualities", "Durability", "Recipe", "Crafting Station"]}
-                imgBasePath = {"/val_images/armor"}
+                imgBasePath = {armorImgs}
                 contentFlag = 'capes'
                 contentNames = {["Item", "Effects", "Qualities", "Durability", "Recipe", "CraftingStation"]}
                 showTitle = {true}
@@ -50,7 +53,7 @@ const ValArmor = ({ data }) => {
                 filterFunction = {armorFilter}
                 data = {data.allDataJson.nodes}
                 headers = {["Item", "Effects", "Qualities", "Durability", "Recipe", "Crafting Station"]}
-                imgBasePath = {"/val_images/armor"}
+                imgBasePath = {armorImgs}
                 showSearch = {false}
                 contentFlag = 'helmets'
                 contentNames = {["Item", "Effects", "Qualities", "Durability", "Recipe", "CraftingStation"]}
@@ -61,7 +64,7 @@ const ValArmor = ({ data }) => {
                 filterFunction = {armorFilter}
                 data = {data.allDataJson.nodes}
                 headers = {["Item", "Effects", "Qualities", "Durability", "Recipe", "Crafting Station"]}
-                imgBasePath = {"/val_images/armor"}
+                imgBasePath = {armorImgs}
                 showSearch = {false}
                 contentFlag = 'chest'
                 contentNames = {["Item", "Effects", "Qualities", "Durability", "Recipe", "CraftingStation"]}
@@ -72,7 +75,7 @@ const ValArmor = ({ data }) => {
                 filterFunction = {armorFilter}
                 data = {data.allDataJson.nodes}
                 headers = {["Item", "Effects", "Qualities", "Durability", "Recipe", "Crafting Station"]}
-                imgBasePath = {"/val_images/armor"}
+                imgBasePath = {armorImgs}
                 showSearch = {false}
                 contentFlag = 'legs'
                 contentNames = {["Item", "Effects", "Qualities", "Durability", "Recipe", "CraftingStation"]}
