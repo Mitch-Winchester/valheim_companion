@@ -1097,7 +1097,7 @@
             ]
         },
         {
-            "Item": "Jotun bane",
+            "Item": "Jotun Bane",
             "Type": "One-handed",
             "Effects": ["-5% Movement speed"],
             "StamUse": {
