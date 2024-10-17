@@ -147,6 +147,14 @@ const Strong = styled.strong`
         font-size: 1.75vw;
     }
 `;
+const EffectHead = styled.h5`
+    @media (max-width: 767px) {
+        font-size: 2vw;
+    }
+    @media (max-width: 576px) {
+        font-size: 2.5vw;
+    }
+`;
 
 // Create table
 const ValTableLayout = ({
@@ -243,13 +251,13 @@ const ValTableLayout = ({
                                         <EffectList>
                                             {item.Type ? (
                                                 <li>
-                                                    <strong>Type:</strong>
+                                                    <EffectHead><strong>Type:</strong></EffectHead>
                                                     <p>{item.Type}</p>
                                                 </li>
                                             ) : null}
                                             {item.Effects ? (
                                                 <li>
-                                                    {!armor.includes(contentFlag) ? (<strong>Effects:</strong>) : null}
+                                                    {!armor.includes(contentFlag) ? (<EffectHead><strong>Effects:</strong></EffectHead>) : null}
                                                     {item.Effects.map((effect, effectIndex) => (
                                                     <p key={effectIndex}>
                                                         {effect}
@@ -259,16 +267,16 @@ const ValTableLayout = ({
                                             ) : null}
                                             {item.StamUse ? (
                                                 <li>
-                                                    <strong>Stamina Use:</strong>
-                                                    <p>Primary: {item.StamUse.Primary}</p>
-                                                    {item.StamUse.Secondary ? (<p>Secondary: {item.StamUse.Secondary}</p>) : null}
+                                                    <EffectHead><strong>Stamina Use:</strong></EffectHead>
+                                                    <p><strong>Primary:</strong> {item.StamUse.Primary}</p>
+                                                    {item.StamUse.Secondary ? (<p><strong>Secondary:</strong> {item.StamUse.Secondary}</p>) : null}
                                                 </li>
                                             ) : null}
                                             {item.Speed ? (
                                                 <li>
-                                                    <strong>Attack Speed:</strong>
-                                                    <p>Primary: {item.Speed.Primary}</p>
-                                                    {item.Speed.Seconday ? (<p>Secondary: {item.Speed.Secondary}</p>) : null}
+                                                    <EffectHead><strong>Attack Speed:</strong></EffectHead>
+                                                    <p><strong>Primary:</strong> {item.Speed.Primary}</p>
+                                                    {item.Speed.Secondary ? (<p><strong>Secondary:</strong> {item.Speed.Secondary}</p>) : null}
                                                 </li>
                                             ) : null}
                                         </EffectList>
