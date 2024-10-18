@@ -331,6 +331,7 @@ const ValTableLayout = ({
                                                                                                 </QualBody>
                                                                                             </DamageCard>
                                                                                         </DamageCol>
+                                                                                        {quality.Damage.Secondary ? (
                                                                                         <DamageCol>
                                                                                             <DamageCard>
                                                                                                 <QualBody>
@@ -345,6 +346,7 @@ const ValTableLayout = ({
                                                                                                 </QualBody>
                                                                                             </DamageCard>
                                                                                         </DamageCol>
+                                                                                        ) : null}
                                                                                     </Row>
                                                                                     ) : null}
                                                                                     </>
