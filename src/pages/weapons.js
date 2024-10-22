@@ -8,12 +8,30 @@ const ValWeapons = ({ data }) => {
     // set weapons img path
     const weaponsImg = '/val_images/weapons';
 
+    // get damage types for drop down menu
+    var damageTypes = [];
+    data.allDataJson.nodes.flatMap(node =>
+        Object.values(node).flatMap(items =>
+            items.map(weapon => 
+                weapon.Qualities.map(qual =>
+                    Object.values(qual.Damage).forEach(damType =>
+                        damType?.forEach(type =>
+                            {if (!damageTypes.includes(type.Type)) {
+                                return (damageTypes.push(type.Type))
+                            }}
+                        )
+                    )
+                )
+            )
+        )
+    )
+
     // get content names for drop down menu
     var conFlag = Object.keys(data.allDataJson.nodes[0])
 
     // filter function
     const weaponFilter = (weapon, filter) => {
-        const item = weapon.Item.toLowerCase();
+        const item = weapon.Item.toLowerCase().includes(filter);
         const effect = weapon.Effects?.some(effect =>
             effect.toLowerCase().includes(filter)
         );
@@ -27,12 +45,20 @@ const ValWeapons = ({ data }) => {
                 station.Station.toLowerCase().includes(filter)
             )
         );
+        const damage = weapon.Qualities?.some(qual =>
+            Object.values(qual.Damage).some(damType =>
+                damType?.some(type =>
+                    type.Type.toLowerCase().includes(filter)
+                )
+            )
+        )
 
         return (
-            item.includes(filter) ||
+            item ||
             effect ||
             recipe ||
-            station
+            station ||
+            damage
         );
     };
 

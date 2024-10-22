@@ -2694,7 +2694,7 @@
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
                     "Recipe": [
-                        { "Material": "Iron", "Quantity": 30 }
+                        { "Material": "Silver", "Quantity": 30 }
                     ],
                     "CraftingStation": [
                         { "Station": "Forge", "Level": 5 }
@@ -2730,7 +2730,7 @@
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
                     "Recipe": [
-                        { "Material": "Iron", "Quantity": 45 }
+                        { "Material": "Silver", "Quantity": 45 }
                     ],
                     "CraftingStation": [
                         { "Station": "Forge", "Level": 6 }

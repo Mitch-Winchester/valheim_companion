@@ -14,7 +14,7 @@ const ValArmor = ({ data }) => {
 
     // filterFunction to pass to tableLayout
     const armorFilter = (armor, filter) => {
-        const item = armor.Item.toLowerCase();
+        const item = armor.Item.toLowerCase().includes(filter);
         const effect = armor.Effects?.some(effect =>
             effect.toLowerCase().includes(filter)
         );
@@ -30,7 +30,7 @@ const ValArmor = ({ data }) => {
         );
 
         return (
-            item.includes(filter) ||
+            item ||
             effect ||
             recipe ||
             station

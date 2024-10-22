@@ -161,6 +161,7 @@ const ValTableLayout = ({
     filter,
     filterFunction,
     contentFilter,
+    damTypeFilter,
     data,
     headers,
     imgBasePath,

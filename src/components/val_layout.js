@@ -88,7 +88,8 @@ const ValLayout = ({
     title,
     children,
     showSearch = true,
-    content = null
+    content = null,
+    damage = null
 }) => {
     // Get the current pathname from the location object
     const location = useLocation();
@@ -115,6 +116,7 @@ const ValLayout = ({
     // Set initial filter & setFilter state
     const [filter, setFilter] = React.useState("");
     const [contentFilter, setContentFilter] = React.useState(null);
+    const [damTypeFilter, setDamTypeFilter] = React.useState(null);
 
     // Handle user input for the search
     const inputChange = (e) => {
@@ -123,9 +125,14 @@ const ValLayout = ({
         }
     };
     // Handle dropdown menu input
-    const dropSelect = (e) => {
+    const typeSelect = (e) => {
         if (setContentFilter) {
             setContentFilter(e);
+        }
+    };
+    const damTypeSelect = (e) => {
+        if (setDamTypeFilter) {
+            setDamTypeFilter(e);
         }
     };
 
@@ -141,8 +148,8 @@ const ValLayout = ({
             {showSearch && setFilter && (
                 <SearchBar>
                     {content !== null ? (
-                    <DropFilter onSelect={dropSelect}>
-                        <DropFilterToggle id="dropdownMenu">
+                    <DropFilter onSelect={typeSelect}>
+                        <DropFilterToggle id="typeDropdown">
                             {contentFilter === null ? (
                                 title.replaceAll('Recipes', 'Types')
                             ) : contentFilter.charAt(0).toUpperCase()+contentFilter.slice(1)
@@ -151,6 +158,24 @@ const ValLayout = ({
                         <Dropdown.Menu>
                             <DropFilterItem eventKey={null}>All</DropFilterItem>
                             {content.map((type, typeIndex) => (
+                                <DropFilterItem key={typeIndex} eventKey={type}>
+                                    {type.charAt(0).toUpperCase()+type.slice(1)}
+                                </DropFilterItem>
+                            ))}
+                        </Dropdown.Menu>
+                    </DropFilter>
+                    ) : null}
+                    {damage !== null ? (
+                    <DropFilter onSelect={damTypeSelect}>
+                        <DropFilterToggle id="damageDropdown">
+                            {damTypeFilter === null ? (
+                                'Damage Types'
+                            ) : damTypeFilter.charAt(0).toUpperCase()+damTypeFilter.slice(1)
+                            }
+                        </DropFilterToggle>
+                        <Dropdown.Menu>
+                            <DropFilterItem eventKey={null}>All</DropFilterItem>
+                            {damage.map((type, typeIndex) => (
                                 <DropFilterItem key={typeIndex} eventKey={type}>
                                     {type.charAt(0).toUpperCase()+type.slice(1)}
                                 </DropFilterItem>
@@ -168,7 +193,7 @@ const ValLayout = ({
             )}
             {/* Pass filter & setFilter to children as props */}
             {React.Children.map(children, (child) =>
-                React.cloneElement(child, { filter, setFilter, contentFilter })
+                React.cloneElement(child, { filter, setFilter, contentFilter, damTypeFilter })
             )}
             {showButton && (
                 <BackButCon>
