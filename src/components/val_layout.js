@@ -116,7 +116,7 @@ const ValLayout = ({
     // Set initial filter & setFilter state
     const [filter, setFilter] = React.useState("");
     const [contentFilter, setContentFilter] = React.useState(null);
-    const [damTypeFilter, setDamTypeFilter] = React.useState(null);
+    const [damTypeFilter, setDamTypeFilter] = React.useState();
 
     // Handle user input for the search
     const inputChange = (e) => {
@@ -135,7 +135,7 @@ const ValLayout = ({
             setDamTypeFilter(e?.toLowerCase());
         }
     };
-    console.log(damTypeFilter);
+
     return (
         <ValBody fluid
             style={{backgroundImage: background}}
@@ -168,7 +168,7 @@ const ValLayout = ({
                     {damage !== null ? (
                     <DropFilter onSelect={damTypeSelect}>
                         <DropFilterToggle id="damageDropdown">
-                            {damTypeFilter === null ? (
+                            {damTypeFilter === undefined ? (
                                 'Damage Types'
                             ) : damTypeFilter?.charAt(0).toUpperCase()+damTypeFilter?.slice(1)
                             }

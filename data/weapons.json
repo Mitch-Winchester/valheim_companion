@@ -36,8 +36,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 3 },
                         { "Type": "Block armor (100 skill)", "Amount": 4.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 6 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 9 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 6 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 9 },
                         { "Type": "Block force", "Amount": 20 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -71,8 +71,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 3 },
                         { "Type": "Block armor (100 skill)", "Amount": 4.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 6 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 9 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 6 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 9 },
                         { "Type": "Block force", "Amount": 25 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -105,8 +105,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 3 },
                         { "Type": "Block armor (100 skill)", "Amount": 4.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 6 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 9 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 6 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 9 },
                         { "Type": "Block force", "Amount": 30 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -139,8 +139,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 3 },
                         { "Type": "Block armor (100 skill)", "Amount": 4.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 6 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 9 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 6 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 9 },
                         { "Type": "Block force", "Amount": 35 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -188,8 +188,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 4 },
                         { "Type": "Block armor (100 skill)", "Amount": 6 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 8 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 12 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 8 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 12 },
                         { "Type": "Block force", "Amount": 20 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -223,8 +223,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 4 },
                         { "Type": "Block armor (100 skill)", "Amount": 6 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 8 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 12 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 8 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 12 },
                         { "Type": "Block force", "Amount": 25 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -258,8 +258,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 4 },
                         { "Type": "Block armor (100 skill)", "Amount": 6 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 8 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 12 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 8 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 12 },
                         { "Type": "Block force", "Amount": 30 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -293,8 +293,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 4 },
                         { "Type": "Block armor (100 skill)", "Amount": 6 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 8 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 12 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 8 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 12 },
                         { "Type": "Block force", "Amount": 35 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -343,8 +343,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 12 },
                         { "Type": "Block armor (100 skill)", "Amount": 18 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 24 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 36 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 24 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 36 },
                         { "Type": "Block force", "Amount": 20 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -379,8 +379,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 12 },
                         { "Type": "Block armor (100 skill)", "Amount": 18 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 24 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 36 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 24 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 36 },
                         { "Type": "Block force", "Amount": 25 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -414,8 +414,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 12 },
                         { "Type": "Block armor (100 skill)", "Amount": 18 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 24 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 36 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 24 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 36 },
                         { "Type": "Block force", "Amount": 30 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -449,8 +449,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 12 },
                         { "Type": "Block armor (100 skill)", "Amount": 18 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 24 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 36 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 24 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 36 },
                         { "Type": "Block force", "Amount": 35 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -499,8 +499,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 21 },
                         { "Type": "Block armor (100 skill)", "Amount": 31.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 42 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 63 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 42 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 63 },
                         { "Type": "Block force", "Amount": 20 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -535,8 +535,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 21 },
                         { "Type": "Block armor (100 skill)", "Amount": 31.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 42 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 63 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 42 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 63 },
                         { "Type": "Block force", "Amount": 25 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -570,8 +570,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 21 },
                         { "Type": "Block armor (100 skill)", "Amount": 31.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 42 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 63 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 42 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 63 },
                         { "Type": "Block force", "Amount": 30 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -605,8 +605,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 21 },
                         { "Type": "Block armor (100 skill)", "Amount": 31.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 42 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 63 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 42 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 63 },
                         { "Type": "Block force", "Amount": 35 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -655,8 +655,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 28 },
                         { "Type": "Block armor (100 skill)", "Amount": 42 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 56 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 84 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 56 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 84 },
                         { "Type": "Block force", "Amount": 70 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -691,8 +691,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 28 },
                         { "Type": "Block armor (100 skill)", "Amount": 42 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 56 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 84 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 56 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 84 },
                         { "Type": "Block force", "Amount": 75 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -726,8 +726,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 28 },
                         { "Type": "Block armor (100 skill)", "Amount": 42 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 56 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 84 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 56 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 84 },
                         { "Type": "Block force", "Amount": 80 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -761,8 +761,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 28 },
                         { "Type": "Block armor (100 skill)", "Amount": 42 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 56 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 84 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 56 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 84 },
                         { "Type": "Block force", "Amount": 85 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -813,8 +813,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 40 },
                         { "Type": "Block armor (100 skill)", "Amount": 60 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 80 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 120 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 80 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 120 },
                         { "Type": "Block force", "Amount": 70 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -851,8 +851,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 40 },
                         { "Type": "Block armor (100 skill)", "Amount": 60 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 80 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 120 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 80 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 120 },
                         { "Type": "Block force", "Amount": 75 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -888,8 +888,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 40 },
                         { "Type": "Block armor (100 skill)", "Amount": 60 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 80 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 120 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 80 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 120 },
                         { "Type": "Block force", "Amount": 80 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -925,8 +925,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 40 },
                         { "Type": "Block armor (100 skill)", "Amount": 60 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 80 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 120 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 80 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 120 },
                         { "Type": "Block force", "Amount": 85 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -975,8 +975,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 39 },
                         { "Type": "Block armor (100 skill)", "Amount": 58.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 78 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 117 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 78 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 117 },
                         { "Type": "Block force", "Amount": 20 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -1011,8 +1011,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 39 },
                         { "Type": "Block armor (100 skill)", "Amount": 58.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 78 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 117 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 78 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 117 },
                         { "Type": "Block force", "Amount": 25 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -1046,8 +1046,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 39 },
                         { "Type": "Block armor (100 skill)", "Amount": 58.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 78 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 117 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 78 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 117 },
                         { "Type": "Block force", "Amount": 30 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -1081,8 +1081,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 39 },
                         { "Type": "Block armor (100 skill)", "Amount": 58.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 78 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 117 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 78 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 117 },
                         { "Type": "Block force", "Amount": 35 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -1133,8 +1133,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 48 },
                         { "Type": "Block armor (100 skill)", "Amount": 72 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 96 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 144 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 96 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 144 },
                         { "Type": "Block force", "Amount": 20 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -1172,8 +1172,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 48 },
                         { "Type": "Block armor (100 skill)", "Amount": 72 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 96 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 144 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 96 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 144 },
                         { "Type": "Block force", "Amount": 25 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -1210,8 +1210,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 48 },
                         { "Type": "Block armor (100 skill)", "Amount": 72 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 96 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 144 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 96 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 144 },
                         { "Type": "Block force", "Amount": 30 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -1248,8 +1248,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 48 },
                         { "Type": "Block armor (100 skill)", "Amount": 72 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 96 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 144 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 96 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 144 },
                         { "Type": "Block force", "Amount": 35 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -1921,8 +1921,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 3 },
                         { "Type": "Block armor (100 skill)", "Amount": 4.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 6 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 9 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 6 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 9 },
                         { "Type": "Block force", "Amount": 20 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -1948,8 +1948,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 3 },
                         { "Type": "Block armor (100 skill)", "Amount": 4.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 6 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 9 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 6 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 9 },
                         { "Type": "Block force", "Amount": 25 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -1975,8 +1975,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 3 },
                         { "Type": "Block armor (100 skill)", "Amount": 4.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 6 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 9 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 6 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 9 },
                         { "Type": "Block force", "Amount": 30 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2002,8 +2002,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 3 },
                         { "Type": "Block armor (100 skill)", "Amount": 4.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 6 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 9 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 6 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 9 },
                         { "Type": "Block force", "Amount": 35 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2045,8 +2045,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 4 },
                         { "Type": "Block armor (100 skill)", "Amount": 6 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 8 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 12 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 8 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 12 },
                         { "Type": "Block force", "Amount": 50 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2075,8 +2075,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 4 },
                         { "Type": "Block armor (100 skill)", "Amount": 6 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 8 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 12 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 8 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 12 },
                         { "Type": "Block force", "Amount": 60 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2106,8 +2106,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 4 },
                         { "Type": "Block armor (100 skill)", "Amount": 6 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 8 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 12 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 8 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 12 },
                         { "Type": "Block force", "Amount": 70 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2137,8 +2137,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 4 },
                         { "Type": "Block armor (100 skill)", "Amount": 6 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 8 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 12 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 8 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 12 },
                         { "Type": "Block force", "Amount": 80 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2187,8 +2187,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 12 },
                         { "Type": "Block armor (100 skill)", "Amount": 18 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 24 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 36 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 24 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 36 },
                         { "Type": "Block force", "Amount": 30 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2221,8 +2221,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 12 },
                         { "Type": "Block armor (100 skill)", "Amount": 18 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 24 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 36 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 24 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 36 },
                         { "Type": "Block force", "Amount": 35 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2253,8 +2253,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 12 },
                         { "Type": "Block armor (100 skill)", "Amount": 18 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 24 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 36 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 24 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 36 },
                         { "Type": "Block force", "Amount": 40 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2285,8 +2285,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 12 },
                         { "Type": "Block armor (100 skill)", "Amount": 18 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 24 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 36 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 24 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 36 },
                         { "Type": "Block force", "Amount": 45 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2332,8 +2332,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 21 },
                         { "Type": "Block armor (100 skill)", "Amount": 31.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 42 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 63 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 42 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 63 },
                         { "Type": "Block force", "Amount": 30 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2366,8 +2366,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 21 },
                         { "Type": "Block armor (100 skill)", "Amount": 31.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 42 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 63 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 42 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 63 },
                         { "Type": "Block force", "Amount": 35 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2398,8 +2398,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 21 },
                         { "Type": "Block armor (100 skill)", "Amount": 31.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 42 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 63 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 42 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 63 },
                         { "Type": "Block force", "Amount": 40 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2430,8 +2430,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 21 },
                         { "Type": "Block armor (100 skill)", "Amount": 31.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 42 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 63 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 42 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 63 },
                         { "Type": "Block force", "Amount": 45 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2472,8 +2472,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 28 },
                         { "Type": "Block armor (100 skill)", "Amount": 42 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 56 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 84 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 56 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 84 },
                         { "Type": "Block force", "Amount": 50 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2502,8 +2502,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 28 },
                         { "Type": "Block armor (100 skill)", "Amount": 42 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 56 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 84 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 56 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 84 },
                         { "Type": "Block force", "Amount": 60 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2531,8 +2531,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 28 },
                         { "Type": "Block armor (100 skill)", "Amount": 42 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 56 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 84 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 56 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 84 },
                         { "Type": "Block force", "Amount": 70 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2560,8 +2560,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 28 },
                         { "Type": "Block armor (100 skill)", "Amount": 42 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 56 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 84 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 56 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 84 },
                         { "Type": "Block force", "Amount": 80 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2613,8 +2613,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 30 },
                         { "Type": "Block armor (100 skill)", "Amount": 45 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 60 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 90 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 60 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 90 },
                         { "Type": "Block force", "Amount": 30 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2652,8 +2652,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 30 },
                         { "Type": "Block armor (100 skill)", "Amount": 45 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 60 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 90 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 60 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 90 },
                         { "Type": "Block force", "Amount": 35 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2688,8 +2688,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 30 },
                         { "Type": "Block armor (100 skill)", "Amount": 45 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 60 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 90 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 60 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 90 },
                         { "Type": "Block force", "Amount": 40 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2724,8 +2724,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 30 },
                         { "Type": "Block armor (100 skill)", "Amount": 45 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 60 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 90 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 60 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 90 },
                         { "Type": "Block force", "Amount": 45 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2773,8 +2773,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 39 },
                         { "Type": "Block armor (100 skill)", "Amount": 58.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 78 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 117 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 78 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 117 },
                         { "Type": "Block force", "Amount": 30 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2810,8 +2810,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 39 },
                         { "Type": "Block armor (100 skill)", "Amount": 58.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 78 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 117 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 78 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 117 },
                         { "Type": "Block force", "Amount": 35 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2845,8 +2845,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 39 },
                         { "Type": "Block armor (100 skill)", "Amount": 58.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 78 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 117 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 78 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 117 },
                         { "Type": "Block force", "Amount": 40 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2880,8 +2880,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 39 },
                         { "Type": "Block armor (100 skill)", "Amount": 58.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 78 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 117 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 78 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 117 },
                         { "Type": "Block force", "Amount": 45 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2923,8 +2923,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 52 },
                         { "Type": "Block armor (100 skill)", "Amount": 78 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 104 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 156 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 104 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 156 },
                         { "Type": "Block force", "Amount": 50 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2952,8 +2952,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 52 },
                         { "Type": "Block armor (100 skill)", "Amount": 78 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 104 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 156 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 104 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 156 },
                         { "Type": "Block force", "Amount": 60 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -2981,8 +2981,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 52 },
                         { "Type": "Block armor (100 skill)", "Amount": 78 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 104 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 156 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 104 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 156 },
                         { "Type": "Block force", "Amount": 70 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -3010,8 +3010,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 52 },
                         { "Type": "Block armor (100 skill)", "Amount": 78 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 104 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 156 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 104 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 156 },
                         { "Type": "Block force", "Amount": 80 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -3059,8 +3059,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 57 },
                         { "Type": "Block armor (100 skill)", "Amount": 85.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 114 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 171 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 114 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 171 },
                         { "Type": "Block force", "Amount": 30 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -3094,8 +3094,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 57 },
                         { "Type": "Block armor (100 skill)", "Amount": 85.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 114 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 171 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 114 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 171 },
                         { "Type": "Block force", "Amount": 35 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -3129,8 +3129,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 57 },
                         { "Type": "Block armor (100 skill)", "Amount": 85.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 114 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 171 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 114 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 171 },
                         { "Type": "Block force", "Amount": 40 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -3164,8 +3164,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 57 },
                         { "Type": "Block armor (100 skill)", "Amount": 85.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 114 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 171 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 114 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 171 },
                         { "Type": "Block force", "Amount": 45 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -3218,8 +3218,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 57 },
                         { "Type": "Block armor (100 skill)", "Amount": 85.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 114 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 171 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 114 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 171 },
                         { "Type": "Block force", "Amount": 30 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -3252,8 +3252,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 57 },
                         { "Type": "Block armor (100 skill)", "Amount": 85.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 114 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 171 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 114 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 171 },
                         { "Type": "Block force", "Amount": 35 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -3285,8 +3285,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 57 },
                         { "Type": "Block armor (100 skill)", "Amount": 85.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 114 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 171 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 114 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 171 },
                         { "Type": "Block force", "Amount": 40 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -3318,8 +3318,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 57 },
                         { "Type": "Block armor (100 skill)", "Amount": 85.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 114 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 171 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 114 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 171 },
                         { "Type": "Block force", "Amount": 45 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -3372,8 +3372,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 57 },
                         { "Type": "Block armor (100 skill)", "Amount": 85.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 114 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 171 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 114 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 171 },
                         { "Type": "Block force", "Amount": 30 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -3408,8 +3408,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 57 },
                         { "Type": "Block armor (100 skill)", "Amount": 85.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 114 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 171 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 114 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 171 },
                         { "Type": "Block force", "Amount": 35 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -3443,8 +3443,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 57 },
                         { "Type": "Block armor (100 skill)", "Amount": 85.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 114 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 171 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 114 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 171 },
                         { "Type": "Block force", "Amount": 40 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -3478,8 +3478,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 57 },
                         { "Type": "Block armor (100 skill)", "Amount": 85.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 114 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 171 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 114 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 171 },
                         { "Type": "Block force", "Amount": 45 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -3532,8 +3532,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 57 },
                         { "Type": "Block armor (100 skill)", "Amount": 85.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 114 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 171 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 114 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 171 },
                         { "Type": "Block force", "Amount": 30 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -3568,8 +3568,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 57 },
                         { "Type": "Block armor (100 skill)", "Amount": 85.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 114 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 171 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 114 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 171 },
                         { "Type": "Block force", "Amount": 35 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -3603,8 +3603,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 57 },
                         { "Type": "Block armor (100 skill)", "Amount": 85.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 114 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 171 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 114 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 171 },
                         { "Type": "Block force", "Amount": 40 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],
@@ -3638,8 +3638,8 @@
                     "Block": [
                         { "Type": "Block armor (0 skill)", "Amount": 57 },
                         { "Type": "Block armor (100 skill)", "Amount": 85.5 },
-                        { "Type": "Parry block armor {0 skill)", "Amount": 114 },
-                        { "Type": "Parry block armor {100 skill)", "Amount": 171 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 114 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 171 },
                         { "Type": "Block force", "Amount": 45 },
                         { "Type": "Parry bonus", "Amount": 2 }
                     ],

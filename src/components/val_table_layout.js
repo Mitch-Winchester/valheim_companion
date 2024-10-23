@@ -180,25 +180,19 @@ const ValTableLayout = ({
     const filteredItems = filterFunction
         ? data.flatMap(node =>
             node[filteredContentFlag].filter(item => {
-                // check both search bar input and damage type filters
+                // check both search bar input and damage type filters. Return true if filter is undefined.
                 const matchesFilter = filter !== undefined ? filterFunction(item, filter) : true;
-                const matchesDamTypeFilter = damTypeFilter !== null ? filterFunction(item, damTypeFilter) : true;
+                const matchesDamTypeFilter = damTypeFilter !== undefined ? filterFunction(item, damTypeFilter) : true;
                 return matchesFilter && matchesDamTypeFilter;
             })
         ) : data.flatMap(node => node[filteredContentFlag] // return all items if no filter
     );
 
-    /*
-     : filterFunction && damTypeFilter !== null // filter by damage type
-        ? data.flatMap(node =>
-            node[filteredContentFlag].filter(item => filterFunction(item, damTypeFilter))
-        ) 
-     */
-
+    // variables to determine table headers
     const nonDetailCards = ['content', 'bait', 'crop', 'animals'];
     const usesItems = ['logging', 'mining'];
     const armor = ['capes', 'helmets', 'chest', 'legs'];
-    const weapons = ['axes'];
+    const weapons = ['axes', 'clubs'];
 
     return (
         <> 
@@ -213,7 +207,7 @@ const ValTableLayout = ({
                 <ValTable>
                     <thead>
                         <tr>
-                            <th aria-label='image'></th> {/* header space for image column */}
+                            <th aria-label='image'></th>{/* header space for image column */}
                             { // handle standard headers
                             nonDetailCards.includes(contentFlag) ? (
                                 headers.map((column, colIndex) => (
@@ -252,14 +246,14 @@ const ValTableLayout = ({
                         
                             return (
                                 <ValRow key={index}>
-                                    <td> {/* Get image */}
+                                    <td>{/* Get image */}
                                         <img src={imagePath} alt={item[firstKey]}/>
                                     </td>
-                                    <td> {/* Get item name */}
+                                    <td>{/* Get item name */}
                                         <Strong>{item[firstKey]}</Strong>
                                     </td>
                                     {item.Type || item.Effects || item.StamUse || item.Speed ? (
-                                    <td style={{width: '20%'}}> {/* Combine Effects, Stamina, & Speed into one column */}
+                                    <td style={{width: '20%'}}>{/* Combine Effects, Stamina, & Speed into one column */}
                                         <EffectList>
                                             {item.Type ? (
                                                 <li>
