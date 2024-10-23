@@ -175,14 +175,25 @@ const ValTableLayout = ({
     // Determine if a contentFilter was selected
     const filteredContentFlag = contentFilter !== null ?
         contentFilter : contentFlag;
-
+    
     // Filter table items based on passed in filter function
-    const filteredItems = filterFunction && filter !== undefined
+    const filteredItems = filterFunction
         ? data.flatMap(node =>
-            node[filteredContentFlag].filter(item => filterFunction(item, filter))
-          )
-        : data.flatMap(node => node[filteredContentFlag] // return all items if no filter
+            node[filteredContentFlag].filter(item => {
+                // check both search bar input and damage type filters
+                const matchesFilter = filter !== undefined ? filterFunction(item, filter) : true;
+                const matchesDamTypeFilter = damTypeFilter !== null ? filterFunction(item, damTypeFilter) : true;
+                return matchesFilter && matchesDamTypeFilter;
+            })
+        ) : data.flatMap(node => node[filteredContentFlag] // return all items if no filter
     );
+
+    /*
+     : filterFunction && damTypeFilter !== null // filter by damage type
+        ? data.flatMap(node =>
+            node[filteredContentFlag].filter(item => filterFunction(item, damTypeFilter))
+        ) 
+     */
 
     const nonDetailCards = ['content', 'bait', 'crop', 'animals'];
     const usesItems = ['logging', 'mining'];
@@ -205,22 +216,22 @@ const ValTableLayout = ({
                             <th aria-label='image'></th> {/* header space for image column */}
                             { // handle standard headers
                             nonDetailCards.includes(contentFlag) ? (
-                                headers.map(column => (
-                                    <th>{column}</th>
+                                headers.map((column, colIndex) => (
+                                    <th key={colIndex}>{column}</th>
                                 ))
-                            ) : (usesItems.includes(contentFlag) ? (
+                            ) : usesItems.includes(contentFlag) ? (
                             <> {/* Handle headers for tools with specific uses */}
                                 <th>Item</th>
                                 <th>Uses</th>
                                 <th>Details</th>
                             </>
-                            ) : (armor.includes(contentFlag)) ? (
+                            ) : armor.includes(contentFlag) ? (
                             <> {/* Handle headers for armor */}
                                 <th>Item</th>
                                 <th>Effects</th>
                                 <th>Details</th>
                             </>
-                            ) : (weapons.includes(contentFlag)) ? (
+                            ) : weapons.includes(contentFlag) ? (
                             <> {/* Handle headers for weapons */}
                                 <th>Item</th>
                                 <th>Base Stats</th>
@@ -231,7 +242,7 @@ const ValTableLayout = ({
                                 <th>Item</th>
                                 <th>Details</th>
                             </>
-                            ))}
+                            )}
                         </tr>
                     </thead>
                     <tbody>

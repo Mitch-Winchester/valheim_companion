@@ -66,6 +66,7 @@ const ValWeapons = ({ data }) => {
         <ValLayout
             title = "Weapon Recipes"
             content = {conFlag}
+            damage = {damageTypes}
         >
             <ValTableLayout
                 filterFunction = {weaponFilter}

@@ -132,10 +132,10 @@ const ValLayout = ({
     };
     const damTypeSelect = (e) => {
         if (setDamTypeFilter) {
-            setDamTypeFilter(e);
+            setDamTypeFilter(e?.toLowerCase());
         }
     };
-
+    console.log(damTypeFilter);
     return (
         <ValBody fluid
             style={{backgroundImage: background}}
@@ -170,7 +170,7 @@ const ValLayout = ({
                         <DropFilterToggle id="damageDropdown">
                             {damTypeFilter === null ? (
                                 'Damage Types'
-                            ) : damTypeFilter.charAt(0).toUpperCase()+damTypeFilter.slice(1)
+                            ) : damTypeFilter?.charAt(0).toUpperCase()+damTypeFilter?.slice(1)
                             }
                         </DropFilterToggle>
                         <Dropdown.Menu>
