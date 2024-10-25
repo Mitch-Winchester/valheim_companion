@@ -3656,6 +3656,306 @@
     ],
     "swords": [
         {
+            "Item": "Bronze sword",
+            "Type": "One-handed",
+            "Effects": ["-5% Movement speed"],
+            "StamUse": {
+                "Primary": 8,
+                "Secondary": 16
+            },
+            "Speed": {
+                "Primary": "2.46s (1.14 + 0.44 + 0.88)",
+                "Secondary": "1.84s"
+            },
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 200,
+                    "Damage": {
+                        "Primary": [
+                            { "Type": "Slash", "Amount": 35 },
+                            { "Type": "Stagger", "Amount": 35 },
+                            { "Type": "Knockback", "Amount": 40 },
+                            { "Type": "Backstab", "Amount": 3 }
+                        ],
+                        "Secondary": [
+                            { "Type": "Slash", "Amount": 105 },
+                            { "Type": "Stagger", "Amount": 105 },
+                            { "Type": "Knockback", "Amount": 40 },
+                            { "Type": "Backstab", "Amount": 3 }
+                        ]
+                    },
+                    "Block": [
+                        { "Type": "Block armor (0 skill)", "Amount": 12 },
+                        { "Type": "Block armor (100 skill)", "Amount": 18 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 24 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 36 },
+                        { "Type": "Block force", "Amount": 20 },
+                        { "Type": "Parry bonus", "Amount": 2 }
+                    ],
+                    "Recipe": [
+                        { "Material": "Wood", "Quantity": 2 },
+                        { "Material": "Bronze", "Quantity": 8 },
+                        { "Material": "Leather scraps", "Quantity": 2 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Forge", "Level": 1 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 250,
+                    "Damage": {
+                        "Primary": [
+                            { "Type": "Slash", "Amount": 41 },
+                            { "Type": "Stagger", "Amount": 41 },
+                            { "Type": "Knockback", "Amount": 40 },
+                            { "Type": "Backstab", "Amount": 3 }
+                        ],
+                        "Secondary": [
+                            { "Type": "Slash", "Amount": 123 },
+                            { "Type": "Stagger", "Amount": 123 },
+                            { "Type": "Knockback", "Amount": 40 },
+                            { "Type": "Backstab", "Amount": 3 }
+                        ]
+                    },
+                    "Block": [
+                        { "Type": "Block armor (0 skill)", "Amount": 12 },
+                        { "Type": "Block armor (100 skill)", "Amount": 18 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 24 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 36 },
+                        { "Type": "Block force", "Amount": 25 },
+                        { "Type": "Parry bonus", "Amount": 2 }
+                    ],
+                    "Recipe": [
+                        { "Material": "Wood", "Quantity": 1 },
+                        { "Material": "Bronze", "Quantity": 4 },
+                        { "Material": "Leather scraps", "Quantity": 1 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Forge", "Level": 2 }
+                    ]
+                },{
+                    "Level": 3,
+                    "Durability": 300,
+                    "Damage": {
+                        "Primary": [
+                            { "Type": "Slash", "Amount": 47 },
+                            { "Type": "Stagger", "Amount": 47 },
+                            { "Type": "Knockback", "Amount": 40 },
+                            { "Type": "Backstab", "Amount": 3 }
+                        ],
+                        "Secondary": [
+                            { "Type": "Slash", "Amount": 141 },
+                            { "Type": "Stagger", "Amount": 141 },
+                            { "Type": "Knockback", "Amount": 40 },
+                            { "Type": "Backstab", "Amount": 3 }
+                        ]
+                    },
+                    "Block": [
+                        { "Type": "Block armor (0 skill)", "Amount": 12 },
+                        { "Type": "Block armor (100 skill)", "Amount": 18 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 24 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 36 },
+                        { "Type": "Block force", "Amount": 30 },
+                        { "Type": "Parry bonus", "Amount": 2 }
+                    ],
+                    "Recipe": [
+                        { "Material": "Wood", "Quantity": 2 },
+                        { "Material": "Bronze", "Quantity": 8 },
+                        { "Material": "Leather scraps", "Quantity": 2 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Forge", "Level": 3 }
+                    ]
+                },{
+                    "Level": 4,
+                    "Durability": 350,
+                    "Damage": {
+                        "Primary": [
+                            { "Type": "Slash", "Amount": 53 },
+                            { "Type": "Stagger", "Amount": 53 },
+                            { "Type": "Knockback", "Amount": 40 },
+                            { "Type": "Backstab", "Amount": 3 }
+                        ],
+                        "Secondary": [
+                            { "Type": "Slash", "Amount": 159 },
+                            { "Type": "Stagger", "Amount": 159 },
+                            { "Type": "Knockback", "Amount": 40 },
+                            { "Type": "Backstab", "Amount": 3 }
+                        ]
+                    },
+                    "Block": [
+                        { "Type": "Block armor (0 skill)", "Amount": 12 },
+                        { "Type": "Block armor (100 skill)", "Amount": 18 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 24 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 36 },
+                        { "Type": "Block force", "Amount": 35 },
+                        { "Type": "Parry bonus", "Amount": 2 }
+                    ],
+                    "Recipe": [
+                        { "Material": "Wood", "Quantity": 3 },
+                        { "Material": "Bronze", "Quantity": 12 },
+                        { "Material": "Leather scraps", "Quantity": 3 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Forge", "Level": 4 }
+                    ]
+                }
+            ]
+        },
+        {
+            "Item": "Iron sword",
+            "Type": "One-handed",
+            "Effects": ["-5% Movement speed"],
+            "StamUse": {
+                "Primary": 10,
+                "Secondary": 20
+            },
+            "Speed": {
+                "Primary": "2.46s (1.14 + 0.44 + 0.88)",
+                "Secondary": "1.84s"
+            },
+            "Qualities": [
+                {
+                    "Level": 1,
+                    "Durability": 200,
+                    "Damage": {
+                        "Primary": [
+                            { "Type": "Slash", "Amount": 55 },
+                            { "Type": "Stagger", "Amount": 55 },
+                            { "Type": "Knockback", "Amount": 40 },
+                            { "Type": "Backstab", "Amount": 3 }
+                        ],
+                        "Secondary": [
+                            { "Type": "Slash", "Amount": 165 },
+                            { "Type": "Stagger", "Amount": 165 },
+                            { "Type": "Knockback", "Amount": 40 },
+                            { "Type": "Backstab", "Amount": 3 }
+                        ]
+                    },
+                    "Block": [
+                        { "Type": "Block armor (0 skill)", "Amount": 21 },
+                        { "Type": "Block armor (100 skill)", "Amount": 31.5 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 42 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 63 },
+                        { "Type": "Block force", "Amount": 20 },
+                        { "Type": "Parry bonus", "Amount": 2 }
+                    ],
+                    "Recipe": [
+                        { "Material": "Wood", "Quantity": 2 },
+                        { "Material": "Iron", "Quantity": 20 },
+                        { "Material": "Leather scraps", "Quantity": 3 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Forge", "Level": 2 }
+                    ]
+                },
+                {
+                    "Level": 2,
+                    "Durability": 250,
+                    "Damage": {
+                        "Primary": [
+                            { "Type": "Slash", "Amount": 61 },
+                            { "Type": "Stagger", "Amount": 61 },
+                            { "Type": "Knockback", "Amount": 40 },
+                            { "Type": "Backstab", "Amount": 3 }
+                        ],
+                        "Secondary": [
+                            { "Type": "Slash", "Amount": 183 },
+                            { "Type": "Stagger", "Amount": 183 },
+                            { "Type": "Knockback", "Amount": 40 },
+                            { "Type": "Backstab", "Amount": 3 }
+                        ]
+                    },
+                    "Block": [
+                        { "Type": "Block armor (0 skill)", "Amount": 21 },
+                        { "Type": "Block armor (100 skill)", "Amount": 31.5 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 42 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 63 },
+                        { "Type": "Block force", "Amount": 25 },
+                        { "Type": "Parry bonus", "Amount": 2 }
+                    ],
+                    "Recipe": [
+                        { "Material": "Wood", "Quantity": 1 },
+                        { "Material": "Iron", "Quantity": 10 },
+                        { "Material": "Leather scraps", "Quantity": 2 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Forge", "Level": 3 }
+                    ]
+                },{
+                    "Level": 3,
+                    "Durability": 300,
+                    "Damage": {
+                        "Primary": [
+                            { "Type": "Slash", "Amount": 67 },
+                            { "Type": "Stagger", "Amount": 67 },
+                            { "Type": "Knockback", "Amount": 40 },
+                            { "Type": "Backstab", "Amount": 3 }
+                        ],
+                        "Secondary": [
+                            { "Type": "Slash", "Amount": 201 },
+                            { "Type": "Stagger", "Amount": 201 },
+                            { "Type": "Knockback", "Amount": 40 },
+                            { "Type": "Backstab", "Amount": 3 }
+                        ]
+                    },
+                    "Block": [
+                        { "Type": "Block armor (0 skill)", "Amount": 21 },
+                        { "Type": "Block armor (100 skill)", "Amount": 31.5 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 42 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 63 },
+                        { "Type": "Block force", "Amount": 30 },
+                        { "Type": "Parry bonus", "Amount": 2 }
+                    ],
+                    "Recipe": [
+                        { "Material": "Wood", "Quantity": 2 },
+                        { "Material": "Iron", "Quantity": 20 },
+                        { "Material": "Leather scraps", "Quantity": 4 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Forge", "Level": 4 }
+                    ]
+                },{
+                    "Level": 4,
+                    "Durability": 350,
+                    "Damage": {
+                        "Primary": [
+                            { "Type": "Slash", "Amount": 73 },
+                            { "Type": "Stagger", "Amount": 73 },
+                            { "Type": "Knockback", "Amount": 40 },
+                            { "Type": "Backstab", "Amount": 3 }
+                        ],
+                        "Secondary": [
+                            { "Type": "Slash", "Amount": 219 },
+                            { "Type": "Stagger", "Amount": 219 },
+                            { "Type": "Knockback", "Amount": 40 },
+                            { "Type": "Backstab", "Amount": 3 }
+                        ]
+                    },
+                    "Block": [
+                        { "Type": "Block armor (0 skill)", "Amount": 21 },
+                        { "Type": "Block armor (100 skill)", "Amount": 31.5 },
+                        { "Type": "Parry block armor (0 skill)", "Amount": 42 },
+                        { "Type": "Parry block armor (100 skill)", "Amount": 63 },
+                        { "Type": "Block force", "Amount": 35 },
+                        { "Type": "Parry bonus", "Amount": 2 }
+                    ],
+                    "Recipe": [
+                        { "Material": "Wood", "Quantity": 3 },
+                        { "Material": "Iron", "Quantity": 30 },
+                        { "Material": "Leather scraps", "Quantity": 6 }
+                    ],
+                    "CraftingStation": [
+                        { "Station": "Forge", "Level": 5 }
+                    ]
+                }
+            ]
+        }
+    ],
+    "spears": [
+        {
             "Item": null,
             "Type": null,
             "Effects": null,
@@ -3692,7 +3992,6 @@
             ]
         }
     ],
-    "spears": [],
     "polearms": [],
     "knives": [],
     "fists": [],

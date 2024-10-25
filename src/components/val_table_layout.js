@@ -192,7 +192,7 @@ const ValTableLayout = ({
     const nonDetailCards = ['content', 'bait', 'crop', 'animals'];
     const usesItems = ['logging', 'mining'];
     const armor = ['capes', 'helmets', 'chest', 'legs'];
-    const weapons = ['axes', 'clubs'];
+    const weapons = ['axes', 'clubs', 'swords'];
 
     return (
         <> 

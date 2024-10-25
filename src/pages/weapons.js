@@ -90,6 +90,17 @@ const ValWeapons = ({ data }) => {
                     "Qualities", "Durability", "Damage", "Block", "Recipe", "CraftingStation"]}
                 showTitle = {true}
             />
+            <ValTableLayout
+                filterFunction = {weaponFilter}
+                data = {data.allDataJson.nodes}
+                headers = {["Item", "Type", "Effects", "Stamina", "Speed", "Qualities",
+                    "Durability", "Damage", "Block", "Recipe", "Crafting Station"]}
+                imgBasePath = {weaponsImg}
+                contentFlag = 'swords'
+                contentNames = {["Item", "Type", "Effects", "StamUse", "Speed",
+                    "Qualities", "Durability", "Damage", "Block", "Recipe", "CraftingStation"]}
+                showTitle = {true}
+            />
         </ValLayout>
     )
 }
@@ -139,6 +150,45 @@ export const query = graphql`
                     }
                 }
                 clubs {
+                    Item
+                    Type
+                    Effects
+                    StamUse {
+                        Primary
+                        Secondary
+                    }
+                    Speed {
+                        Primary
+                        Secondary
+                    }
+                    Qualities {
+                        Level
+                        Durability
+                        Damage {
+                            Primary {
+                                Type
+                                Amount
+                            }
+                            Secondary {
+                                Type
+                                Amount
+                            }
+                        }
+                        Block {
+                            Type
+                            Amount
+                        }
+                        Recipe {
+                            Material
+                            Quantity
+                        }
+                        CraftingStation {
+                            Station
+                            Level
+                        }
+                    }
+                }
+                swords {
                     Item
                     Type
                     Effects
