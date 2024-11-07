@@ -36,13 +36,15 @@ const ValTable = styled.table`
     color: white;
     background-color: rgb(94, 102, 111, 0.75);
     margin: 0 auto;
-    max-width: 100vw;
+    max-width: 80vw;
 
     th {
         text-align: center;
         font-size: 2vw;
     }
-
+    @media (max-width: 1920px) {
+        max-width: 100vw;
+    }
     @media (max-width: 768px) {
         font-size: 1.5vw;
         th {
@@ -75,12 +77,7 @@ const QualCol = styled(Col)`
     flex: 1 1 25%;
     justify-content: center;
 
-    @media (max-width: 2000px) {
-        flex: 1 1 50%;
-    }
-    @media (max-width: 1500px) {
-        flex: 1 1 25%;
-    }
+
     @media (max-width: 767px) {
         flex: 1 1 50%;
     }
